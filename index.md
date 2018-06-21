@@ -56,3 +56,12 @@ Harry Potter und der Half-Life Prinz (HLP)
 | Teil   | YouTube  | D.Tube | Twitch.TV | Vimeo | Archive.org | Dropbox | Anderes |
 |--------|----------|--------|-----------|-------|-------------|---------|---------|
 | **01** |  |  |  |  |  |  |  |
+
+
+Sonstige Videos
+---------------
+
+| Titel | Youtube |
+|-------|---------|
+| Die Ankündigung des Todestodes |  [Special](https://youtu.be/uw76l0VnoL0) |
+| 1000-Abonnenten-Special | [Special](https://youtu.be/ARcpujeMOog) |
