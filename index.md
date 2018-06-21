@@ -34,19 +34,19 @@ Harry Potter und der Orden des Penners (OdP)
 
 | Teil   | YouTube  | D.Tube | Twitch.TV | Vimeo | Archive.org | Dropbox | Anderes |
 |--------|----------|--------|-----------|-------|-------------|---------|---------|
-| **01** |  |  |  |  |  |  |  |
-| **02** |  |  |  |  |  |  |  |
-| **03** |  |  |  |  |  |  |  |
-| **04** |  |  |  |  |  |  |  |
-| **05** |  |  |  |  |  |  |  |
-| **06** |  |  |  |  |  |  |  |
-| **07** |  |  |  |  |  |  |  |
-| **08** |  |  |  |  |  |  |  |
-| **09** |  |  |  |  |  |  |  |
-| **10** |  |  |  |  |  |  |  |
-| **11** |  |  |  |  |  |  |  |
-| **12** |  |  |  |  |  |  |  |
-| **13** |  |  |  |  |  |  |  |
+| **01** | [Original](https://youtu.be/4arwkIcTHgs?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/yowkmsul) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_01.mp4) |  |  |
+| **02** | [Original](https://youtu.be/HAVbNybjias?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/vxxeq1dz) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_02.mp4) |  |  |
+| **03** | [Original](https://youtu.be/2Rn8Fpyt4S0?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/ojjzcir1) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_03.mp4) |  |  |
+| **04** | [Original](https://youtu.be/XZWaD4Kutd4?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/wf1g92re) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_04.mp4) |  |  |
+| **05** |  | [Original](https://d.tube/v/jbb/2foc1boz) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_05.mp4) |  |  |
+| **06** | [Original](https://youtu.be/d7CSBVOaB_4?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/2bbvo19y) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_06.mp4) |  |  |
+| **07** | [Original](https://youtu.be/Dd6G60HRaCI?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/ox1kk5zi) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_07.mp4) |  |  |
+| **08** | [Original](https://youtu.be/LuQmEIbjTFM?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/2ixom1zp) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_08.mp4) |  |  |
+| **09** |  | [Original](https://d.tube/v/jbb/nmai4kqm) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_09.mp4) |  |  |
+| **10** | [Original](https://youtu.be/IrDY1qGAJGw?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/pkyfsj64) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_10.mp4) |  |  |
+| **11** | [Original](https://youtu.be/FHhVIAqBV8U?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/r51npdkf) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_11.mp4) |  |  |
+| **12** | [Original](https://youtu.be/r90wHohn3_A?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/pekxz0pl) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_12.mp4) |  |  |
+| **13** | [Original](https://youtu.be/CNqeEqktQHo?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://d.tube/v/jbb/ku0zicng) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_13.mp4) |  |  |
 | **14** |  |  |  |  |  |  |  |
 
 
