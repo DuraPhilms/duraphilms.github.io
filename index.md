@@ -32,23 +32,64 @@ Harry Potter und der Penner von Alcatraz (PvA)
 Harry Potter und der Orden des Penners (OdP)
 --------------------------------------------
 
-| Teil   | YouTube  | Twitch.TV | Vimeo | Archive.org | Dropbox | PeerTube |
-|--------|----------|-----------|-------|-------------|---------|----------|
-| **01** | [Original](https://youtu.be/4arwkIcTHgs?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) |  |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_01.mp4) |  |  |
-| **02** | [Original](https://youtu.be/HAVbNybjias?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385699605) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_02.mp4) |  |  |
-| **03** | [Original](https://youtu.be/2Rn8Fpyt4S0?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385917574) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_03.mp4) |  |  |
-| **04** | [Original](https://youtu.be/XZWaD4Kutd4?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385699663) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_04.mp4) |  |  |
-| **05** | -- gesperrt -- | [Original](https://www.twitch.tv/videos/385699696) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_05.mp4) |  |  |
-| **06** | [Original](https://youtu.be/d7CSBVOaB_4?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385699723) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_06.mp4) |  |  |
-| **07** | [Original](https://youtu.be/Dd6G60HRaCI?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385699752) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_07.mp4) |  |  |
-| **08** | [Original](https://youtu.be/LuQmEIbjTFM?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385699782) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_08.mp4) |  |  |
-| **09** | -- gesperrt -- | [Original](https://www.twitch.tv/videos/385699812) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_09.mp4) |  |  |
-| **10** | [Original](https://youtu.be/IrDY1qGAJGw?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385699829) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_10.mp4) |  |  |
-| **11** | [Original](https://youtu.be/FHhVIAqBV8U?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385699853) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_11.mp4) |  |  |
-| **12** | [Original](https://youtu.be/r90wHohn3_A?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385699883) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_12.mp4) |  |  |
-| **13** | [Original](https://youtu.be/CNqeEqktQHo?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g) | [Original](https://www.twitch.tv/videos/385916775) |  | [Original](https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_13.mp4) |  |  |
-| **14** |  |  |  |  |  |  |
+| Teil   | YouTube            | Twitch             | Vimeo | Archive.org      | Dropbox | PeerTube |
+|--------|--------------------|--------------------|-------|------------------|---------|----------|
+| **01** | [Original][501y]   | ~[Original][501t]~ |       | [Original][501a] |         |          |
+| **02** | [Original][502y]   | [Original][502t]   |       | [Original][502a] |         |          |
+| **03** | [Original][503y]   | [Original][503t]   |       | [Original][503a] |         |          |
+| **04** | [Original][504y]   | [Original][504t]   |       | [Original][504a] |         |          |
+| **05** | [Original][505y]   | [Original][505t]   |       | [Original][505a] |         |          |
+| **06** | [Original][506y]   | [Original][506t]   |       | [Original][506a] |         |          |
+| **07** | [Original][507y]   | [Original][507t]   |       | [Original][507a] |         |          |
+| **08** | [Original][508y]   | [Original][508t]   |       | [Original][508a] |         |          |
+| **09** | ~[Original][509y]~ | [Original][509t]   |       | [Original][509a] |         |          |
+| **10** | [Original][510y]   | [Original][510t]   |       | [Original][510a] |         |          |
+| **11** | [Original][511y]   | [Original][511t]   |       | [Original][511a] |         |          |
+| **12** | [Original][512y]   | [Original][512t]   |       | [Original][512a] |         |          |
+| **13** | [Original][513y]   | [Original][513t]   |       | [Original][513a] |         |          |
+| **14** |                    |                    |       |                  |         |          |
 
+[501y]: https://youtu.be/4arwkIcTHgs?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[502y]: https://youtu.be/HAVbNybjias?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[503y]: https://youtu.be/2Rn8Fpyt4S0?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[504y]: https://youtu.be/XZWaD4Kutd4?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[505y]: https://youtu.be/Hj0ztszS3EA&list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[506y]: https://youtu.be/d7CSBVOaB_4?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[507y]: https://youtu.be/Dd6G60HRaCI?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[508y]: https://youtu.be/LuQmEIbjTFM?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[509y]: https://youtu.be/Mzmszrx_uco&list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[510y]: https://youtu.be/IrDY1qGAJGw?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[511y]: https://youtu.be/FHhVIAqBV8U?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[512y]: https://youtu.be/r90wHohn3_A?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+[513y]: https://youtu.be/CNqeEqktQHo?list=PLOZUMtCVKU0AygY2l4fQ3-RZHSc-L0V5g
+
+[501t]: https://www.twitch.tv/videos/385699576
+[502t]: https://www.twitch.tv/videos/385699605
+[503t]: https://www.twitch.tv/videos/385917574
+[504t]: https://www.twitch.tv/videos/385699663
+[505t]: https://www.twitch.tv/videos/385699696
+[506t]: https://www.twitch.tv/videos/385699723
+[507t]: https://www.twitch.tv/videos/385699752
+[508t]: https://www.twitch.tv/videos/385699782
+[509t]: https://www.twitch.tv/videos/385699812
+[510t]: https://www.twitch.tv/videos/385699829
+[511t]: https://www.twitch.tv/videos/385699853
+[512t]: https://www.twitch.tv/videos/385699883
+[513t]: https://www.twitch.tv/videos/385916775
+
+[501a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_01.mp4
+[502a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_02.mp4
+[503a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_03.mp4
+[504a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_04.mp4
+[505a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_05.mp4
+[506a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_06.mp4
+[507a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_07.mp4
+[508a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_08.mp4
+[509a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_09.mp4
+[510a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_10.mp4
+[511a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_11.mp4
+[512a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_12.mp4
+[513a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_13.mp4
 
 Harry Potter und der Half-Life Prinz (HLP)
 ------------------------------------------
