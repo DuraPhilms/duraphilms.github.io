@@ -16,10 +16,10 @@ Harry Potter und der Penner von Alcatraz (PvA)
 | **01** | [Alt][301y-]<br/>[Remake][301y] | [1080Rmk][301t] | [1080Rmk][301v]   | [Remake][301a-]<br/>[1080Rmk][301a]   | [Remake][301d-]<br/>[1080Rmk][301d]   | [1080Rmk][301p] |
 | **02** | [Alt][302y-]<br/>[Remake][302y] | [1080Rmk][302t] | [1080Rmk][302v]   | [Remake][302a-]<br/>[1080Rmk][302a]   | [Remake][302d-]<br/>[1080Rmk][302d]   | [1080Rmk][302p] |
 | **03** | [Alt][303y-]<br/>[Remake][303y] | [1080Rmk][303t] | [1080Rmk][303v]   | [Remake][303a-]<br/>[1080Rmk][303a]   | [Remake][303d-]<br/>[1080Rmk][303d]   | [1080Rmk][303p] |
-| **04** | [Original][304y]                | [1080Rmk][304t] | [1080Rmk][304v]   | [Original][304a-]<br/>[1080Rmk][304a] | [Original][304d-]<br/>[1080Rmk][304d] |                 |
+| **04** | [Original][304y]                | [1080Rmk][304t] | [1080Rmk][304v]   | [Original][304a-]<br/>[1080Rmk][304a] | [Original][304d-]<br/>[1080Rmk][304d] | [1080Rmk][304p] |
 | **05** | [Original][305y]                | [1080Rmk][305t] | [1080Rmk][305v]   | [Original][305a-]<br/>[1080Rmk][305a] | [Original][305d-]<br/>[1080Rmk][305d] |                 |
 | **06** | [Original][306y]                | [1080Rmk][306t] | [1080Rmk][306v]   | [Original][306a-]<br/>[1080Rmk][306a] | [Original][306d-]<br/>[1080Rmk][306d] |                 |
-| **07** | [Original][307y]                |                 | [Original][307v-] | [Original][307a-]<br/>[1080Rmk][307a] | [Original][307d-]<br/>[1080Rmk][307d] |                 |
+| **07** | [Original][307y]                | [1080Rmk][307t] | [Original][307v-] | [Original][307a-]<br/>[1080Rmk][307a] | [Original][307d-]<br/>[1080Rmk][307d] |                 |
 | **08** | [Original][308y]                |                 |                   | [Original][308a-]                     | [Original][308d-]                     |                 |
 | **09** | [Original][309y]                |                 |                   | [Original][309a-]                     | [Original][309d-]                     |                 |
 | **10** | [Original][310y]                |                 |                   | [Original][310a-]                     | [Original][310d-]                     |                 |
