@@ -28,7 +28,7 @@ Harry Potter und der Penner von Alcatraz (PvA)
 | **04** | [Original][304y]                | [1080Rmk][304t] | [1080Rmk][304v]   | [Original][304a-]<br/>[1080Rmk][304a] | [Original][304d-]<br/>[1080Rmk][304d] | [1080Rmk][304p] |
 | **05** | [Original][305y]                | [1080Rmk][305t] | [1080Rmk][305v]   | [Original][305a-]<br/>[1080Rmk][305a] | [Original][305d-]<br/>[1080Rmk][305d] | [1080Rmk][305p] |
 | **06** | [Original][306y]                | [1080Rmk][306t] | [1080Rmk][306v]   | [Original][306a-]<br/>[1080Rmk][306a] | [Original][306d-]<br/>[1080Rmk][306d] | [1080Rmk][306p] |
-| **07** | [Original][307y]                | [1080Rmk][307t] | [Original][307v-] | [Original][307a-]<br/>[1080Rmk][307a] | [Original][307d-]<br/>[1080Rmk][307d] |                 |
+| **07** | [Original][307y]                | [1080Rmk][307t] | [1080Rmk][307v]   | [Original][307a-]<br/>[1080Rmk][307a] | [Original][307d-]<br/>[1080Rmk][307d] |                 |
 | **08** | [Original][308y]                |                 |                   | [Original][308a-]                     | [Original][308d-]                     |                 |
 | **09** | [Original][309y]                |                 |                   | [Original][309a-]                     | [Original][309d-]                     |                 |
 | **10** | [Original][310y]                |                 |                   | [Original][310a-]                     | [Original][310d-]                     |                 |
@@ -69,7 +69,7 @@ Harry Potter und der Penner von Alcatraz (PvA)
 [304v]: https://vimeo.com/229456126
 [305v]: https://vimeo.com/230376294
 [306v]: https://vimeo.com/321108665
-[307v-]: https://vimeo.com/281727101
+[307v]: https://vimeo.com/324839845
 
 [301a-]: https://archive.org/download/HPudPvAT_file_remake/HPudPvA_T_01.mp4
 [302a-]: https://archive.org/download/HPudPvAT_file_remake/HPudPvA_T_02.mp4
