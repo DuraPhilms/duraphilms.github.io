@@ -28,7 +28,7 @@ Harry Potter und der Penner von Alcatraz (PvA)
 | **04** | [Original][304y]                | [1080Rmk][304t] | [1080Rmk][304v]   | [Original][304a-]<br/>[1080Rmk][304a] | [Original][304d-]<br/>[1080Rmk][304d] | [1080Rmk][304p] |
 | **05** | [Original][305y]                | [1080Rmk][305t] | [1080Rmk][305v]   | [Original][305a-]<br/>[1080Rmk][305a] | [Original][305d-]<br/>[1080Rmk][305d] | [1080Rmk][305p] |
 | **06** | [Original][306y]                | [1080Rmk][306t] | [1080Rmk][306v]   | [Original][306a-]<br/>[1080Rmk][306a] | [Original][306d-]<br/>[1080Rmk][306d] | [1080Rmk][306p] |
-| **07** | [Original][307y]                | [1080Rmk][307t] | [1080Rmk][307v]   | [Original][307a-]<br/>[1080Rmk][307a] | [Original][307d-]<br/>[1080Rmk][307d] |                 |
+| **07** | [Original][307y]                | [1080Rmk][307t] | [1080Rmk][307v]   | [Original][307a-]<br/>[1080Rmk][307a] | [Original][307d-]<br/>[1080Rmk][307d] | [1080Rmk][307p] |
 | **08** | [Original][308y]                |                 |                   | [Original][308a-]                     | [Original][308d-]                     |                 |
 | **09** | [Original][309y]                |                 |                   | [Original][309a-]                     | [Original][309d-]                     |                 |
 | **10** | [Original][310y]                |                 |                   | [Original][310a-]                     | [Original][310d-]                     |                 |
@@ -123,6 +123,7 @@ Harry Potter und der Penner von Alcatraz (PvA)
 [304p]: https://peertube.social/videos/watch/70e3ae00-1a8a-466c-ac0b-3a10f222e8bf
 [305p]: https://peertube.social/videos/watch/384ab703-84bf-4a42-9595-f7e9332ec63d
 [306p]: https://peertube.social/videos/watch/78db65ec-0e50-49f5-8e96-b771e23845cc
+[307p]: https://peertube.social/videos/watch/5d8a8b36-0d79-4fdc-9af2-3cc5ced23709
 
 Harry Potter und der Orden des Penners (OdP)
 --------------------------------------------
