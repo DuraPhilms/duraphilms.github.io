@@ -1,8 +1,8 @@
 <script>
   const SAVE_YOUR_INTERNET_CONFIG = {
     'language': 'en',
-    'hideOnReload': false,
-    'showAlways': true
+    'hideOnReload': false
+#    'blackOutDay': "2019-03-17"
   };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/save-your-internet-widget/dist/syi-widget.js" async></script>
