@@ -118,22 +118,22 @@ Harry Potter und der Penner von Alcatraz (PvA)
 Harry Potter und der Orden des Penners (OdP)
 --------------------------------------------
 
-| Teil   | YouTube              | Twitch               | Vimeo | Archive.org      | Dropbox |
-|--------|----------------------|----------------------|-------|------------------|---------|
-| **01** | [Original][501y]     | [~~Original~~][501t] |       | [Original][501a] |         |
-| **02** | [Original][502y]     | [Original][502t]     |       | [Original][502a] |         |
-| **03** | [Original][503y]     | [Original][503t]     |       | [Original][503a] |         |
-| **04** | [Original][504y]     | [Original][504t]     |       | [Original][504a] |         |
-| **05** | [Original][505y]     | [Original][505t]     |       | [Original][505a] |         |
-| **06** | [Original][506y]     | [Original][506t]     |       | [Original][506a] |         |
-| **07** | [Original][507y]     | [Original][507t]     |       | [Original][507a] |         |
-| **08** | [Original][508y]     | [Original][508t]     |       | [Original][508a] |         |
-| **09** | [~~Original~~][509y] | [Original][509t]     |       | [Original][509a] |         |
-| **10** | [Original][510y]     | [Original][510t]     |       | [Original][510a] |         |
-| **11** | [Original][511y]     | [Original][511t]     |       | [Original][511a] |         |
-| **12** | [Original][512y]     | [Original][512t]     |       | [Original][512a] |         |
-| **13** | [Original][513y]     | [Original][513t]     |       | [Original][513a] |         |
-| **14** |                      |                      |       |                  |         |
+| Teil   | YouTube              | Twitch               | Vimeo | Archive.org      | Dropbox | openload         |
+|--------|----------------------|----------------------|-------|------------------|---------|------------------|
+| **01** | [Original][501y]     | [~~Original~~][501t] |       | [Original][501a] |         | [Original][501o] |
+| **02** | [Original][502y]     | [Original][502t]     |       | [Original][502a] |         | [Original][502o] |
+| **03** | [Original][503y]     | [Original][503t]     |       | [Original][503a] |         |                  |
+| **04** | [Original][504y]     | [Original][504t]     |       | [Original][504a] |         |                  |
+| **05** | [Original][505y]     | [Original][505t]     |       | [Original][505a] |         |                  |
+| **06** | [Original][506y]     | [Original][506t]     |       | [Original][506a] |         |                  |
+| **07** | [Original][507y]     | [Original][507t]     |       | [Original][507a] |         |                  |
+| **08** | [Original][508y]     | [Original][508t]     |       | [Original][508a] |         |                  |
+| **09** | [~~Original~~][509y] | [Original][509t]     |       | [Original][509a] |         |                  |
+| **10** | [Original][510y]     | [Original][510t]     |       | [Original][510a] |         |                  |
+| **11** | [Original][511y]     | [Original][511t]     |       | [Original][511a] |         |                  |
+| **12** | [Original][512y]     | [Original][512t]     |       | [Original][512a] |         |                  |
+| **13** | [Original][513y]     | [Original][513t]     |       | [Original][513a] |         |                  |
+| **14** |                      |                      |       |                  |         |                  |
 
 Inoffizieller Trailer: [YouTube](https://www.youtube.com/watch?v=gemxrCSBlu8)
 
@@ -178,6 +178,9 @@ Inoffizieller Trailer: [YouTube](https://www.youtube.com/watch?v=gemxrCSBlu8)
 [511a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_11.mp4
 [512a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_12.mp4
 [513a]: https://archive.org/download/HPudOdPT_file_remake/HPudOdP_T_13.mp4
+
+[501o]: https://openload.co/embed/SYrWsNOWByM/
+[502o]: https://openload.co/embed/vft3W9KAMWU/
 
 Harry Potter und der Half-Life Prinz (HLP)
 ------------------------------------------
