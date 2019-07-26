@@ -8,6 +8,9 @@ Zugriff auf [GitHub](https://github.com/duraphilms/duraphilms.github.io).
 Hier gibt es eine Auflistung aller Synchro Teile bei allen verschiedenen Hostern.
 Hierbei entspricht 1080Rmk, einem 1080p Full-HD Remaster (von LNJ).
 
+Alle Teile können von den verschiedenen Seiten mittels
+[youtube-dl](https://ytdl-org.github.io/youtube-dl/index.html) heruntergeladen werden.
+
 Harry Potter und der Penner von Alcatraz (PvA)
 ----------------------------------------------
 
