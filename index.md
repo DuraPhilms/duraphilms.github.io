@@ -127,9 +127,9 @@ Harry Potter und der Orden des Penners (OdP)
 |--------|----------------------|----------------------|-------|------------------|---------|------------------|
 | **01** | [Original][501y]     | [~~Original~~][501t] |       | [Original][501a] |         | [Original][501o] |
 | **02** | [Original][502y]     | [Original][502t]     |       | [Original][502a] |         | [Original][502o] |
-| **03** | [Original][503y]     | [Original][503t]     |       | [Original][503a] |         |                  |
-| **04** | [Original][504y]     | [Original][504t]     |       | [Original][504a] |         |                  |
-| **05** | [Original][505y]     | [Original][505t]     |       | [Original][505a] |         |                  |
+| **03** | [Original][503y]     | [Original][503t]     |       | [Original][503a] |         | [Original][503o] |
+| **04** | [Original][504y]     | [Original][504t]     |       | [Original][504a] |         | [Original][504o] |
+| **05** | [Original][505y]     | [Original][505t]     |       | [Original][505a] |         | [Original][505o] |
 | **06** | [Original][506y]     | [Original][506t]     |       | [Original][506a] |         |                  |
 | **07** | [Original][507y]     | [Original][507t]     |       | [Original][507a] |         |                  |
 | **08** | [Original][508y]     | [Original][508t]     |       | [Original][508a] |         |                  |
@@ -186,6 +186,9 @@ Inoffizieller Trailer: [YouTube](https://www.youtube.com/watch?v=gemxrCSBlu8)
 
 [501o]: https://openload.co/embed/SYrWsNOWByM/
 [502o]: https://openload.co/embed/vft3W9KAMWU/
+[503o]: https://openload.co/embed/MIbpKC9F5bc/
+[504o]: https://openload.co/embed/0vNoFznM8m0/
+[505o]: https://openload.co/embed/GWNmF11uvRU/
 
 Harry Potter und der Half-Life Prinz (HLP)
 ------------------------------------------
