@@ -1,0 +1,661 @@
+[
+    {
+        "title": "Harry Potter und der Penner von Alcatraz",
+        "name": "HPudPvA",
+        "short": "PvA",
+        "videos": {
+            "1": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Remake",
+                        "id": "8QPo_diqd8k"
+                    },
+                    "twitch": {
+                        "version": "1080Rmk",
+                        "id": "173846718"
+                    },
+                    "vimeo": {
+                        "version": "1080Rmk",
+                        "id": "233225334"
+                    },
+                    "archive": {
+                        "version": "1080Rmk",
+                        "id": "HPudPvA_1080Rmk/HPudPvA_01_1080Rmk.mp4"
+                    },
+                    "dropbox": {
+                        "version": "1080Rmk",
+                        "id": "o9la0a7erwntwxl/HPudPvA_01_1080Rmk.mp4"
+                    },
+                    "openload": {
+                        "version": "1080Rmk",
+                        "id": "_C0CaTfz6ps"
+                    }
+                }
+            },
+            "2": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Remake",
+                        "id": "-h-yviW_xVs"
+                    },
+                    "twitch": {
+                        "version": "1080Rmk",
+                        "id": "224047707"
+                    },
+                    "vimeo": {
+                        "version": "1080Rmk",
+                        "id": "253485162"
+                    },
+                    "archive": {
+                        "version": "1080Rmk",
+                        "id": "HPudPvA_1080Rmk/HPudPvA_02_1080Rmk.mp4"
+                    },
+                    "dropbox": {
+                        "version": "1080Rmk",
+                        "id": "8l0g2v6s4uixpr7/HPudPvA_02_1080Rmk.mp4"
+                    },
+                    "openload": {
+                        "version": "1080Rmk",
+                        "id": "NmZSXWgsTS4"
+                    }
+                }
+            },
+            "3": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Remake",
+                        "id": "2H8SCuHWjdw"
+                    },
+                    "twitch": {
+                        "version": "1080Rmk",
+                        "id": "385542997"
+                    },
+                    "vimeo": {
+                        "version": "1080Rmk",
+                        "id": "319204895"
+                    },
+                    "archive": {
+                        "version": "1080Rmk",
+                        "id": "HPudPvA_1080Rmk/HPudPvA_03_1080Rmk.mp4"
+                    },
+                    "dropbox": {
+                        "version": "1080Rmk",
+                        "id": "zda15eebz4ppdim/HPudPvA_03_1080Rmk.mp4"
+                    },
+                    "openload": {
+                        "version": "1080Rmk",
+                        "id": "eZN_U7EZaTs"
+                    }
+                }
+            },
+            "4": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "3GXJpjFtv4o"
+                    },
+                    "twitch": {
+                        "version": "1080Rmk",
+                        "id": "388174461"
+                    },
+                    "vimeo": {
+                        "version": "1080Rmk",
+                        "id": "229456126"
+                    },
+                    "archive": {
+                        "version": "Original",
+                        "id": "dsws2lc6rprn/HPudPvA_04.mp4"
+                    },
+                    "dropbox": {
+                        "version": "1080Rmk",
+                        "id": "pdfekrnsqhzxc08/HPudPvA_04_1080Rmk.mp4"
+                    },
+                    "openload": {
+                        "version": "1080Rmk",
+                        "id": "BGzR3MxicV8"
+                    }
+                }
+            },
+            "5": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "xc_Xa7StPbQ"
+                    },
+                    "twitch": {
+                        "version": "1080Rmk",
+                        "id": "155750947"
+                    },
+                    "vimeo": {
+                        "version": "1080Rmk",
+                        "id": "230376294"
+                    },
+                    "archive": {
+                        "version": "1080Rmk",
+                        "id": "HPudPvA_1080Rmk/HPudPvA_05_1080Rmk.mp4"
+                    },
+                    "dropbox": {
+                        "version": "1080Rmk",
+                        "id": "giz6oz5tc8mpox4/HPudPvA_05_1080Rmk.mp4"
+                    },
+                    "openload": {
+                        "version": "1080Rmk",
+                        "id": "aLbVVer-Hvs"
+                    }
+                }
+            },
+            "6": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "rKM5iXdOxtE"
+                    },
+                    "twitch": {
+                        "version": "1080Rmk",
+                        "id": "156787176"
+                    },
+                    "vimeo": {
+                        "version": "1080Rmk",
+                        "id": "321108665"
+                    },
+                    "archive": {
+                        "version": "1080Rmk",
+                        "id": "HPudPvA_1080Rmk/HPudPvA_06_1080Rmk.mp4"
+                    },
+                    "dropbox": {
+                        "version": "1080Rmk",
+                        "id": "zo8ubu4u4picy5k/HPudPvA_06_1080Rmk.mp4"
+                    },
+                    "openload": {
+                        "version": "1080Rmk",
+                        "id": "1sSzhHSkQDI"
+                    }
+                }
+            },
+            "7": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "yq7WYOOd4sk"
+                    },
+                    "twitch": {
+                        "version": "1080Rmk",
+                        "id": "388174548"
+                    },
+                    "vimeo": {
+                        "version": "1080Rmk",
+                        "id": "324839845"
+                    },
+                    "archive": {
+                        "version": "1080Rmk",
+                        "id": "HPudPvA_1080Rmk/HPudPvA_07_1080Rmk.mp4"
+                    },
+                    "dropbox": {
+                        "version": "1080Rmk",
+                        "id": "ee3jufwopqd9uxn/HPudPvA_07_1080Rmk.mp4"
+                    },
+                    "openload": {
+                        "version": "1080Rmk",
+                        "id": "P54OyGOU-Hs"
+                    }
+                }
+            },
+            "8": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "Pd8EfJ0FQb0"
+                    },
+                    "twitch": {},
+                    "vimeo": {
+                        "version": "Original",
+                        "id": "332203525"
+                    },
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudPvAT_file_remake/HPudPvA_T_08.mp4"
+                    },
+                    "dropbox": {
+                        "version": "Original",
+                        "id": "7ykw783k3i351nv/HPudPvA_T_8.mp4"
+                    },
+                    "openload": {}
+                }
+            },
+            "9": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "4gOStT5d_Nw"
+                    },
+                    "twitch": {},
+                    "vimeo": {
+                        "version": "Original",
+                        "id": "332203525"
+                    },
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudPvAT_file_remake/HPudPvA_T_09.mp4"
+                    },
+                    "dropbox": {
+                        "version": "Original",
+                        "id": "ezufwyhby40tmh4/HPudPvA_T_9.mp4"
+                    },
+                    "openload": {}
+                }
+            },
+            "10": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "IJB5G2ZgS40"
+                    },
+                    "twitch": {},
+                    "vimeo": {
+                        "version": "Original",
+                        "id": "332207514"
+                    },
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudPvAT_file_remake/HPudPvA_T_10.mp4"
+                    },
+                    "dropbox": {
+                        "version": "Original",
+                        "id": "sp56a7yfhctt0dx/HPudPvA_T_10.mp4"
+                    },
+                    "openload": {}
+                }
+            },
+            "11": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "_Bb2YoEspY8"
+                    },
+                    "twitch": {},
+                    "vimeo": {
+                        "version": "Original",
+                        "id": "332209387"
+                    },
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudPvAT_file_remake/HPudPvA_T_11.mp4"
+                    },
+                    "dropbox": {
+                        "version": "Original",
+                        "id": "1dveoib6o7noa17/HPudPvA_T_11.mp4"
+                    },
+                    "openload": {}
+                }
+            },
+            "12": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "8TEXBGAYuN0"
+                    },
+                    "twitch": {},
+                    "vimeo": {
+                        "version": "Original",
+                        "id": "332212466"
+                    },
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudPvAT_file_remake/HPudPvA_T_12.mp4"
+                    },
+                    "dropbox": {
+                        "version": "Original",
+                        "id": "v9fvz4hcg2lm700/HPudPvA_T_12.mp4"
+                    },
+                    "openload": {}
+                }
+            },
+            "13": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "AB5k0rhiqbc"
+                    },
+                    "twitch": {},
+                    "vimeo": {
+                        "version": "Original",
+                        "id": "332215473"
+                    },
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudPvAT_file_remake/HPudPvA_T_13.mp4"
+                    },
+                    "dropbox": {
+                        "version": "Original",
+                        "id": "9dmmcsf1v88ymko/HPudPvA_T_13.mp4"
+                    },
+                    "openload": {}
+                }
+            },
+            "14": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "9A7KsljQHSw"
+                    },
+                    "twitch": {},
+                    "vimeo": {
+                        "version": "Original",
+                        "id": "332217903"
+                    },
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudPvAT_file_remake/HPudPvA_T_14.mp4"
+                    },
+                    "dropbox": {
+                        "version": "Original",
+                        "id": "fhqqp1rrvvv6p39/HPudPvA_T_14.mp4"
+                    },
+                    "openload": {}
+                }
+            }
+        }
+    },
+    {
+        "title": "Harry Potter und der Orden des Penners",
+        "name": "HPudOdP",
+        "short": "OdP",
+        "videos": {
+            "1": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "4arwkIcTHgs"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699576"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_01.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {
+                        "version": "Original",
+                        "id": "SYrWsNOWByM"
+                    }
+                }
+            },
+            "2": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "HAVbNybjias"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699605"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_02.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {
+                        "version": "Original",
+                        "id": "vft3W9KAMWU"
+                    }
+                }
+            },
+            "3": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "2Rn8Fpyt4S0"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385917574"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_03.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {
+                        "version": "Original",
+                        "id": "MIbpKC9F5bc"
+                    }
+                }
+            },
+            "4": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "XZWaD4Kutd4"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699663"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_04.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {
+                        "version": "Original",
+                        "id": "0vNoFznM8m0"
+                    }
+                }
+            },
+            "5": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "Hj0ztszS3EA"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699696"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_05.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {
+                        "version": "Original",
+                        "id": "GWNmF11uvRU"
+                    }
+                }
+            },
+            "6": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "d7CSBVOaB_4"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699723"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_06.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {}
+                }
+            },
+            "7": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "Dd6G60HRaCI"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699752"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_07.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {}
+                }
+            },
+            "8": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "LuQmEIbjTFM"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699782"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_08.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {}
+                }
+            },
+            "9": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "Mzmszrx_uco"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699812"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_09.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {}
+                }
+            },
+            "10": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "IrDY1qGAJGw"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699829"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_10.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {}
+                }
+            },
+            "11": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "FHhVIAqBV8U"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699853"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_11.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {}
+                }
+            },
+            "12": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "r90wHohn3_A"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385699883"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_12.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {}
+                }
+            },
+            "13": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "CNqeEqktQHo"
+                    },
+                    "twitch": {
+                        "version": "Original",
+                        "id": "385916775"
+                    },
+                    "vimeo": {},
+                    "archive": {
+                        "version": "Original",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_13.mp4"
+                    },
+                    "dropbox": {},
+                    "openload": {}
+                }
+            },
+            "14": {
+                "hosters": {
+                    "youtube": {},
+                    "twitch": {},
+                    "vimeo": {},
+                    "archive": {},
+                    "dropbox": {},
+                    "openload": {}
+                }
+            }
+        }
+    },
+    {
+        "title": "DuraPhilms News & Specials",
+        "name": "DuraPhilms",
+        "short": "duraphilms",
+        "videos": {
+            "1": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Special",
+                        "id": "uw76l0VnoL0"
+                    }
+                }
+            },
+            "2": {
+                "hosters": {
+                    "youtube": {
+                        "version": "Special",
+                        "id": "ARcpujeMOog"
+                    }
+                }
+            }
+        }
+    }
+]
