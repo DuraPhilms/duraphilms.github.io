@@ -14,10 +14,6 @@
                         "version": "1080Rmk",
                         "id": "173846718"
                     },
-                    "vimeo": {
-                        "version": "1080Rmk",
-                        "id": "233225334"
-                    },
                     "dropbox": {
                         "version": "1080Rmk",
                         "id": "o9la0a7erwntwxl/HPudPvA_01_1080Rmk.mp4"
@@ -37,10 +33,6 @@
                     "twitch": {
                         "version": "1080Rmk",
                         "id": "224047707"
-                    },
-                    "vimeo": {
-                        "version": "1080Rmk",
-                        "id": "253485162"
                     },
                     "dropbox": {
                         "version": "1080Rmk",
@@ -62,10 +54,6 @@
                         "version": "1080Rmk",
                         "id": "385542997"
                     },
-                    "vimeo": {
-                        "version": "1080Rmk",
-                        "id": "319204895"
-                    },
                     "dropbox": {
                         "version": "1080Rmk",
                         "id": "zda15eebz4ppdim/HPudPvA_03_1080Rmk.mp4"
@@ -86,14 +74,6 @@
                         "version": "1080Rmk",
                         "id": "388174461"
                     },
-                    "vimeo": {
-                        "version": "1080Rmk",
-                        "id": "229456126"
-                    },
-                    "archive": {
-                        "version": "Original",
-                        "id": "dsws2lc6rprn/HPudPvA_04.mp4"
-                    },
                     "dropbox": {
                         "version": "1080Rmk",
                         "id": "pdfekrnsqhzxc08/HPudPvA_04_1080Rmk.mp4"
@@ -109,10 +89,6 @@
                     "twitch": {
                         "version": "1080Rmk",
                         "id": "155750947"
-                    },
-                    "vimeo": {
-                        "version": "1080Rmk",
-                        "id": "230376294"
                     },
                     "dropbox": {
                         "version": "1080Rmk",
@@ -134,10 +110,6 @@
                         "version": "1080Rmk",
                         "id": "156787176"
                     },
-                    "vimeo": {
-                        "version": "1080Rmk",
-                        "id": "321108665"
-                    },
                     "dropbox": {
                         "version": "1080Rmk",
                         "id": "zo8ubu4u4picy5k/HPudPvA_06_1080Rmk.mp4"
@@ -153,10 +125,6 @@
                     "twitch": {
                         "version": "1080Rmk",
                         "id": "388174548"
-                    },
-                    "vimeo": {
-                        "version": "1080Rmk",
-                        "id": "324839845"
                     },
                     "dropbox": {
                         "version": "1080Rmk",
@@ -174,10 +142,6 @@
                         "version": "Original",
                         "id": "Pd8EfJ0FQb0"
                     },
-                    "vimeo": {
-                        "version": "Original",
-                        "id": "332203525"
-                    },
                     "archive": {
                         "version": "Original",
                         "id": "HPudPvAT_file_remake/HPudPvA_T_08.mp4"
@@ -193,10 +157,6 @@
                     "youtube": {
                         "version": "Original",
                         "id": "4gOStT5d_Nw"
-                    },
-                    "vimeo": {
-                        "version": "Original",
-                        "id": "332203525"
                     },
                     "archive": {
                         "version": "Original",
@@ -254,10 +214,6 @@
                         "version": "Original",
                         "id": "8TEXBGAYuN0"
                     },
-                    "vimeo": {
-                        "version": "Original",
-                        "id": "332212466"
-                    },
                     "archive": {
                         "version": "Original",
                         "id": "HPudPvAT_file_remake/HPudPvA_T_12.mp4"
@@ -274,10 +230,6 @@
                         "version": "Original",
                         "id": "AB5k0rhiqbc"
                     },
-                    "vimeo": {
-                        "version": "Original",
-                        "id": "332215473"
-                    },
                     "archive": {
                         "version": "Original",
                         "id": "HPudPvAT_file_remake/HPudPvA_T_13.mp4"
@@ -290,10 +242,6 @@
             },
             "14": {
                 "hosters": {
-                    "vimeo": {
-                        "version": "Original",
-                        "id": "332217903"
-                    },
                     "archive": {
                         "version": "Original",
                         "id": "HPudPvAT_file_remake/HPudPvA_T_14.mp4"
@@ -521,8 +469,7 @@
             },
             "14": {
                 "available_soon": true,
-                "hosters": {
-                }
+                "hosters": {}
             }
         }
     },
@@ -552,7 +499,7 @@
                 }
             },
             "5": {
-                "title": "Wir sind wieder da! Duraphilms - Die Ankündigung des Lebenslebens",
+                "title": "Wir sind wieder da! Duraphilms - Die Ank\u00fcndigung des Lebenslebens",
                 "hosters": {
                     "youtube": {
                         "version": "Original",
@@ -561,7 +508,7 @@
                 }
             },
             "4": {
-                "title": "Duraphilms - Die Ankündigung des Todestodes",
+                "title": "Duraphilms - Die Ank\u00fcndigung des Todestodes",
                 "hosters": {
                     "youtube": {
                         "version": "Original",
