@@ -584,19 +584,57 @@
         "name": "DuraPhilms",
         "short": "duraphilms",
         "videos": {
-            "1": {
+            "6": {
+                "title": "Orden des Penners - News & Trailer zu Teil 14",
                 "hosters": {
                     "youtube": {
-                        "version": "Special",
+                        "version": "Original",
+                        "id": "6aH1Q3k-7L4"
+                    }
+                }
+            },
+            "5": {
+                "title": "Wir sind wieder da! Duraphilms - Die Ankündigung des Lebenslebens",
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "hVVokdYUAgI"
+                    }
+                }
+            },
+            "4": {
+                "title": "Die Ankündigung des Todestodes",
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
                         "id": "uw76l0VnoL0"
                     }
                 }
             },
-            "2": {
+            "3": {
+                "title": "1000-Abonnenten-Special",
                 "hosters": {
                     "youtube": {
-                        "version": "Special",
+                        "version": "Original",
                         "id": "ARcpujeMOog"
+                    }
+                }
+            },
+            "2": {
+                "title": "Harry Potter und der Penner von Alcatraz Outtakes 2/2",
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "JShHKtexsbw"
+                    }
+                }
+            },
+            "1": {
+                "title": "Harry Potter und der Penner von Alcatraz Outtakes 1/2",
+                "hosters": {
+                    "youtube": {
+                        "version": "Original",
+                        "id": "GSR4rE8Tsms"
                     }
                 }
             }
