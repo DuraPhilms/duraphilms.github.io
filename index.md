@@ -3,11 +3,11 @@ layout: default
 title: Duraphilms
 ---
 
-DuraPhilms Fan Productions
+Duraphilms Fan Productions
 ==========================
 
-Diese Seite ist *nicht* von DuraPhilms selbst, sondern von den ultra krassen
-DuraPhilms-Fans LNJ und JBB. Wenn ihr weitere Links habt, geben wir euch gerne
+Diese Seite ist *nicht* von Duraphilms selbst, sondern von den ultra krassen
+Duraphilms-Fans LNJ und JBB. Wenn ihr weitere Links habt, geben wir euch gerne
 Zugriff auf [GitHub](https://github.com/duraphilms/duraphilms.github.io).
 
 Hier gibt es eine Auflistung aller Synchro Teile bei allen verschiedenen Hostern.
