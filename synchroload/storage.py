@@ -57,7 +57,7 @@ def addVideo(playlist, newVideo):
         DB[playlist]["videos"].append(newVideo)
 
 def setVideoId(playlistId, part, hoster, videoId, version = "Original"):
-    DB[playlistId]["videos"][str(part - 1)]["hosters"][hoster] = {"id": videoId, "version": version}
+    DB[playlistId]["videos"][str(part)]["hosters"][hoster] = {"id": videoId, "version": version}
     
 def removeVideoHoster(playlist, part, hoster):
     DB[playlist]["videos"][str(part)]["hosters"].pop(hoster, None)
