@@ -40,23 +40,25 @@ Alle Teile können von den verschiedenen Seiten mittels
 
                 <p>
 {% for hoster in video[1].hosters %}
-{% if hoster[0] == "youtube" and hoster[1].id %}
+{% if hoster[1].id != "" %}
+{% if hoster[0] == "youtube" %}
                     <a target="_blank" href="https://youtube.com/watch?v={{ hoster[1].id }}">YouTube</a>
-{% endif %}
-{% if hoster[0] == "twitch" and hoster[1].id %}
+{% elsif hoster[0] == "twitch" %}
                     <a target="_blank" href="https://www.twitch.tv/videos/{{ hoster[1].id }}">Twitch</a>
-{% endif %}
-{% if hoster[0] == "vimeo" and hoster[1].id %}
+{% elsif hoster[0] == "vimeo" %}
                     <a target="_blank" href="https://vimeo.com/{{ hoster[1].id }}">Vimeo</a>
-{% endif %}
-{% if hoster[0] == "archive" and hoster[1].id %}
+{% elsif hoster[0] == "archive" %}
                     <a target="_blank" href="https://archive.org/download/{{ hoster[1].id }}">archive.org</a>
-{% endif %}
-{% if hoster[0] == "dropbox" and hoster[1].id %}
+{% elsif hoster[0] == "dropbox" %}
                     <a target="_blank" href="https://dl.dropboxusercontent.com/s/{{ hoster[1].id }}">Dropbox</a>
-{% endif %}
-{% if hoster[0] == "openload" and hoster[1].id %}
+{% elsif hoster[0] == "openload" %}
                     <a target="_blank" href="https://openload.co/embed/{{ hoster[1].id }}">openload</a>
+{% endif %}
+
+{% if forloop.rindex != 1 %}
+                    •
+{% endif %}
+
 {% endif %}
 {% endfor %}
                 </p>
