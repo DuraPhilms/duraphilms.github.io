@@ -527,6 +527,17 @@
         }
     },
     {
+        "title": "Harry Potter und der Half-Life Prinz",
+        "name": "HPudHLP",
+        "short": "HLP",
+        "videos": {
+            "1": {
+                "available_soon": true,
+                "hosters": {}
+            }
+        }
+    },
+    {
         "title": "DuraPhilms News & Specials",
         "name": "DuraPhilms",
         "short": "duraphilms",
