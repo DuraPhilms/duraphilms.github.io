@@ -41,7 +41,7 @@ Alle Teile können von den verschiedenen Seiten mittels
 
                 <p>
 {% for hoster in video[1].hosters %}
-{% if hoster[1].id != "" %}
+{% if hoster[1].id %}
 {% if hoster[0] == "youtube" %}
                     <a target="_blank" href="https://youtube.com/watch?v={{ hoster[1].id }}">YouTube</a>
 {% elsif hoster[0] == "twitch" %}
@@ -56,9 +56,9 @@ Alle Teile können von den verschiedenen Seiten mittels
                     <a target="_blank" href="https://openload.co/embed/{{ hoster[1].id }}">openload</a>
 {% endif %}
 
-{% if forloop.rindex != 1 %}
+{% unless forloop.last %}
                     •
-{% endif %}
+{% endunless %}
 
 {% endif %}
 {% endfor %}

@@ -174,7 +174,6 @@
                         "version": "Original",
                         "id": "Pd8EfJ0FQb0"
                     },
-                    "twitch": {},
                     "vimeo": {
                         "version": "Original",
                         "id": "332203525"
@@ -186,8 +185,7 @@
                     "dropbox": {
                         "version": "Original",
                         "id": "7ykw783k3i351nv/HPudPvA_T_8.mp4"
-                    },
-                    "openload": {}
+                    }
                 }
             },
             "9": {
@@ -196,7 +194,6 @@
                         "version": "Original",
                         "id": "4gOStT5d_Nw"
                     },
-                    "twitch": {},
                     "vimeo": {
                         "version": "Original",
                         "id": "332203525"
@@ -208,8 +205,7 @@
                     "dropbox": {
                         "version": "Original",
                         "id": "ezufwyhby40tmh4/HPudPvA_T_9.mp4"
-                    },
-                    "openload": {}
+                    }
                 }
             },
             "10": {
@@ -218,7 +214,6 @@
                         "version": "Original",
                         "id": "IJB5G2ZgS40"
                     },
-                    "twitch": {},
                     "vimeo": {
                         "version": "Original",
                         "id": "332207514"
@@ -230,8 +225,7 @@
                     "dropbox": {
                         "version": "Original",
                         "id": "sp56a7yfhctt0dx/HPudPvA_T_10.mp4"
-                    },
-                    "openload": {}
+                    }
                 }
             },
             "11": {
@@ -240,7 +234,6 @@
                         "version": "Original",
                         "id": "_Bb2YoEspY8"
                     },
-                    "twitch": {},
                     "vimeo": {
                         "version": "Original",
                         "id": "332209387"
@@ -252,8 +245,7 @@
                     "dropbox": {
                         "version": "Original",
                         "id": "1dveoib6o7noa17/HPudPvA_T_11.mp4"
-                    },
-                    "openload": {}
+                    }
                 }
             },
             "12": {
@@ -262,7 +254,6 @@
                         "version": "Original",
                         "id": "8TEXBGAYuN0"
                     },
-                    "twitch": {},
                     "vimeo": {
                         "version": "Original",
                         "id": "332212466"
@@ -274,8 +265,7 @@
                     "dropbox": {
                         "version": "Original",
                         "id": "v9fvz4hcg2lm700/HPudPvA_T_12.mp4"
-                    },
-                    "openload": {}
+                    }
                 }
             },
             "13": {
@@ -284,7 +274,6 @@
                         "version": "Original",
                         "id": "AB5k0rhiqbc"
                     },
-                    "twitch": {},
                     "vimeo": {
                         "version": "Original",
                         "id": "332215473"
@@ -296,13 +285,11 @@
                     "dropbox": {
                         "version": "Original",
                         "id": "9dmmcsf1v88ymko/HPudPvA_T_13.mp4"
-                    },
-                    "openload": {}
+                    }
                 }
             },
             "14": {
                 "hosters": {
-                    "twitch": {},
                     "vimeo": {
                         "version": "Original",
                         "id": "332217903"
@@ -314,8 +301,7 @@
                     "dropbox": {
                         "version": "Original",
                         "id": "fhqqp1rrvvv6p39/HPudPvA_T_14.mp4"
-                    },
-                    "openload": {}
+                    }
                 }
             }
         }
@@ -335,12 +321,10 @@
                         "version": "Original",
                         "id": "385699576"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_01.mp4"
                     },
-                    "dropbox": {},
                     "openload": {
                         "version": "Original",
                         "id": "SYrWsNOWByM"
@@ -357,12 +341,10 @@
                         "version": "Original",
                         "id": "385699605"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_02.mp4"
                     },
-                    "dropbox": {},
                     "openload": {
                         "version": "Original",
                         "id": "vft3W9KAMWU"
@@ -375,12 +357,10 @@
                         "version": "Original",
                         "id": "385917574"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_03.mp4"
                     },
-                    "dropbox": {},
                     "openload": {
                         "version": "Original",
                         "id": "MIbpKC9F5bc"
@@ -397,12 +377,10 @@
                         "version": "Original",
                         "id": "385699663"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_04.mp4"
                     },
-                    "dropbox": {},
                     "openload": {
                         "version": "Original",
                         "id": "0vNoFznM8m0"
@@ -415,12 +393,10 @@
                         "version": "Original",
                         "id": "385699696"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_05.mp4"
                     },
-                    "dropbox": {},
                     "openload": {
                         "version": "Original",
                         "id": "GWNmF11uvRU"
@@ -433,13 +409,10 @@
                         "version": "Original",
                         "id": "385699723"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_06.mp4"
-                    },
-                    "dropbox": {},
-                    "openload": {}
+                    }
                 }
             },
             "7": {
@@ -452,13 +425,10 @@
                         "version": "Original",
                         "id": "385699752"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_07.mp4"
-                    },
-                    "dropbox": {},
-                    "openload": {}
+                    }
                 }
             },
             "8": {
@@ -471,13 +441,10 @@
                         "version": "Original",
                         "id": "385699782"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_08.mp4"
-                    },
-                    "dropbox": {},
-                    "openload": {}
+                    }
                 }
             },
             "9": {
@@ -486,13 +453,10 @@
                         "version": "Original",
                         "id": "385699812"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_09.mp4"
-                    },
-                    "dropbox": {},
-                    "openload": {}
+                    }
                 }
             },
             "10": {
@@ -505,13 +469,10 @@
                         "version": "Original",
                         "id": "385699829"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_10.mp4"
-                    },
-                    "dropbox": {},
-                    "openload": {}
+                    }
                 }
             },
             "11": {
@@ -520,13 +481,10 @@
                         "version": "Original",
                         "id": "385699853"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_11.mp4"
-                    },
-                    "dropbox": {},
-                    "openload": {}
+                    }
                 }
             },
             "12": {
@@ -539,13 +497,10 @@
                         "version": "Original",
                         "id": "385699883"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_12.mp4"
-                    },
-                    "dropbox": {},
-                    "openload": {}
+                    }
                 }
             },
             "13": {
@@ -558,24 +513,15 @@
                         "version": "Original",
                         "id": "385916775"
                     },
-                    "vimeo": {},
                     "archive": {
                         "version": "Original",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_13.mp4"
-                    },
-                    "dropbox": {},
-                    "openload": {}
+                    }
                 }
             },
             "14": {
                 "available_soon": true,
                 "hosters": {
-                    "youtube": {},
-                    "twitch": {},
-                    "vimeo": {},
-                    "archive": {},
-                    "dropbox": {},
-                    "openload": {}
                 }
             }
         }
