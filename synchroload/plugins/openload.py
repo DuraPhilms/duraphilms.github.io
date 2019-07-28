@@ -10,7 +10,7 @@ def linkFromId(id):
 
 def upload(filename):
     print("[openload] Requesting upload slot...")
-    result = requests.get(OPENLOAD_CO_UPLOAD_REQUEST_URL)
+    result = requests.get(OPENLOAD_CO_UPLOAD_URL)
 
     uploadSlot = json.loads(result.text)
     

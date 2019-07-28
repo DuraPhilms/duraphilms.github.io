@@ -61,3 +61,13 @@ def setVideoId(playlistId, part, hoster, videoId, version = "Original"):
     
 def removeVideoHoster(playlist, part, hoster):
     DB[playlist]["videos"][str(part)]["hosters"].pop(hoster, None)
+
+def getVideoFilenameBase(playlistId, part):
+    video = getVideo(playlistId, part)
+    if video["filename"]:
+        return video["filename"]
+    else:
+        if video["hosters"]["youtube"]["version"] == "Original":
+            return storage.getPlaylistName(playlist) + "_{0:0>2}".format(args.part)
+        else:
+            return storage.getPlaylistName(playlist) + "_{0:0>2}_".format(args.part) + video["hosters"]["youtube"]["version"]

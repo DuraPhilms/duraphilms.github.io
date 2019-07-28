@@ -89,6 +89,19 @@ def check_availability(plugin):
             print("[check online] {} {} on {} is not available: Removing...".format(storage.getPlaylistName(playlistId), int(part), plugin.HOSTER_NAME))
             storage.removeVideoHoster(playlistId, part, plugin.HOSTER_NAME)
 
+def check_file_extension(basename, extension):
+    if os.path.isfile(basename + "." + extension):
+        return basename + "." + extension
+
+def find_local_video(playlistId, part):
+    filename = storage.getVideoFilenameBase(playlistId, part)
+    for ext in ["mp4", "webm", "mkv"]:
+        if check_file_extension(filename, ext):
+            return check_file_extension(filename, ext)
+
+    print("Could not find local file: " + filename + ".{mp4,webm,mkv}.")
+    return ""
+
 if args.delete_offline:
     for playlistId in storage.getPlaylistIds():
         for part in storage.getVideos(playlist = playlistId):
@@ -113,29 +126,17 @@ if args.insert:
 
 if args.download or args.upload:
     video = storage.getVideo(storage.getPlaylistId(args.playlist), args.part)
+    filename = storage.getVideoFilenameBase(storage.getPlaylistId(args.playlist), args.part)
 
-    if video["hosters"]["youtube"]["version"] == "Original":
-        filename = storage.getPlaylistName(playlist) + "_{0:0>2}".format(args.part)
+    download = downloader.download(video["hosters"]["youtube"]["id"], filename)
+    if download:
+        print("Downloaded video to: {}".format(download))
     else:
-        filename = storage.getPlaylistName(playlist) + "_{0:0>2}_".format(args.part) + video["hosters"]["youtube"]["version"]
-
-    if video["hosters"]["youtube"]:
-        if not downloader.download(video["hosters"]["youtube"]["id"], filename):
-            print("Could not download video from youtube.")
-            exit(1)
+        print("Could not download video from youtube.")
+        exit(1)
 
 if args.upload:
-    playlistName = storage.getPlaylistName(storage.getPlaylistId(args.playlist))
-    filename = playlistName + "_{0:0>2}.".format(args.part)
-    if os.path.isfile(filename + "mp4"):
-        filename += "mp4"
-    elif os.path.isfile(filename + "webm"):
-        filename += "webm"
-    elif os.path.isfile(filename + "mkv"):
-        filename += "mkv"
-    else:
-        print("Could not find local file: " + filename + "{mp4,webm,mkv}.")
-        exit(1)
+    filename = find_local_video(storage.getPlaylistId(args.playlist), args.part)
 
     videoId = ""
     if args.hoster == "openload":

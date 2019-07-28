@@ -34,7 +34,6 @@ def download(url, basename):
     except:
         return ""
 
-    #print(json.dumps(ffmpeg.probe(fullname), indent=6))
     probe = ffmpeg.probe(fullname)
 
     outputName = basename + "."
@@ -57,5 +56,3 @@ def download(url, basename):
     ffmpeg.run(outputStream, overwrite_output=True)
 
     return outputName
-
-# print(download("https://www.youtube.com/watch?v=xc_Xa7StPbQ", "HPudPvA", True))
