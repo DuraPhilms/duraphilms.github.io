@@ -11,13 +11,15 @@ import plugins.dropbox
 import plugins.openload
 import plugins.vimeo
 import plugins.youtube
+import plugins.dailymotion
 
 SYNCHROLOAD_PLUGINS = [
     plugins.archive,
     plugins.dropbox,
     plugins.openload,
     plugins.vimeo,
-    plugins.youtube
+    plugins.youtube,
+    plugins.dailymotion
 ]
 
 parser = argparse.ArgumentParser(description='Synchronize ')
