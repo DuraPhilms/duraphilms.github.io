@@ -491,6 +491,7 @@
         "videos": {
             "6": {
                 "title": "Orden des Penners - News & Trailer zu Teil 14",
+                "filename": "Duraphilms_OdP_News_Trailer_zu_Teil_14",
                 "hosters": {
                     "youtube": {
                         "version": "Original",
@@ -500,6 +501,7 @@
             },
             "5": {
                 "title": "Wir sind wieder da! Duraphilms - Die Ank\u00fcndigung des Lebenslebens",
+                "filename": "Duraphilms_Die_Ankuendigung_des_Lebenslebens",
                 "hosters": {
                     "youtube": {
                         "version": "Original",
@@ -509,6 +511,7 @@
             },
             "4": {
                 "title": "Duraphilms - Die Ank\u00fcndigung des Todestodes",
+                "filename": "Duraphilms_Die_Ankuendigung_des_Todestodes",
                 "hosters": {
                     "youtube": {
                         "version": "Original",
@@ -518,6 +521,7 @@
             },
             "3": {
                 "title": "1000-Abonnenten-Special",
+                "filename": "Duraphilms_1000_Abonnenten_Special",
                 "hosters": {
                     "youtube": {
                         "version": "Original",
@@ -527,6 +531,7 @@
             },
             "2": {
                 "title": "Harry Potter und der Penner von Alcatraz Outtakes 2/2",
+                "filename": "HPudPvA_Outtakes_2",
                 "hosters": {
                     "youtube": {
                         "version": "Original",
@@ -536,6 +541,7 @@
             },
             "1": {
                 "title": "Harry Potter und der Penner von Alcatraz Outtakes 1/2",
+                "filename": "HPudPvA_Outtakes_1",
                 "hosters": {
                     "youtube": {
                         "version": "Original",
