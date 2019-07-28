@@ -54,6 +54,8 @@ heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
                     <a target="_blank" href="https://dl.dropboxusercontent.com/s/{{ hoster[1].id }}">Dropbox</a>
 {% elsif hoster[0] == "openload" %}
                     <a target="_blank" href="https://openload.co/embed/{{ hoster[1].id }}">openload</a>
+{% elsif hoster[0] == "dailymotion" %}
+                    <a target="_blank" href="https://www.dailymotion.com/embed/video/{{ hoster[1].id }}">dailymotion</a>
 {% endif %}
 
 {% unless forloop.last %}
