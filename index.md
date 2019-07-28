@@ -34,6 +34,10 @@ Alle Teile können von den verschiedenen Seiten mittels
                 <h3>Teil {{ video[0] }}</h3>
 {% endif %}
 
+{% if video[1].available_soon %}
+                <i><h5>Demnächst™ verfügbar</h5></i>
+{% endif %}
+
                 <p>
 {% for hoster in video[1].hosters %}
 {% if hoster[0] == "youtube" and hoster[1].id %}

@@ -568,6 +568,7 @@
                 }
             },
             "14": {
+                "available_soon": true,
                 "hosters": {
                     "youtube": {},
                     "twitch": {},
@@ -603,7 +604,7 @@
                 }
             },
             "4": {
-                "title": "Die Ankündigung des Todestodes",
+                "title": "Duraphilms - Die Ankündigung des Todestodes",
                 "hosters": {
                     "youtube": {
                         "version": "Original",
