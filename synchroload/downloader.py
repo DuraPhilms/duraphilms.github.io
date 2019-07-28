@@ -2,6 +2,7 @@ import youtube_dl
 import urllib.error
 import ffmpeg
 import json
+import requests
 
 def check_availability(url):
     try:
@@ -60,3 +61,17 @@ def download(url, basename):
     ffmpeg.run(outputStream, overwrite_output=True)
 
     return outputName
+
+def downloadDirect(url, basename):
+    print("[downloader] Downloading {}...".format(url))
+
+    local_filename = basename + "." + url.split('.')[-1]
+    # NOTE the stream=True parameter below
+    with requests.get(url, stream=True) as r:
+        r.raise_for_status()
+        with open(local_filename, 'wb') as f:
+            for chunk in r.iter_content(chunk_size=8192):
+                if chunk: # filter out keep-alive new chunks
+                    f.write(chunk)
+                    # f.flush()
+    return local_filename

@@ -24,12 +24,24 @@ parser = argparse.ArgumentParser(description='Synchronize ')
 parser.add_argument("--insert", action="store_true", help='Adds a new video to the database')
 parser.add_argument("--part", type=int, default=-1)
 parser.add_argument("--playlist", type=str)
-parser.add_argument("--hoster", type=str)
+parser.add_argument("--hoster", type=str, default="youtube")
 parser.add_argument("--download", action="store_true")
 parser.add_argument("--upload", action="store_true")
 parser.add_argument("--delete-offline", action="store_true")
 
 args = parser.parse_args()
+
+def pluginByName(pluginName):
+    if pluginName == "archive":
+        return plugins.archive
+    if pluginName == "dropbox":
+        return plugins.dropbox
+    if pluginName == "openload":
+        return plugins.openload
+    if pluginName == "vimeo":
+        return plugins.vimeo
+    if pluginName == "youtube":
+        return plugins.youtube
 
 def selectPlaylist():
     i = 0
@@ -56,9 +68,8 @@ def selectPart():
     return partnumber
 
 def selectVideoVersion():
-    options = ["Original", "Remake", "1080Rmk"]
     i = 0
-    for x in options:
+    for x in storage.VIDEO_VERSIONS:
         i += 1
         print("{}: {}".format(str(i), x))
 
@@ -69,7 +80,7 @@ def selectVideoVersion():
         except ValueError:
             pass
 
-    return options[version - 1]
+    return storage.VIDEO_VERSIONS[version - 1]
 
 def selectHosterIds():
     hosters = {}
@@ -94,10 +105,19 @@ def check_file_extension(basename, extension):
         return basename + "." + extension
 
 def find_local_video(playlistId, part):
-    filename = storage.getVideoFilenameBase(playlistId, part)
-    for ext in ["mp4", "webm", "mkv"]:
-        if check_file_extension(filename, ext):
-            return check_file_extension(filename, ext)
+    filename = storage.getVideoFilenameBase(playlistId, part, "")
+
+    versions = []
+    for version in storage.VIDEO_VERSIONS:
+        if version == "Original":
+            versions.append("")
+        else:
+            versions.append("_" + version)
+
+    for version in versions:
+        for ext in ["mp4", "webm", "mkv"]:
+            if check_file_extension(filename + version, ext):
+                return "{}{}.{}".format(filename, version, ext)
 
     print("Could not find local file: " + filename + ".{mp4,webm,mkv}.")
     return ""
@@ -124,11 +144,17 @@ if args.insert:
     storage.saveDatabase()
     print("Added {} Teil {}!".format(DB[playlist]["title"], newVideo["part"]))
 
-if args.download or args.upload:
+if args.download:
     video = storage.getVideo(storage.getPlaylistId(args.playlist), args.part)
-    filename = storage.getVideoFilenameBase(storage.getPlaylistId(args.playlist), args.part)
+    filename = storage.getVideoFilenameBase(storage.getPlaylistId(args.playlist), args.part, args.hoster)
+    plugin = pluginByName(args.hoster)
+    url = plugin.linkFromId(video["hosters"][args.hoster]["id"])
 
-    download = downloader.download(video["hosters"]["youtube"]["id"], filename)
+    if plugin.HOSTER_HAS_DIRECT_LINKS:
+        download = downloader.downloadDirect(url, filename)
+    else:
+        download = downloader.download(url, filename)
+
     if download:
         print("Downloaded video to: {}".format(download))
     else:
@@ -149,6 +175,10 @@ if args.upload:
         print("Could not upload: unknown hoster.")
         exit(1)
 
+    version = filename.split("_")[-1].split(".")[0]
+    if not version in storage.VIDEO_VERSIONS:
+        version = "Original"
+
     if videoId:
-        storage.setVideoId(storage.getPlaylistId(args.playlist), args.part, args.hoster, videoId)
+        storage.setVideoId(storage.getPlaylistId(args.playlist), args.part, args.hoster, videoId, version)
         storage.saveDatabase()

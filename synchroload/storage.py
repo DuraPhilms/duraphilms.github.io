@@ -2,6 +2,12 @@ import json
 
 DATA_LOCATION = "_data/videos.json"
 
+VIDEO_VERSIONS = [
+    "1080Rmk",
+    "Remake",
+    "Original",
+]
+
 with open(DATA_LOCATION) as f:
     DB = json.load(f)
 
@@ -56,18 +62,18 @@ def addVideo(playlist, newVideo):
     if not newVideo in DB[playlist]["videos"]:
         DB[playlist]["videos"].append(newVideo)
 
-def setVideoId(playlistId, part, hoster, videoId, version = "Original"):
+def setVideoId(playlistId, part, hoster, videoId, version):
     DB[playlistId]["videos"][str(part)]["hosters"][hoster] = {"id": videoId, "version": version}
     
 def removeVideoHoster(playlist, part, hoster):
     DB[playlist]["videos"][str(part)]["hosters"].pop(hoster, None)
 
-def getVideoFilenameBase(playlistId, part):
+def getVideoFilenameBase(playlistId, part, hoster):
     video = getVideo(playlistId, part)
     if "filename" in video and video["filename"]:
         return video["filename"]
     else:
-        if video["hosters"]["youtube"]["version"] == "Original":
+        if not hoster or video["hosters"][hoster]["version"] == "Original":
             return getPlaylistName(playlistId) + "_{0:0>2}".format(part)
         else:
-            return getPlaylistName(playlistId) + "_{0:0>2}_".format(part) + video["hosters"]["youtube"]["version"]
+            return getPlaylistName(playlistId) + "_{0:0>2}_".format(part) + video["hosters"][hoster]["version"]

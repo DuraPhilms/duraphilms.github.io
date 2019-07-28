@@ -2,6 +2,7 @@ import dropbox
 import os
 
 HOSTER_NAME = "dropbox"
+HOSTER_HAS_DIRECT_LINKS = True
 
 DROPBOX_TOKEN = os.environ.get("DROPBOX_TOKEN")
 

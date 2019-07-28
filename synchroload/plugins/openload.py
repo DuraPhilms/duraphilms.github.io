@@ -2,6 +2,7 @@ import requests
 import json
 
 HOSTER_NAME = "openload"
+HOSTER_HAS_DIRECT_LINKS = False
 
 OPENLOAD_CO_UPLOAD_URL = "https://api.openload.co/1/file/ul"
 
