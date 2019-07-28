@@ -4,6 +4,8 @@ import os
 import random
 import string
 
+HOSTER_NAME = "archive"
+
 if not os.path.isfile(os.environ.get("HOME") + "/" + ".config/ia.ini"):
     subprocess.call(["ia", "configure"])
 

@@ -1,7 +1,9 @@
 import dropbox
 import os
 
-DROPBOX_TOKEN = os.environment.get("DROPBOX_TOKEN")
+HOSTER_NAME = "dropbox"
+
+DROPBOX_TOKEN = os.environ.get("DROPBOX_TOKEN")
 
 CHUNK_SIZE = 4 * 1024 * 1024
 

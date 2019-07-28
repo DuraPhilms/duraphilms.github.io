@@ -6,9 +6,19 @@ import os
 
 import storage
 import downloader
-import plugins.openload
-import plugins.dropbox
 import plugins.archive
+import plugins.dropbox
+import plugins.openload
+import plugins.vimeo
+import plugins.youtube
+
+SYNCHROLOAD_PLUGINS = [
+    plugins.archive,
+    plugins.dropbox,
+    plugins.openload,
+    plugins.vimeo,
+    plugins.youtube
+]
 
 parser = argparse.ArgumentParser(description='Synchronize ')
 parser.add_argument("--insert", action="store_true", help='Adds a new video to the database')
@@ -72,33 +82,19 @@ def selectHosterIds():
 
     return hosters
 
+def check_availability(plugin):
+    if plugin.HOSTER_NAME in video["hosters"] and video["hosters"][plugin.HOSTER_NAME]:
+        print("[check online] Checking availability for {} {} on {}...".format(storage.getPlaylistName(playlistId), int(part), plugin.HOSTER_NAME))
+        if not downloader.check_availability(plugin.linkFromId(video["hosters"][plugin.HOSTER_NAME]["id"])):
+            print("[check online] {} {} on {} is not available: Removing...".format(storage.getPlaylistName(playlistId), int(part), plugin.HOSTER_NAME))
+            storage.removeVideoHoster(playlistId, part, plugin.HOSTER_NAME)
+
 if args.delete_offline:
     for playlistId in storage.getPlaylistIds():
         for part in storage.getVideos(playlist = playlistId):
             video = storage.getVideo(playlistId, part)
-            if "youtube" in video["hosters"] and video["hosters"]["youtube"]:
-                print("Checking availability for {} / {}...".format(storage.getPlaylistName(playlistId), int(part)))
-                if not downloader.check_availability(video["hosters"]["youtube"]["id"]):
-                    print("Not available, removing...")
-                    storage.removeVideoHoster(playlistId, part, "youtube")
-            
-            if "archive" in video["hosters"] and video["hosters"]["archive"]:
-                print("Checking availability for {} / {}...".format(storage.getPlaylistName(playlistId), int(part)))
-                if not downloader.check_availability(plugins.archive.linkFromId(video["hosters"]["archive"]["id"])):
-                    print("Not available, removing...")
-                    storage.removeVideoHoster(playlistId, part, "archive")
-            
-            if "openload" in video["hosters"] and video["hosters"]["openload"]:
-                print("Checking availability for {} / {}...".format(storage.getPlaylistName(playlistId), int(part)))
-                if not downloader.check_availability(plugins.openload.linkFromId(video["hosters"]["openload"]["id"])):
-                    print("Not available, removing...")
-                    storage.removeVideoHoster(playlistId, part, "openload")
-
-            if "dropbox" in video["hosters"] and video["hosters"]["dropbox"]:
-                print("Checking availability for {} / {}...".format(storage.getPlaylistName(playlistId), int(part)))
-                if not downloader.check_availability(plugins.dropbox.linkFromId(video["hosters"]["dropbox"]["id"])):
-                    print("Not available, removing...")
-                    storage.removeVideoHoster(playlistId, part, "dropbox")
+            for plugin in SYNCHROLOAD_PLUGINS:
+                check_availability(plugin)
 
     storage.saveDatabase()
 
