@@ -1,6 +1,10 @@
 import json
+import shutil
+import os
 
 DATA_LOCATION = "_data/videos.json"
+COLLECTIONS_PLAYLISTS_LOCATION = "_playlists/"
+COLLECTIONS_VIDEOS_LOCATION = "_videos/"
 
 VIDEO_VERSIONS = [
     "1080Rmk",
@@ -10,10 +14,6 @@ VIDEO_VERSIONS = [
 
 with open(DATA_LOCATION) as f:
     DB = json.load(f)
-
-def saveDatabase():
-    with open(DATA_LOCATION, 'w') as f:
-        json.dump(DB, f, indent=4)
 
 def getPlaylistIds():
     return range(len(DB))
@@ -77,3 +77,48 @@ def getVideoFilenameBase(playlistId, part, hoster):
             return getPlaylistName(playlistId) + "_{0:0>2}".format(part)
         else:
             return getPlaylistName(playlistId) + "_{0:0>2}_".format(part) + video["hosters"][hoster]["version"]
+
+def writePlaylist(playlist):
+    f = open(
+        COLLECTIONS_PLAYLISTS_LOCATION + playlist["short"] + ".md",
+        "w"
+    )
+    f.write("---\n")
+    f.write("layout: playlist\n")
+    f.write("permalink: /{}/\n".format(playlist["short"]))
+    f.write("playlist: {}\n".format(playlist["short"]))
+    f.write("---\n")
+    f.write("Moooin\n")
+    f.close()
+
+def writeVideo(playlist, videoId):
+    f = open(
+        COLLECTIONS_VIDEOS_LOCATION + playlist["short"] + "_{0:0>2}.md".format(videoId),
+        "w"
+    )
+    f.write("---\n")
+    f.write("layout: video\n")
+    f.write("permalink: /" + playlist["short"] + "/{0:0>2}/\n".format(videoId))
+    f.write("playlist: {}\n".format(playlist["short"]))
+    f.write("part: {}\n".format(videoId))
+    f.write("---\n")
+    f.write("Moooin\n")
+    f.close()
+
+def writeCollections():
+    print("[storage] Cleaning up...")
+    # delete everything
+    for directory in ["_playlists", "_videos"]:
+        shutil.rmtree(directory)
+        os.mkdir(directory)
+
+    print("[storage] Generating collections...")
+    for playlist in DB:
+        writePlaylist(playlist)
+        for video in playlist["videos"]:
+            writeVideo(playlist, video)
+
+def saveDatabase():
+    with open(DATA_LOCATION, 'w') as f:
+        json.dump(DB, f, indent=4)
+    writeCollections()

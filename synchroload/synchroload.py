@@ -171,4 +171,5 @@ if args.upload:
 
     if videoId:
         storage.setVideoId(storage.getPlaylistId(args.playlist), args.part, args.hoster, videoId, version)
-        storage.saveDatabase()
+
+storage.saveDatabase()
