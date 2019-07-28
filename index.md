@@ -6,16 +6,16 @@ title: Duraphilms
 Duraphilms Fan Productions
 ==========================
 
-Diese Seite ist *nicht* von Duraphilms selbst, sondern von den ultra krassen
-Duraphilms-Fans LNJ und JBB. Wenn ihr weitere Links habt, geben wir euch gerne
-Zugriff auf [GitHub](https://github.com/duraphilms/duraphilms.github.io).
+Diese Seite ist *nicht* von Duraphilms selbst, sondern wird von den
+Duraphilms-Fans LNJ und JBB verwaltet. Wenn ihr weitere Links habt, geben wir
+euch gerne Zugriff auf [GitHub][gh].
 
 Hier gibt es eine Auflistung aller Synchro Teile bei allen verschiedenen Hostern.
 Hierbei entspricht 1080Rmk, einem 1080p Full-HD Remaster (von LNJ).
 
-Alle Teile können von den verschiedenen Seiten mittels
-[youtube-dl](https://ytdl-org.github.io/youtube-dl/index.html) heruntergeladen werden.
-
+Alle Teile können von den verschiedenen Seiten mittels [youtube-dl][ytdl]
+heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
+über direkte Links, die Ihr einfach mit dem Browser herunterladen könnt.
 
 {% for playlist in site.data.videos %}
 # {{ playlist.title }}
@@ -69,4 +69,8 @@ Alle Teile können von den verschiedenen Seiten mittels
 {% endfor %}
 </div>
 {% endfor %}
+
+
+[gh]: https://github.com/duraphilms/duraphilms.github.io
+[ytdl]: https://ytdl-org.github.io/youtube-dl/index.html
 
