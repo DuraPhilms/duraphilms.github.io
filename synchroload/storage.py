@@ -64,10 +64,10 @@ def removeVideoHoster(playlist, part, hoster):
 
 def getVideoFilenameBase(playlistId, part):
     video = getVideo(playlistId, part)
-    if video["filename"]:
+    if "filename" in video and video["filename"]:
         return video["filename"]
     else:
         if video["hosters"]["youtube"]["version"] == "Original":
-            return storage.getPlaylistName(playlist) + "_{0:0>2}".format(args.part)
+            return getPlaylistName(playlistId) + "_{0:0>2}".format(part)
         else:
-            return storage.getPlaylistName(playlist) + "_{0:0>2}_".format(args.part) + video["hosters"]["youtube"]["version"]
+            return getPlaylistName(playlistId) + "_{0:0>2}_".format(part) + video["hosters"]["youtube"]["version"]

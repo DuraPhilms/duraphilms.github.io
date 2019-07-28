@@ -21,7 +21,11 @@ def check_availability(url):
 
 def download(url, basename):
     fullname = basename + ".mkv"
-    ydl = youtube_dl.YoutubeDL({'outtmpl': fullname, "merge_output_format": "mkv"})
+    ydl = youtube_dl.YoutubeDL({
+        'format': "bestvideo[ext=webm]+bestaudio[ext=webm]/bestvideo[ext=mp4]+bestaudio[ext=m4a]",
+        'outtmpl': fullname,
+        "merge_output_format": "mkv"
+    })
 
     try:
         ydl.extract_info(url)
