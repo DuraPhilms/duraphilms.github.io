@@ -52,8 +52,14 @@ this.hotkeys({
 });
 });
 
+{% if video[1].title %}
+{% assign title = video[1].title %}
+{% else %}
+{% assign title = pl.title | append: " " | append: strpart %}
+{% endif %}
+
 videojs("player").titleoverlay({
-    title: "{{ pl.title }} {{ strpart }}",  //Title for movie
+    title: "{{ title }}",  //Title for movie
     floatPosition: "left", //Float left or right (to prevent big play button overlap) (default left)
     margin: "10px", //Margin from top/left/right (default 10px)
     fontSize: "2em", //font size (default 1em)
