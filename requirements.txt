@@ -3,3 +3,4 @@ ffmpeg-python
 requests
 internetarchive
 youtube_dl
+google_auth_oauthlib

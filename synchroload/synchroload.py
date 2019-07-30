@@ -16,10 +16,10 @@ import plugins.dailymotion
 SYNCHROLOAD_PLUGINS = [
     plugins.archive,
     plugins.dropbox,
+    plugins.dailymotion,
     plugins.openload,
     plugins.vimeo,
-    plugins.youtube,
-    plugins.dailymotion
+    plugins.youtube
 ]
 
 parser = argparse.ArgumentParser(description='Synchronize ')
@@ -38,6 +38,8 @@ def pluginByName(pluginName):
         return plugins.archive
     if pluginName == "dropbox":
         return plugins.dropbox
+    if pluginName == "dailymotion":
+        return plugins.dailymotion
     if pluginName == "openload":
         return plugins.openload
     if pluginName == "vimeo":
@@ -167,12 +169,9 @@ if args.upload:
     filename = find_local_video(storage.getPlaylistId(args.playlist), args.part)
 
     videoId = ""
-    if args.hoster == "openload":
-        videoId = plugins.openload.upload(filename)
-    elif args.hoster == "dropbox":
-        videoId = plugins.dropbox.upload(filename)
-    elif args.hoster == "archive":
-        videoId = plugins.archive.upload(filename)
+    plugin = pluginByName(args.hoster)
+    if plugin:
+        videoId = plugin.upload(filename)
     else:
         print("Could not upload: unknown hoster.")
         exit(1)
