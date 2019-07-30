@@ -2,34 +2,67 @@
 
 {% for pl in site.data.videos %}
 
-    {% for video in pl.videos %}
+{% for video in pl.videos %}
 
-	{% assign strpart = page.part | downcase %}
+{% assign strpart = page.part | downcase %}
 
-        {% if video[0] == strpart and pl.short == page.playlist %}
+{% if video[0] == strpart and pl.short == page.playlist %}
 
-            {% for hoster in video[1].hosters %}
+{% for hoster in video[1].hosters %}
 
-                {% if hoster[1].id %}
-                    {% if hoster[0] == "youtube" %}
-                                        <a target="_blank" href="https://youtube.com/watch?v={{ hoster[1].id }}">YouTube</a>
-                    {% elsif hoster[0] == "twitch" %}
-                                        <a target="_blank" href="https://www.twitch.tv/videos/{{ hoster[1].id }}">Twitch</a>
-                    {% elsif hoster[0] == "vimeo" %}
-                                        <a target="_blank" href="https://vimeo.com/{{ hoster[1].id }}">Vimeo</a>
-                    {% elsif hoster[0] == "archive" %}
-                                        <a target="_blank" href="https://archive.org/download/{{ hoster[1].id }}">archive.org</a>
-                    {% elsif hoster[0] == "dropbox" %}
-                                        <a target="_blank" href="https://dl.dropboxusercontent.com/s/{{ hoster[1].id }}">Dropbox</a>
-                    {% elsif hoster[0] == "openload" %}
-                                        <a target="_blank" href="https://openload.co/embed/{{ hoster[1].id }}">openload</a>
-                    {% endif %}
-                {% endif %}
+{% if hoster[1].id %}
+{% if hoster[0] == "youtube" %}
+<a target="_blank" href="https://youtube.com/watch?v={{ hoster[1].id }}">YouTube</a>
+{% elsif hoster[0] == "twitch" %}
+<a target="_blank" href="https://www.twitch.tv/videos/{{ hoster[1].id }}">Twitch</a>
+{% elsif hoster[0] == "vimeo" %}
+<a target="_blank" href="https://vimeo.com/{{ hoster[1].id }}">Vimeo</a>
+{% elsif hoster[0] == "archive" %}
+<a target="_blank" href="https://archive.org/download/{{ hoster[1].id }}">archive.org</a>
+{% elsif hoster[0] == "dropbox" %}
+<a target="_blank" href="https://dl.dropboxusercontent.com/s/{{ hoster[1].id }}">Dropbox</a>
+{% elsif hoster[0] == "openload" %}
+<a target="_blank" href="https://openload.co/embed/{{ hoster[1].id }}">openload</a>
+{% endif %}
+{% endif %}
 
-            {% endfor %}
+{% endfor %}
 
-        {% endif %}
-    {% endfor %}
+<video-js id="player" class="video-js vjs-big-play-centered" controls preload="auto" style="width: 100%; height: 40em;"
+poster="/{{ pl.short }}_{{ part }}" data-setup="{}">
+    <source src="https://archive.org/download/{{ video[1].hosters.archive.id }}" type="video/mp4">
+
+    <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+</video-js>
+
+<script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+<script src="/assets/js/video.min.js"></script>
+<script src="/assets/js/videojs.youtube.js"></script>
+<script src="/assets/js/videojs.hotkeys.js"></script>
+<script src="/assets/js/videojs.titleoverlay.js"></script>
+<script>
+videojs("player").ready(function() {
+this.hotkeys({
+    volumeStep: 0.1,
+    seekStep: 5,
+    enableModifiersForNumbers: false
+});
+});
+
+videojs("player").titleoverlay({
+    title: "Harry Potter und der Penner von Alcatraz Teil 1",  //Title for movie
+    floatPosition: "left", //Float left or right (to prevent big play button overlap) (default left)
+    margin: "10px", //Margin from top/left/right (default 10px)
+    fontSize: "2em", //font size (default 1em)
+    debug: false, //true or false. Will output debug messages for title status
+})
+</script>
+
+{% endif %}
+{% endfor %}
 {% endfor %}
 
 {% include footer.html %}
