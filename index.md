@@ -24,17 +24,27 @@ heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
 {% for video in playlist.videos %}
     <div class="w3-padding">
         <div class="w3-card" style="height: 100%; width: 20em;">
+{% unless video[1].available_soon %}
             <a href="/{{ playlist.short }}/{{ video[0] | prepend: '00' | slice: -2, 2 }}">
+{% endunless %}
                 <div class="w3-display-container" style="width: 100%; height: 11.3em; background: #000000;">
                     <img class="w3-display-middle" style="width: 100%;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video[0] }}.jpg">
                 </div>
+{% unless video[1].available_soon %}
             </a>
-
+{% endunless %}
             <div class="w3-margin">
 {% if video[1].title %}
                 <h3>{{ video[1].title }}</h3>
 {% else %}
-                <h3>Teil {{ video[0] }}</h3>
+{% unless video[1].available_soon %}
+                <a href="/{{ playlist.short }}/{{ video[0] | prepend: '00' | slice: -2, 2 }}">
+{% endunless %}
+                    <h3>Teil {{ video[0] }}</h3>
+{% unless video[1].available_soon %}
+                </a>
+{% endunless %}
+
 {% endif %}
 
 {% if video[1].available_soon %}
@@ -72,6 +82,7 @@ heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
     </div>
 {% endfor %}
 </div>
+
 {% endfor %}
 
 
