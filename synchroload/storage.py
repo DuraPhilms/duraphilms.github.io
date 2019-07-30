@@ -64,7 +64,7 @@ def addVideo(playlist, newVideo):
 
 def setVideoId(playlistId, part, hoster, videoId, version):
     DB[playlistId]["videos"][str(part)]["hosters"][hoster] = {"id": videoId, "version": version}
-    
+
 def removeVideoHoster(playlist, part, hoster):
     DB[playlist]["videos"][str(part)]["hosters"].pop(hoster, None)
 
@@ -85,6 +85,7 @@ def writePlaylist(playlist):
     )
     f.write("---\n")
     f.write("layout: playlist\n")
+    f.write("title: {}\n".format(playlist["title"]))
     f.write("permalink: /{}/\n".format(playlist["short"]))
     f.write("playlist: {}\n".format(playlist["short"]))
     f.write("---\n")
@@ -98,6 +99,7 @@ def writeVideo(playlist, videoId):
     )
     f.write("---\n")
     f.write("layout: video\n")
+    f.write("title: {}".format(playlist["title"] + " {0:0>2}\n".format(videoId)))
     f.write("permalink: /" + playlist["short"] + "/{0:0>2}/\n".format(videoId))
     f.write("playlist: {}\n".format(playlist["short"]))
     f.write("part: {}\n".format(videoId))
