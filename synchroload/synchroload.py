@@ -13,14 +13,14 @@ import plugins.vimeo
 import plugins.youtube
 import plugins.dailymotion
 
-SYNCHROLOAD_PLUGINS = [
-    plugins.archive,
-    plugins.dropbox,
-    plugins.dailymotion,
-    plugins.openload,
-    plugins.vimeo,
-    plugins.youtube
-]
+SYNCHROLOAD_PLUGINS = {
+    "archive": plugins.archive,
+    "dropbox": plugins.dropbox,
+    "dailymotion": plugins.dailymotion,
+    "openload": plugins.openload,
+    "vimeo": plugins.vimeo,
+    "youtube": plugins.youtube
+}
 
 parser = argparse.ArgumentParser(description='Synchronize ')
 parser.add_argument("--insert", action="store_true", help='Adds a new video to the database')
@@ -34,18 +34,7 @@ parser.add_argument("--delete-offline", action="store_true")
 args = parser.parse_args()
 
 def pluginByName(pluginName):
-    if pluginName == "archive":
-        return plugins.archive
-    if pluginName == "dropbox":
-        return plugins.dropbox
-    if pluginName == "dailymotion":
-        return plugins.dailymotion
-    if pluginName == "openload":
-        return plugins.openload
-    if pluginName == "vimeo":
-        return plugins.vimeo
-    if pluginName == "youtube":
-        return plugins.youtube
+    return SYNCHROLOAD_PLUGINS[pluginName]
 
 def selectPlaylist():
     i = 0
@@ -130,7 +119,7 @@ if args.delete_offline:
     for playlistId in storage.getPlaylistIds():
         for part in storage.getVideos(playlist = playlistId):
             video = storage.getVideo(playlistId, part)
-            for plugin in SYNCHROLOAD_PLUGINS:
+            for plugin in SYNCHROLOAD_PLUGINS.values():
                 check_availability(plugin)
 
     storage.saveDatabase()
