@@ -8,10 +8,10 @@ import storage
 import downloader
 import plugins.archive
 import plugins.dropbox
+import plugins.dailymotion
 import plugins.openload
 import plugins.vimeo
 import plugins.youtube
-import plugins.dailymotion
 
 SYNCHROLOAD_PLUGINS = {
     "archive": plugins.archive,

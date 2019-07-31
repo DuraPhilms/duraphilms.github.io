@@ -4,7 +4,7 @@ import os
 HOSTER_NAME = "dropbox"
 HOSTER_HAS_DIRECT_LINKS = True
 
-DROPBOX_TOKEN = os.environ.get("DROPBOX_TOKEN")
+DROPBOX_TOKEN = os.getenv("DROPBOX_TOKEN", "")
 
 CHUNK_SIZE = 4 * 1024 * 1024
 
