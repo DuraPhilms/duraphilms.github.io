@@ -4,11 +4,7 @@ import os
 HOSTER_NAME = "dropbox"
 HOSTER_HAS_DIRECT_LINKS = True
 
-DROPBOX_TOKEN = os.getenv("DROPBOX_TOKEN", "")
-
 CHUNK_SIZE = 4 * 1024 * 1024
-
-dbx = dropbox.Dropbox(DROPBOX_TOKEN)
 
 def linkFromId(id):
     return "https://dl.dropboxusercontent.com/s/" + id
@@ -18,6 +14,9 @@ def upload(filename):
     We could also use the "remote upload" from an archive.org url or something:
     https://dropbox-sdk-python.readthedocs.io/en/latest/api/dropbox.html#dropbox.dropbox.Dropbox.files_save_url
     """
+    DROPBOX_TOKEN = os.getenv("DROPBOX_TOKEN", "")
+    dbx = dropbox.Dropbox(DROPBOX_TOKEN)
+    
     print("[dropbox] Uploading {}...".format(filename))
     f = open(filename, "rb")
     file_size = os.path.getsize(filename)

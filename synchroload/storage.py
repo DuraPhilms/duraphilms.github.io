@@ -89,7 +89,6 @@ def writePlaylist(playlist):
     f.write("permalink: /{}/\n".format(playlist["short"]))
     f.write("playlist: {}\n".format(playlist["short"]))
     f.write("---\n")
-    f.write("Moooin\n")
     f.close()
 
 def writeVideo(playlist, videoId):
@@ -104,7 +103,6 @@ def writeVideo(playlist, videoId):
     f.write("playlist: {}\n".format(playlist["short"]))
     f.write("part: {}\n".format(videoId))
     f.write("---\n")
-    f.write("Moooin\n")
     f.close()
 
 def writeCollections():

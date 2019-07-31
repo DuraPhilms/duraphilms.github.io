@@ -1,7 +1,6 @@
 ---
 layout: playlist
-title: DuraPhilms News & Specials
+title: Duraphilms News & Specials
 permalink: /duraphilms/
 playlist: duraphilms
 ---
-Moooin
