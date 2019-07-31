@@ -1,36 +1,25 @@
 {% include header.html %}
 
 {% for pl in site.data.videos %}
-
 {% for video in pl.videos %}
-
 {% assign strpart = page.part | downcase %}
-
 {% if video[0] == strpart and pl.short == page.playlist %}
 
-{% for hoster in video[1].hosters %}
 
-{% if hoster[1].id %}
-{% if hoster[0] == "youtube" %}
-<a target="_blank" href="https://youtube.com/watch?v={{ hoster[1].id }}">YouTube</a>
-{% elsif hoster[0] == "twitch" %}
-<a target="_blank" href="https://www.twitch.tv/videos/{{ hoster[1].id }}">Twitch</a>
-{% elsif hoster[0] == "vimeo" %}
-<a target="_blank" href="https://vimeo.com/{{ hoster[1].id }}">Vimeo</a>
-{% elsif hoster[0] == "archive" %}
-<a target="_blank" href="https://archive.org/download/{{ hoster[1].id }}">archive.org</a>
-{% elsif hoster[0] == "dropbox" %}
-<a target="_blank" href="https://dl.dropboxusercontent.com/s/{{ hoster[1].id }}">Dropbox</a>
-{% elsif hoster[0] == "openload" %}
-<a target="_blank" href="https://openload.co/embed/{{ hoster[1].id }}">openload</a>
-{% endif %}
+{% if video[1].title %}
+{% assign title = video[1].title %}
+{% else %}
+{% assign title = pl.title | append: " Teil " | append: strpart %}
 {% endif %}
 
-{% endfor %}
-
-<video-js id="player" class="video-js vjs-big-play-centered" controls preload="auto" style="width: 100%; height: 40em;"
-poster="/thumbs/{{ pl.name }}_{{ strpart }}.jpg" data-setup="{}">
-    <source src="https://archive.org/download/{{ video[1].hosters.archive.id }}" type="video/mp4">
+<video-js
+        id="player"
+        class="video-js vjs-big-play-centered"
+        controls
+        preload="auto"
+        style="position: relative; width: 100%; padding-top: 56.25%; /* 16:9 Aspect Ratio */"
+        poster="/thumbs/{{ pl.name }}_{{ strpart }}.jpg" data-setup="{}">
+    <source src="https://archive.org/download/{{ video[1].hosters.archive.id }}">
 
     <p class="vjs-no-js">
         To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -52,20 +41,41 @@ this.hotkeys({
 });
 });
 
-{% if video[1].title %}
-{% assign title = video[1].title %}
-{% else %}
-{% assign title = pl.title | append: " " | append: strpart %}
-{% endif %}
-
 videojs("player").titleoverlay({
     title: "{{ title }}",  //Title for movie
     floatPosition: "left", //Float left or right (to prevent big play button overlap) (default left)
-    margin: "10px", //Margin from top/left/right (default 10px)
+    margin: "14px", //Margin from top/left/right (default 10px)
     fontSize: "2em", //font size (default 1em)
     debug: false, //true or false. Will output debug messages for title status
 })
 </script>
+
+<h1>{{ title }}</h1>
+
+<div class="w3-card w3-padding">
+<p class="w3-padding">
+{% for hoster in video[1].hosters %}
+{% if hoster[1].id %}
+{% if hoster[0] == "youtube" %}
+<a class="w3-btn w3-red w3-margin-left w3-margin-right" target="_blank" href="https://youtube.com/watch?v={{ hoster[1].id }}">YouTube</a>
+{% elsif hoster[0] == "twitch" %}
+<a class="w3-btn w3-purple w3-margin-left w3-margin-right" target="_blank" href="https://www.twitch.tv/videos/{{ hoster[1].id }}">Twitch</a>
+{% elsif hoster[0] == "vimeo" %}
+<a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://vimeo.com/{{ hoster[1].id }}">Vimeo</a>
+{% elsif hoster[0] == "archive" %}
+<a class="w3-btn w3-black w3-margin-left w3-margin-right" target="_blank" href="https://archive.org/download/{{ hoster[1].id }}">archive.org</a>
+{% elsif hoster[0] == "dropbox" %}
+<a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://dl.dropboxusercontent.com/s/{{ hoster[1].id }}">Dropbox</a>
+{% elsif hoster[0] == "openload" %}
+<a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ hoster[1].id }}">openload</a>
+{% endif %}
+{% endif %}
+{% endfor %}
+</p>
+
+<p><b>Veröffentlicht am {{ video[1].date | date_to_string }}</b></p>
+<p>{{ video[1].description }}</p>
+</div>
 
 {% endif %}
 {% endfor %}

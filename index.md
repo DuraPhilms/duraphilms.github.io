@@ -34,18 +34,20 @@ heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
             </a>
 {% endunless %}
             <div class="w3-margin">
-{% if video[1].title %}
-                <h3>{{ video[1].title }}</h3>
-{% else %}
+
 {% unless video[1].available_soon %}
                 <a href="/{{ playlist.short }}/{{ video[0] | prepend: '00' | slice: -2, 2 }}">
 {% endunless %}
+
+{% if video[1].title %}
+                    <h3>{{ video[1].title }}</h3>
+{% else %}
                     <h3>Teil {{ video[0] }}</h3>
+{% endif %}
+
 {% unless video[1].available_soon %}
                 </a>
 {% endunless %}
-
-{% endif %}
 
 {% if video[1].available_soon %}
                 <i><h5>Demnächst™ verfügbar</h5></i>
