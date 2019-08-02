@@ -603,6 +603,11 @@
         "name": "Duraphilms",
         "short": "duraphilms",
         "videos": {
+            "7": {
+                "available_soon": true,
+                "title": "Harry Potter und der Feuerelch",
+                "hosters": {}
+            },
             "6": {
                 "date": "2019-07-25",
                 "description": "Ihr wolltet ein Lebenszeichen, ihr bekommt eins!<br/>Jetzt neu: http://www.duraphilms.tk/<br/>Dort findet ihr all unsere Synchroteile inkl. HD-Remake von PvA (Gro\u00dfen Dank an LNJ & JBB!).",
