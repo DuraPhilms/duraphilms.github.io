@@ -28,7 +28,7 @@ heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
             <a href="/{{ playlist.short }}/{{ video[0] | prepend: '00' | slice: -2, 2 }}">
 {% endunless %}
                 <div class="w3-display-container" style="width: 100%; height: 11.3em; background: #000000;">
-                    <img class="w3-display-middle" style="width: 100%;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video[0] }}.jpg">
+                    <img class="w3-display-middle" style="width: 100%;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video[0] }}.small.jpg">
                 </div>
 {% unless video[1].available_soon %}
             </a>
