@@ -98,10 +98,23 @@ def writeVideo(playlist, videoId):
     )
     f.write("---\n")
     f.write("layout: video\n")
-    f.write("title: {}".format(playlist["title"] + " {0:0>2}\n".format(videoId)))
+
+    if "title" in playlist["videos"][videoId]:
+        f.write("title: {}\n".format(playlist["videos"][videoId]["title"]))
+    else:
+        f.write("title: {} Teil {}\n".format(playlist["title"], videoId))
+
     f.write("permalink: /" + playlist["short"] + "/{0:0>2}/\n".format(videoId))
+
     f.write("playlist: {}\n".format(playlist["short"]))
+
     f.write("part: {}\n".format(videoId))
+
+    if str(int(videoId) + 1) in playlist["videos"]:
+        f.write("nextVideo: {}\n".format(int(videoId) + 1))
+    if str(int(videoId) - 1) in playlist["videos"]:
+        f.write("prevVideo: {}\n".format(int(videoId) - 1))
+
     f.write("---\n")
     f.close()
 
