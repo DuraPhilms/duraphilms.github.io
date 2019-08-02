@@ -18,11 +18,15 @@ heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
 über direkte Links, die Ihr einfach mit dem Browser herunterladen könnt.
 
 {% for playlist in site.data.videos %}
-# {{ playlist.title }}
+<div class="w3-margin-top">
+    <a href="/{{ playlist.short }}/">
+        <h1>{{ playlist.title }}</h1>
+    </a>
+</div>
 
 <div style="display: grid; grid-auto-flow: column; overflow-x: scroll;">
 {% for video in playlist.videos %}
-    <div class="w3-padding">
+    <div class="w3-padding w3-animate-opacity">
         <div class="w3-card" style="height: 100%; width: 20em;">
 {% unless video[1].available_soon %}
             <a href="/{{ playlist.short }}/{{ video[0] | prepend: '00' | slice: -2, 2 }}">
