@@ -10,6 +10,7 @@ import plugins.archive
 import plugins.dropbox
 import plugins.dailymotion
 import plugins.openload
+import plugins.twitch
 import plugins.vimeo
 import plugins.youtube
 
@@ -18,6 +19,7 @@ SYNCHROLOAD_PLUGINS = {
     "dropbox": plugins.dropbox,
     "dailymotion": plugins.dailymotion,
     "openload": plugins.openload,
+    "twitch": plugins.twitch,
     "vimeo": plugins.vimeo,
     "youtube": plugins.youtube
 }
