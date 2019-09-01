@@ -62,21 +62,23 @@ def addVideo(playlist, newVideo):
     if not newVideo in DB[playlist]["videos"]:
         DB[playlist]["videos"].append(newVideo)
 
-def setVideoId(playlistId, part, hoster, videoId, version):
-    DB[playlistId]["videos"][str(part)]["hosters"][hoster] = {"id": videoId, "version": version}
+def findUpload(uploads, videoId):
+    for i in range(len(uploads)):
+        if uploads[i]["id"] == videoId:
+            return i
 
-def removeVideoHoster(playlist, part, hoster):
-    DB[playlist]["videos"][str(part)]["hosters"].pop(hoster, None)
+def removeVideoId(playlist, part, videoId):
+    DB[playlist]["videos"][str(part)]["hosters"] = [x for x in DB[playlist]["videos"][str(part)]["hosters"] if x["id"] != videoId]
 
-def getVideoFilenameBase(playlistId, part, hoster):
+def getVideoFilenameBase(playlistId, part, videoId):
     video = getVideo(playlistId, part)
     if "filename" in video and video["filename"]:
         return video["filename"]
     else:
-        if not hoster or video["hosters"][hoster]["version"] == "Original":
+        if not videoId or findUpload(video["hosters"], videoId)["version"] == "Original":
             return getPlaylistName(playlistId) + "_{0:0>2}".format(part)
         else:
-            return getPlaylistName(playlistId) + "_{0:0>2}_".format(part) + video["hosters"][hoster]["version"]
+            return getPlaylistName(playlistId) + "_{0:0>2}_".format(part) + findUpload(video["hosters"], videoId)["version"]
 
 def writePlaylist(playlist):
     f = open(

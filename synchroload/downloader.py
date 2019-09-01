@@ -6,7 +6,7 @@ import requests
 
 def check_availability(url):
     try:
-        youtube_dl.YoutubeDL().extract_info(
+        youtube_dl.YoutubeDL({"quiet": True}).extract_info(
             url,
             download=False
         )

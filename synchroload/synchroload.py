@@ -88,12 +88,14 @@ def selectHosterIds():
 
     return hosters
 
-def check_availability(plugin):
-    if plugin.HOSTER_NAME in video["hosters"] and video["hosters"][plugin.HOSTER_NAME]:
-        print("[check online] Checking availability for {} {} on {}...".format(storage.getPlaylistName(playlistId), int(part), plugin.HOSTER_NAME))
-        if not downloader.check_availability(plugin.linkFromId(video["hosters"][plugin.HOSTER_NAME]["id"])):
-            print("[check online] {} {} on {} is not available: Removing...".format(storage.getPlaylistName(playlistId), int(part), plugin.HOSTER_NAME))
-            storage.removeVideoHoster(playlistId, part, plugin.HOSTER_NAME)
+def check_availability(upload, playlistId, part):
+    plugin = SYNCHROLOAD_PLUGINS[upload["hoster"]]
+    print("[check online] Checking availability for {} {} on {} ({}) ...".format(storage.getPlaylistName(playlistId), int(part), plugin.HOSTER_NAME, upload["id"]), end="")
+    if not downloader.check_availability(plugin.linkFromId(upload["id"])):
+        print(" [FAIL] - Removing!")
+        storage.removeVideoId(playlistId, part, upload["id"])
+    else:
+        print(" [OK]")
 
 def check_file_extension(basename, extension):
     if os.path.isfile(basename + "." + extension):
@@ -120,9 +122,8 @@ def find_local_video(playlistId, part):
 if args.delete_offline:
     for playlistId in storage.getPlaylistIds():
         for part in storage.getVideos(playlist = playlistId):
-            video = storage.getVideo(playlistId, part)
-            for plugin in SYNCHROLOAD_PLUGINS.values():
-                check_availability(plugin)
+            for upload in storage.getVideo(playlistId, part)["hosters"]:
+                check_availability(upload, playlistId, part)
 
     storage.saveDatabase()
 
