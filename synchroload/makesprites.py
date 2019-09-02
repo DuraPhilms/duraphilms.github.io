@@ -26,21 +26,22 @@ from dateutil import relativedelta
 
 #TODO determine optimal number of images/segment distance based on length of video? (so longer videos don't have huge sprites)
 
-USE_SIPS = True #True to use sips if using MacOSX (creates slightly smaller sprites), else set to False to use ImageMagick
-THUMB_RATE_SECONDS=45 # every Nth second take a snapshot
-THUMB_WIDTH=100 #100-150 is width recommended by JWPlayer; I like smaller files
-SKIP_FIRST=True #True to skip a thumbnail of second 1; often not a useful image, plus JWPlayer doesn't seem to show it anyway, and user knows beginning without needing preview
-SPRITE_NAME = "sprite.jpg" #jpg is much smaller than png, so using jpg
-VTTFILE_NAME = "thumbs.vtt"
-THUMB_OUTDIR = "thumbs"
-USE_UNIQUE_OUTDIR = False #true to make a unique timestamped output dir each time, else False to overwrite/replace existing outdir
-TIMESYNC_ADJUST = -.5 #set to 1 to not adjust time (gets multiplied by thumbRate); On my machine,ffmpeg snapshots show earlier images than expected timestamp by about 1/2 the thumbRate (for one vid, 10s thumbrate->images were 6s earlier than expected;45->22s early,90->44 sec early)
-logger = logging.getLogger(sys.argv[0])
-logSetup=False
-
 class SpriteTask():
     """small wrapper class as convenience accessor for external scripts"""
-    def __init__(self,videofile):
+    def __init__(self, videofile):
+        # Moved from global variables
+        self.use_sips = True #True to use sips if using MacOSX (creates slightly smaller sprites), else set to False to use ImageMagick
+        self.thumb_rate_seconds = 5 # every Nth second take a snapshot
+        self.thumb_width = 150 #100-150 is width recommended by JWPlayer; I like smaller files
+        self.skip_first = True #True to skip a thumbnail of second 1; often not a useful image, plus JWPlayer doesn't seem to show it anyway, and user knows beginning without needing preview
+        self.sprite_name = "sprite.jpg" #jpg is much smaller than png, so using jpg
+        self.vttfile_name = "thumbs.vtt"
+        self.thumb_outdir = "thumbs"
+        self.use_unique_outdir = False #true to make a unique timestamped output dir each time, else False to overwrite/replace existing outdir
+        self.timesync_adjust = -.5 #set to 1 to not adjust time (gets multiplied by thumbRate); On my machine,ffmpeg snapshots show earlier images than expected timestamp by about 1/2 the thumbRate (for one vid, 10s thumbrate->images were 6s earlier than expected;45->22s early,90->44 sec early)
+        self.logger = logging.getLogger(sys.argv[0])
+        self.logSetup = False
+
         self.remotefile = videofile.startswith("http")
         if not self.remotefile and not os.path.exists(videofile):
             sys.exit("File does not exist: %s" % videofile)
@@ -48,12 +49,14 @@ class SpriteTask():
         basefile_nospeed = self.removespeed(basefile) #strip trailing speed suffix from file/dir names, if present
         newoutdir = self.makeOutDir(basefile_nospeed)
         fileprefix,ext = os.path.splitext(basefile_nospeed)
-        spritefile = os.path.join(newoutdir,"%s_%s" % (fileprefix,SPRITE_NAME))
-        vttfile = os.path.join(newoutdir,"%s_%s" % (fileprefix,VTTFILE_NAME))
+        spritefile = os.path.join(newoutdir,"%s_%s" % (fileprefix,self.sprite_name))
+        vttfile = os.path.join(newoutdir,"%s_%s" % (fileprefix,self.vttfile_name))
         self.videofile = videofile
         self.vttfile = vttfile
         self.spritefile = spritefile
         self.outdir = newoutdir
+
+
     def getVideoFile(self):
         return self.videofile
     def getOutdir(self):
@@ -68,18 +71,18 @@ class SpriteTask():
         base,ext = os.path.splitext(videofile)
         script = sys.argv[0]
         basepath = os.path.dirname(os.path.abspath(script)) #make output dir always relative to this script regardless of shell directory
-        if len(THUMB_OUTDIR)>0 and THUMB_OUTDIR[0]=='/':
-            outputdir = THUMB_OUTDIR
+        if len(self.thumb_outdir) > 0 and self.thumb_outdir[0] == '/':
+            outputdir = self.thumb_outdir
         else:
-            outputdir = os.path.join(basepath,THUMB_OUTDIR)
-        if USE_UNIQUE_OUTDIR:
+            outputdir = os.path.join(basepath,self.thumb_outdir)
+        if self.use_unique_outdir:
             newoutdir = "%s.%s" % (os.path.join(outputdir,base),datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
         else:
             newoutdir = "%s_%s" % (os.path.join(outputdir,base),"vtt")
         if not os.path.exists(newoutdir):
-            logger.info("Making dir: %s" % newoutdir)
+            self.logger.info("Making dir: %s" % newoutdir)
             os.makedirs(newoutdir)
-        elif os.path.exists(newoutdir) and not USE_UNIQUE_OUTDIR:
+        elif os.path.exists(newoutdir) and not self.use_unique_outdir:
             #remove previous contents if reusing outdir
             files = os.listdir(newoutdir)
             print("Removing previous contents of output directory: %s" % newoutdir)
@@ -87,17 +90,19 @@ class SpriteTask():
                 os.unlink(os.path.join(newoutdir,f))
         return newoutdir
 
-    def doCmd(self, cmd,logger=logger) -> str:  #execute a shell command and return/print its output
+    def doCmd(self, cmd, logger=None) -> str:  # execute a shell command and return/print its output
+        if not logger: # TODO this is stupid, fix
+            logger = self.logger
+
         logger.info( "START [%s] : %s " % (datetime.datetime.now(), cmd))
         args = shlex.split(cmd) #tokenize args
         output = None
         try:
             output = subprocess.check_output(args, stderr=subprocess.STDOUT).decode("utf-8") #pipe stderr into stdout
         except Exception as e:
-            subprocess.call(args, stderr=subprocess.STDOUT) #TODO remove
             ret = "ERROR   [%s] An exception occurred\n%s\n%s" % (datetime.datetime.now(),output,str(e))
             logger.error(ret)
-            raise e #todo ?
+            raise e #TODO ?
         ret = "END   [%s]\n%s" % (datetime.datetime.now(),output)
         logger.info(ret)
         sys.stdout.flush()
@@ -109,16 +114,16 @@ class SpriteTask():
             reference: https://trac.ffmpeg.org/wiki/Create%20a%20thumbnail%20image%20every%20X%20seconds%20of%20the%20video
         """
         if not thumbRate:
-            thumbRate = THUMB_RATE_SECONDS
+            thumbRate = self.thumb_rate_seconds
         rate = "1/%d" % thumbRate # 1/60=1 per minute, 1/120=1 every 2 minutes
         cmd = "ffmpeg -i %s -f image2 -bt 20M -vf fps=%s -aspect 16:9 %s/tv%%03d.jpg" % (pipes.quote(videofile), rate, pipes.quote(newoutdir))
         self.doCmd (cmd)
-        if SKIP_FIRST:
+        if self.skip_first:
             #remove the first image
-            logger.info("Removing first image, unneeded")
+            self.logger.info("Removing first image, unneeded")
             os.unlink("%s/tv001.jpg" % newoutdir)
         count = len(os.listdir(newoutdir))
-        logger.info("%d thumbs written in %s" % (count,newoutdir))
+        self.logger.info("%d thumbs written in %s" % (count,newoutdir))
         #return the list of generated files
         return count,self.get_thumb_images(newoutdir)
 
@@ -129,12 +134,12 @@ class SpriteTask():
         """change image output size to 100 width (originally matches size of video)
         - pass a list of files as string rather than use '*' with sips command because
             subprocess does not treat * as wildcard like shell does"""
-        if USE_SIPS:
+        if self.use_sips:
             # HERE IS MAC SPECIFIC PROGRAM THAT YIELDS SLIGHTLY SMALLER JPGs
-            self.doCmd("sips --resampleWidth %d %s" % (THUMB_WIDTH," ".join(map(pipes.quote, files))))
+            self.doCmd("sips --resampleWidth %d %s" % (self.thumb_width," ".join(map(pipes.quote, files))))
         else:
             # THIS COMMAND WORKS FINE TOO AND COMES WITH IMAGEMAGICK, IF NOT USING A MAC
-            self.doCmd("mogrify -geometry %dx %s" % (THUMB_WIDTH," ".join(map(pipes.quote, files))))
+            self.doCmd("mogrify -geometry %dx %s" % (self.thumb_width," ".join(map(pipes.quote, files))))
 
     def get_geometry(self, file) -> str:
         """execute command to give geometry HxW+X+Y of each file matching command
@@ -154,7 +159,7 @@ class SpriteTask():
         #split geometry string into individual parts
         ##4200x66+0+0     ===  WxH+X+Y
         if not thumbRate:
-            thumbRate = THUMB_RATE_SECONDS
+            thumbRate = self.thumb_rate_seconds
         wh,xy = coords.split("+", 1)
         w,h = wh.split("x")
         w = int(w)
@@ -177,13 +182,13 @@ class SpriteTask():
     #==== END SAMPLE ========
         basefile = os.path.basename(spritefile)
         vtt = ["WEBVTT",""] #line buffer for file contents
-        if SKIP_FIRST:
+        if self.skip_first:
             clipstart = thumbRate  #offset time to skip the first image
         else:
             clipstart = 0
         # NOTE - putting a time gap between thumbnail end & next start has no visual effect in JWPlayer, so not doing it.
         clipend = clipstart + thumbRate
-        adjust = thumbRate * TIMESYNC_ADJUST
+        adjust = thumbRate * self.timesync_adjust
         for imgnum in range(1,numsegments+1):
             xywh = self.get_grid_coordinates(imgnum,gridsize,w,h)
             start = self.get_time_str(clipstart,adjust=adjust)
@@ -222,13 +227,13 @@ class SpriteTask():
         base the sprite size on the number of thumbs we need to make into a grid."""
         grid: str = "%dx%d" % (gridsize,gridsize)
         cmd = "montage %s/tv*.jpg -tile %s -geometry %s %s" % (pipes.quote(outdir), grid, coords, pipes.quote(spritefile)) #if video had more than 144 thumbs, would need to be bigger grid, making it big to cover all our case
-        print(self.doCmd(cmd)) # TODO remove print
+        self.doCmd(cmd)
 
     def writevtt(self, vttfile,contents):
         """ output VTT file """
         with open(vttfile,mode="w") as h:
             h.write(contents)
-        logger.info("Wrote: %s" % vttfile)
+        self.logger.info("Wrote: %s" % vttfile)
 
     def removespeed(self, videofile):
         """some of my files are suffixed with datarate, e.g. myfile_3200.mp4;
@@ -248,7 +253,7 @@ class SpriteTask():
     def run(self, thumbRate=None):
         self.addLogging()
         if not thumbRate:
-            thumbRate = THUMB_RATE_SECONDS
+            thumbRate = self.thumb_rate_seconds
         outdir = self.getOutdir()
         spritefile = self.getSpriteFile()
 
@@ -268,30 +273,30 @@ class SpriteTask():
         self.makevtt(spritefile,numfiles,coords,gridsize,self.getVTTFile(), thumbRate=thumbRate)
 
     def addLogging(self):
-        global logSetup
-        if not logSetup:
+        if not self.logSetup:
             basescript = os.path.splitext(os.path.basename(sys.argv[0]))[0]
             LOG_FILENAME = 'logs/%s.%s.log'% (basescript,datetime.datetime.now().strftime("%Y%m%d_%H%M%S")) #new log per job so we can run this program concurrently
             #CONSOLE AND FILE LOGGING
             print("Writing log to: %s" % LOG_FILENAME)
             if not os.path.exists('logs'):
                 os.makedirs('logs')
-            logger.setLevel(logging.DEBUG)
+            self.logger.setLevel(logging.DEBUG)
             handler = logging.FileHandler(LOG_FILENAME)
-            logger.addHandler(handler)
+            self.logger.addHandler(handler)
             ch = logging.StreamHandler()
             ch.setLevel(logging.DEBUG)
-            logger.addHandler(ch)
-            logSetup = True #set flag so we don't reset log in same batch
+            self.logger.addHandler(ch)
+            self.logSetup = True #set flag so we don't reset log in same batch
 
 
 if __name__ == "__main__":
-    if not len(sys.argv) > 1 :
+    if not len(sys.argv) > 1:
         sys.exit("Please pass the full path or url to the video file for which to create thumbnails.")
+
+    task = SpriteTask(sys.argv[1])
+
     if len(sys.argv) == 3:
-        THUMB_OUTDIR = sys.argv[2]
-        
-    USE_SIPS = False
-    videofile = sys.argv[1]
-    task = SpriteTask(videofile)
+        task.thumb_outdir = sys.argv[2]
+
+    task.use_sips = False
     task.run()

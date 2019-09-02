@@ -2,6 +2,7 @@
 
 import json
 import argparse
+import subprocess
 import os
 
 import storage
@@ -35,6 +36,7 @@ parser.add_argument("--resolution", type=int, default=-1)
 parser.add_argument("--download", action="store_true")
 parser.add_argument("--upload", action="store_true")
 parser.add_argument("--delete-offline", action="store_true")
+parser.add_argument("--gen-thumbs", action="store_true")
 
 args = parser.parse_args()
 

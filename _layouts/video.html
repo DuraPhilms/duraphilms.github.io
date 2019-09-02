@@ -56,7 +56,7 @@
 <script src="/assets/js/videojs.youtube.js"></script>
 <script src="/assets/js/videojs.hotkeys.js"></script>
 <script src="/assets/js/videojs.titleoverlay.js"></script>
-<script src="/assets/js/videojs-vtt-thumbnails.min.js"></script>
+<script src="/assets/js/videojs.vtt-thumbnails.min.js"></script>
 <script>
     videojs("player", {}, function() {
         var player = this;
@@ -82,7 +82,7 @@
     });
 
     videojs('player').vttThumbnails({
-        src: "/thumbs/{{ playlist.name }}_{{ strpart }}.vtt"
+        src: "http://localhost:4000/thumbs/HPudPvA_Outtakes_vtt/HPudPvA_Outtakes_thumbs.vtt"
     });
 </script>
 
