@@ -13,6 +13,7 @@ import plugins.openload
 import plugins.twitch
 import plugins.vimeo
 import plugins.youtube
+import plugins.dummy
 
 SYNCHROLOAD_PLUGINS = {
     "archive": plugins.archive,
@@ -21,11 +22,12 @@ SYNCHROLOAD_PLUGINS = {
     "openload": plugins.openload,
     "twitch": plugins.twitch,
     "vimeo": plugins.vimeo,
-    "youtube": plugins.youtube
+    "youtube": plugins.youtube,
+    
+    "dummy": plugins.dummy
 }
 
 parser = argparse.ArgumentParser(description='Synchronize ')
-parser.add_argument("--insert", action="store_true", help='Adds a new video to the database')
 parser.add_argument("--part", type=int, default=-1)
 parser.add_argument("--playlist", type=str)
 parser.add_argument("--hoster", type=str, default="youtube")
@@ -35,144 +37,113 @@ parser.add_argument("--delete-offline", action="store_true")
 
 args = parser.parse_args()
 
+db = storage.Database()
+
 def pluginByName(pluginName):
     return SYNCHROLOAD_PLUGINS[pluginName]
 
-def selectPlaylist():
-    i = 0
-    for x in storage.getPlaylistTitles():
-        i += 1
-        print("{}: {}".format(str(i), x))
-
-    playlistId = -1
-    while playlistId < 0 or playlistId > i:
-        try:
-            playlistId = int(input("Select the playlist [1-{}]: ".format(i)))
-        except ValueError:
-            pass
-
-    return playlistId - 1
-
-def selectPart():
-    partnumber = -1
-    while partnumber < 0:
-        try:
-            partnumber = int(input("Part number: "))
-        except ValueError:
-            pass
-    return partnumber
-
-def selectVideoVersion():
-    i = 0
-    for x in storage.VIDEO_VERSIONS:
-        i += 1
-        print("{}: {}".format(str(i), x))
-
-    version = -1
-    while version < 0 or version > i:
-        try:
-            version = int(input("Select the version [1-{}]: ".format(i)))
-        except ValueError:
-            pass
-
-    return storage.VIDEO_VERSIONS[version - 1]
-
-def selectHosterIds():
-    hosters = {}
-
-    for hoster in ["youtube", "archive", "openload"]:
-        videoId = input("Video ID on {}: ".format(hoster))
-        if videoId:
-            version = selectVideoVersion()
-            hosters[hoster] = {"id": videoId, "version": version}
-
-    return hosters
-
-def check_availability(upload, playlistId, part):
-    plugin = SYNCHROLOAD_PLUGINS[upload["hoster"]]
-    print("[check online] Checking availability for {} {} on {} ({}) ...".format(storage.getPlaylistName(playlistId), int(part), plugin.HOSTER_NAME, upload["id"]), end="")
-    if not downloader.check_availability(plugin.linkFromId(upload["id"])):
+def check_availability(upload, playlist, part):
+    plugin = SYNCHROLOAD_PLUGINS[upload.hoster]
+    print("[check online] Checking availability for {} {} on {} ({}) ...".format(playlist.name, part, plugin.HOSTER_NAME, upload.id), end="")
+    if not downloader.check_availability(plugin.linkFromId(upload.id)):
         print(" [FAIL] - Removing!")
         storage.removeVideoId(playlistId, part, upload["id"])
     else:
         print(" [OK]")
 
-def check_file_extension(basename, extension):
-    if os.path.isfile(basename + "." + extension):
-        return basename + "." + extension
+def findLocalVideo(playlist, video, version = None, resolution = None, containers = ["mp4", "webm", "mkv"]):
+    if version:
+        versions = [version]
+    else:
+        versions = ["Remastered", "1080Rmk", "Remake", "Original"]
 
-def find_local_video(playlistId, part):
-    filename = storage.getVideoFilenameBase(playlistId, part, "")
+    if resolution:
+        resolutions = [resolution]
+    else:
+        resolutions = [2160, 1440, 1080, 720, 540, 480, 360, 240, 144]
 
-    versions = []
-    for version in storage.VIDEO_VERSIONS:
-        if version == "Original":
-            versions.append("")
-        else:
-            versions.append("_" + version)
-
+    upload = storage.Upload()
     for version in versions:
-        for ext in ["mp4", "webm", "mkv"]:
-            if check_file_extension(filename + version, ext):
-                return "{}{}.{}".format(filename, version, ext)
+        upload.version = version
+        for resolution in resolutions:
+            upload.resolution = resolution
 
-    print("Could not find local file: " + filename + ".{mp4,webm,mkv}.")
+            base = db.getVideoFilenameBase(video, upload, playlist = playlist)
+
+            for container in containers:
+                fileName = base + "." + container
+                if os.path.isfile(fileName):
+                    return upload, fileName
     return ""
 
-if args.delete_offline:
-    for playlistId in storage.getPlaylistIds():
-        for part in storage.getVideos(playlist = playlistId):
-            for upload in storage.getVideo(playlistId, part)["hosters"]:
-                check_availability(upload, playlistId, part)
+def getPlaylist(playlistName):
+    playlist = db.getPlaylistByName(playlistName)
+    if playlist:
+        return playlist
 
-    storage.saveDatabase()
+    print("No such playlist: " + playlistName)
+    exit(1)
 
-if args.insert:
-    playlist = selectPlaylist()
+def getVideo(playlist, part):
+    video = playlist.getVideo(part)
+    if video:
+        return video
 
-    newVideo = {}
-    newVideo["part"] = selectPart()
-    newVideo["version"] = selectVideoVersion()
-    newVideo["hosters"] = selectHosterIds()
+    print("No such video: " + str(part))
+    exit(1)
 
-    storage.addVideo(playlist, newVideo)
+def getUpload(video, hoster):
+    upload = video.getUpload(args.hoster)
+    if upload:
+        return upload
 
-    storage.saveDatabase()
-    print("Added {} Teil {}!".format(DB[playlist]["title"], newVideo["part"]))
+    print("No upload for this hoster: " + args.hoster)
+    exit(1)
 
-if args.download:
-    video = storage.getVideo(storage.getPlaylistId(args.playlist), args.part)
-    filename = storage.getVideoFilenameBase(storage.getPlaylistId(args.playlist), args.part, args.hoster)
-    plugin = pluginByName(args.hoster)
-    url = plugin.linkFromId(video["hosters"][args.hoster]["id"])
+if __name__ == "__main__":
+    if args.delete_offline:
+        for playlist in db.playlists:
+            for video in playlist.videos:
+                for upload in video.uploads:
+                    check_availability(upload, playlist, video.id)
 
-    if plugin.HOSTER_HAS_DIRECT_LINKS:
-        download = downloader.downloadDirect(url, filename)
-    else:
-        download = downloader.download(url, filename)
+        db.save()
 
-    if download:
-        print("Downloaded video to: {}".format(download))
-    else:
-        print("Could not download video from youtube.")
-        exit(1)
+    if args.download:
+        playlist = getPlaylist(args.playlist)
+        video = getVideo(playlist, args.part)
+        upload = getUpload(video, args.hoster)
 
-if args.upload:
-    filename = find_local_video(storage.getPlaylistId(args.playlist), args.part)
+        plugin = pluginByName(args.hoster)
+        url = plugin.linkFromId(upload.id)
 
-    videoId = ""
-    plugin = pluginByName(args.hoster)
-    if plugin:
-        videoId = plugin.upload(filename)
-    else:
-        print("Could not upload: unknown hoster.")
-        exit(1)
+        filename = db.getVideoFilenameBase(video, upload, playlist = playlist)
 
-    version = filename.split("_")[-1].split(".")[0]
-    if not version in storage.VIDEO_VERSIONS:
-        version = "Original"
+        if plugin.HOSTER_HAS_DIRECT_LINKS:
+            download = downloader.downloadDirect(url, filename)
+        else:
+            download = downloader.download(url, filename)
 
-    if videoId:
-        storage.setVideoId(storage.getPlaylistId(args.playlist), args.part, args.hoster, videoId, version)
+        if download:
+            print("Downloaded video to: {}".format(download))
+        else:
+            print("Could not download video from {}.".format(plugin.HOSTER_NAME))
+            exit(1)
 
-storage.saveDatabase()
+    if args.upload:
+        plugin = pluginByName(args.hoster)
+        if not plugin:
+            print("Could not upload: unknown hoster.")
+            exit(1)
+
+        playlist = getPlaylist(args.playlist)
+        video = getVideo(playlist, args.part)
+        (upload, fileName) = findLocalVideo(playlist, video)
+
+        upload.hoster = args.hoster
+        upload.id = plugin.upload(fileName)
+
+        if upload.id:
+            video.uploads.append(upload)
+
+    db.save()

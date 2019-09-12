@@ -19,19 +19,19 @@
                         "hoster": "twitch",
                         "id": "173846718",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "o9la0a7erwntwxl/HPudPvA_01_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_fhu/HPudPvA_01_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dailymotion",
@@ -56,19 +56,19 @@
                         "hoster": "twitch",
                         "id": "224047707",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "8l0g2v6s4uixpr7/HPudPvA_02_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_k1m/HPudPvA_02_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dailymotion",
@@ -93,19 +93,19 @@
                         "hoster": "twitch",
                         "id": "385542997",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "zda15eebz4ppdim/HPudPvA_03_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_03_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dailymotion",
@@ -130,50 +130,49 @@
                         "hoster": "twitch",
                         "id": "388174461",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "pdfekrnsqhzxc08/HPudPvA_04_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_04_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
             {
                 "id": "5",
                 "date": "2010-02-12",
-                "description": "",
                 "uploads": [
                     {
                         "hoster": "twitch",
                         "id": "155750947",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "giz6oz5tc8mpox4/HPudPvA_05_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "openload",
                         "id": "aLbVVer-Hvs",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_05_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
@@ -192,50 +191,49 @@
                         "hoster": "twitch",
                         "id": "156787176",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "zo8ubu4u4picy5k/HPudPvA_06_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_06_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
             {
                 "id": "7",
                 "date": "2010-05-05",
-                "description": "",
                 "uploads": [
                     {
                         "hoster": "twitch",
                         "id": "388174548",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "ee3jufwopqd9uxn/HPudPvA_07_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "openload",
                         "id": "P54OyGOU-Hs",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_07_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
@@ -254,19 +252,19 @@
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_v4y/HPudPvA_08_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "2agurz7mbmzjy3p/HPudPvA_08_1080Rmk.mp4",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "openload",
                         "id": "8Kk41ITDm1Q",
                         "version": "1080Rmk",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
@@ -452,7 +450,6 @@
             {
                 "id": "14",
                 "date": "2010-12-31",
-                "description": "",
                 "uploads": [
                     {
                         "hoster": "archive",
@@ -577,7 +574,6 @@
             {
                 "id": "4",
                 "date": "2011-10-07",
-                "description": "",
                 "uploads": [
                     {
                         "hoster": "youtube",
@@ -625,6 +621,24 @@
                     {
                         "hoster": "dropbox",
                         "id": "731xo3dxuwwet8u/HPudOdP_05.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "randooomid",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "randooomid",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "randooomid",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -750,25 +764,25 @@
                         "hoster": "twitch",
                         "id": "385699812",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_09.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "klqsbh6nvckv6mj/HPudOdP_09.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "openload",
                         "id": "vF3CoGV0LVE",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
@@ -781,62 +795,61 @@
                         "hoster": "youtube",
                         "id": "IrDY1qGAJGw",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "twitch",
                         "id": "385699829",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_10.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "ay9zwxwku6efwqo/HPudOdP_10.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "openload",
                         "id": "x2HgaZ8hlwQ",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
             {
                 "id": "11",
                 "date": "2014-12-30",
-                "description": "",
                 "uploads": [
                     {
                         "hoster": "twitch",
                         "id": "385699853",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_11.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "q8zdkygyekxosa1/HPudOdP_11.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "openload",
                         "id": "zCxUNx7obA4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
@@ -849,31 +862,31 @@
                         "hoster": "youtube",
                         "id": "r90wHohn3_A",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "twitch",
                         "id": "385699883",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_12.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "l2jbrrra9zrpf60/HPudOdP_12.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "openload",
                         "id": "JNmt41-3-0Y",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
@@ -886,31 +899,31 @@
                         "hoster": "youtube",
                         "id": "CNqeEqktQHo",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "twitch",
                         "id": "385916775",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_13.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "8sa4w8uztkvbhws/HPudOdP_13.mp4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "openload",
                         "id": "SOOtHnBrGs4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
@@ -947,89 +960,89 @@
             {
                 "id": "6",
                 "date": "2019-07-25",
-                "description": "Ihr wolltet ein Lebenszeichen, ihr bekommt eins!<br/>Jetzt neu: http://www.duraphilms.tk/<br/>Dort findet ihr all unsere Synchroteile inkl. HD-Remake von PvA (Gro\u00dfen Dank an LNJ & JBB!).",
                 "title": "Orden des Penners - News & Trailer zu Teil 14",
+                "description": "Ihr wolltet ein Lebenszeichen, ihr bekommt eins!<br/>Jetzt neu: http://www.duraphilms.tk/<br/>Dort findet ihr all unsere Synchroteile inkl. HD-Remake von PvA (Gro\u00dfen Dank an LNJ & JBB!).",
                 "filename": "Duraphilms_OdP_News_Trailer_zu_Teil_14",
                 "uploads": [
                     {
                         "hoster": "youtube",
                         "id": "6aH1Q3k-7L4",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "j6gu9ghuf1uhh79/Duraphilms_OdP_News_Trailer_zu_Teil_14.webm",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraPhilmsSynchro_9db/Duraphilms_OdP_News_Trailer_zu_Teil_14.webm",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
             {
                 "id": "5",
                 "date": "2017-04-11",
-                "description": "Nach langer Zeit melden wir uns mit frohen Nachrichten zur\u00fcck:<br/>Unsere Teile sind (warum auch immer) gr\u00f6\u00dftenteils wieder freigeschaltet. Und ja, bald gehts es dann auch endlich weiter mit Teil 13^^",
                 "title": "Wir sind wieder da! Duraphilms - Die Ank\u00fcndigung des Lebenslebens",
+                "description": "Nach langer Zeit melden wir uns mit frohen Nachrichten zur\u00fcck:<br/>Unsere Teile sind (warum auch immer) gr\u00f6\u00dftenteils wieder freigeschaltet. Und ja, bald gehts es dann auch endlich weiter mit Teil 13^^",
                 "filename": "Duraphilms_Die_Ankuendigung_des_Lebenslebens",
                 "uploads": [
                     {
                         "hoster": "youtube",
                         "id": "hVVokdYUAgI",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "96lwcon0vxm6mou/Duraphilms_Die_Ankuendigung_des_Lebenslebens.webm",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraPhilmsSynchro_yr1/Duraphilms_Die_Ankuendigung_des_Lebenslebens.webm",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
             {
                 "id": "4",
                 "date": "2015-07-04",
-                "description": "Update: Download jetzt inklusive Teil 12!<br/>Hier endlich die kleine \"\u00dcberraschung\", die wir bereits mal erw\u00e4hnt haben^^ Auf vielseitigen Wunsch hin haben wir uns dazu entschieden, euch alle Teile von Orden des Penners und Penner von Alcatraz wieder zur Verf\u00fcgung zu stellen.<br/><br/>PvA 1-14 inkl. Outtakes findet ihr hier:<br/>https://mega.nz/#!L1IXDRCQ!5U3K8SA_Y4NgC_tTJtFTs3j3ZI-c5RZUobE1wniL3xo<br/><br/>OdP 1-12 inkl. Abo-Special + Ank\u00fcndigung des Todestodes:<br/>https://mega.nz/#!LsRUnBwT!RIxNRlQ8yUMDoQaNAC5I-9c9y4l0DKAckH1XlIcezmU<br/><br/>F\u00fcr Leute mit einem nicht ganz so schnellen Anschluss hier nochmal OdP 1-11 etwas kompakter, die Qualit\u00e4t der Teile entspricht der jeweiligen Youtube-Fassung (Vielen Dank an Unknown6656!).<br/>https://mega.nz/#!esYR1DoR!7deKZNASRhfBJAaK9MHGj-Xfu-RgfvOjgtCLeZ_bJVg<br/><br/>Weitere Teile und/oder Hoster werden bei Bedarf hinzugef\u00fcgt, ihr k\u00f6nnt uns auch gerne weitere Links zukommen lassen :)<br/><br/>Zum Streamen derzeit:<br/>http://softwareinternational.de/duraphilms/ (Gro\u00dfes Dankesch\u00f6n an Unknown6656!)<br/><br/>Wir w\u00fcnschen Viel Spa\u00df!",
                 "title": "Duraphilms - Die Ank\u00fcndigung des Todestodes",
+                "description": "Update: Download jetzt inklusive Teil 12!<br/>Hier endlich die kleine \"\u00dcberraschung\", die wir bereits mal erw\u00e4hnt haben^^ Auf vielseitigen Wunsch hin haben wir uns dazu entschieden, euch alle Teile von Orden des Penners und Penner von Alcatraz wieder zur Verf\u00fcgung zu stellen.<br/><br/>PvA 1-14 inkl. Outtakes findet ihr hier:<br/>https://mega.nz/#!L1IXDRCQ!5U3K8SA_Y4NgC_tTJtFTs3j3ZI-c5RZUobE1wniL3xo<br/><br/>OdP 1-12 inkl. Abo-Special + Ank\u00fcndigung des Todestodes:<br/>https://mega.nz/#!LsRUnBwT!RIxNRlQ8yUMDoQaNAC5I-9c9y4l0DKAckH1XlIcezmU<br/><br/>F\u00fcr Leute mit einem nicht ganz so schnellen Anschluss hier nochmal OdP 1-11 etwas kompakter, die Qualit\u00e4t der Teile entspricht der jeweiligen Youtube-Fassung (Vielen Dank an Unknown6656!).<br/>https://mega.nz/#!esYR1DoR!7deKZNASRhfBJAaK9MHGj-Xfu-RgfvOjgtCLeZ_bJVg<br/><br/>Weitere Teile und/oder Hoster werden bei Bedarf hinzugef\u00fcgt, ihr k\u00f6nnt uns auch gerne weitere Links zukommen lassen :)<br/><br/>Zum Streamen derzeit:<br/>http://softwareinternational.de/duraphilms/ (Gro\u00dfes Dankesch\u00f6n an Unknown6656!)<br/><br/>Wir w\u00fcnschen Viel Spa\u00df!",
                 "filename": "Duraphilms_Die_Ankuendigung_des_Todestodes",
                 "uploads": [
                     {
                         "hoster": "youtube",
                         "id": "uw76l0VnoL0",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
                         "id": "q8s55mjbar8o1ny/Duraphilms_Die_Ankuendigung_des_Todestodes.webm",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     },
                     {
                         "hoster": "archive",
                         "id": "DuraPhilmsSynchro_q7m/Duraphilms_Die_Ankuendigung_des_Todestodes.webm",
                         "version": "Original",
-                        "resolution": 720
+                        "resolution": 1080
                     }
                 ]
             },
             {
                 "id": "3",
                 "date": "2011-10-24",
-                "description": "Hier das Videospecial anl\u00e4sslich unserer ersten 1000 Abos. Es hat tats\u00e4chlich geklappt, dass ich es noch am gleichen Abend hochladen konnte. Wir hoffen, dass ihr auch zuk\u00fcnftig viel Spa\u00df mit unseren Synchros haben werdet und uns weiterhin unterst\u00fctzt^^ Und immer flei\u00dfig Abspann lesen wenn ihr ein Lied sucht xD",
                 "title": "1000-Abonnenten-Special",
+                "description": "Hier das Videospecial anl\u00e4sslich unserer ersten 1000 Abos. Es hat tats\u00e4chlich geklappt, dass ich es noch am gleichen Abend hochladen konnte. Wir hoffen, dass ihr auch zuk\u00fcnftig viel Spa\u00df mit unseren Synchros haben werdet und uns weiterhin unterst\u00fctzt^^ Und immer flei\u00dfig Abspann lesen wenn ihr ein Lied sucht xD",
                 "filename": "Duraphilms_1000_Abonnenten_Special",
                 "uploads": [
                     {
@@ -1054,10 +1067,10 @@
             },
             {
                 "id": "2",
-                "filename": "HPudPvA_Outtakes_2",
                 "date": "2011-04-02",
                 "title": "Harry Potter und der Penner von Alcatraz Outtakes 2/2",
                 "description": "Und hier ist Teil 2:<br/><br/>Endlich ist es soweit! Die Duraphilms-Fr\u00fchjahrspause ist zu Ende! Als Entsch\u00e4digung f\u00fcr die lange Wartezeit haben wir ein dickes Paket Outtakes zusammengeschnibbelt (insgesamt 20 Min.), dass wir aufgrund des Youtube-Zeitlimits in 2 Teile splitten mussten. Wir hoffen es gef\u00e4llt euch und bevor jemand fragt: Wir arbeiten weiterhin flei\u00dfig an Orden des Penner (\"Gut Ding will Weile haben\")^^",
+                "filename": "HPudPvA_Outtakes_2",
                 "uploads": [
                     {
                         "hoster": "youtube",
@@ -1081,10 +1094,10 @@
             },
             {
                 "id": "1",
-                "filename": "HPudPvA_Outtakes_1",
                 "date": "2011-04-01",
                 "title": "Harry Potter und der Penner von Alcatraz Outtakes 1/2",
                 "description": "Endlich ist es soweit! Die Duraphilms-Fr\u00fchjahrspause ist zu Ende! Als Entsch\u00e4digung f\u00fcr die lange Wartezeit haben wir ein dickes Paket Outtakes zusammengeschnibbelt (insgesamt 20 Min.), dass wir aufgrund des Youtube-Zeitlimits in 2 Teile splitten mussten. Wir hoffen es gef\u00e4llt euch und bevor jemand fragt: Wir arbeiten weiterhin flei\u00dfig an Orden des Penner (\"Gut Ding will Weile haben\")^^",
+                "filename": "HPudPvA_Outtakes_1",
                 "uploads": [
                     {
                         "hoster": "youtube",
