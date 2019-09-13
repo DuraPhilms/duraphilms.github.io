@@ -5,12 +5,18 @@
 {% assign strPrevVideo = page.prevVideo | downcase %}
 
 {% for playlist in site.data.videos %}
+{% if playlist.short == page.playlist %}
+
 {% for video in playlist.videos %}
-{% if video[0] == strpart and playlist.short == page.playlist %}
+{% if video.id == strpart %}
 
+{% assign nextVideoI = forloop.index0 | minus: 1 %}
+{% assign nextVideo = playlist.videos[nextVideoI] %}
+{% assign prevVideoI = forloop.index0 | plus: 1 %}
+{% assign prevVideo = playlist.videos[prevVideoI] %}
 
-{% if video[1].title %}
-{% assign title = video[1].title %}
+{% if video.title %}
+{% assign title = video.title %}
 {% else %}
 {% assign title = playlist.title | append: " Teil " | append: strpart %}
 {% endif %}
@@ -22,7 +28,11 @@
         preload="auto"
         style="width: 100%; height: /*57.8em*/43em;"
         poster="/thumbs/{{ playlist.name }}_{{ strpart }}.jpg" data-setup="{}">
-    <source src="https://archive.org/download/{{ video[1].hosters.archive.id }}">
+{% for upload in video.uploads %}
+{% if upload.hoster == "archive" %}
+    <source src="https://archive.org/download/{{ upload.id }}">
+{% endif %}
+{% endfor %}
 
     <p class="vjs-no-js">
         To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -56,7 +66,7 @@
 <div class="w3-card w3-padding">
 <div class="w3-container w3-cell-row">
     {% if page.prevVideo %}
-        {% assign prevTitle = playlist.videos[strPrevVideo].title %}
+        {% assign prevTitle = prevVideo.title %}
         {% unless prevTitle %}
             {% assign prevTitle = "Teil " | append: strPrevVideo %}
         {% endunless %}
@@ -86,9 +96,9 @@
     </div>
 
     {% if page.nextVideo %}
-        {% assign available_soon = playlist.videos[strNextVideo].available_soon %}
+        {% assign available_soon = nextVideo.available_soon %}
 
-        {% assign nextTitle = playlist.videos[strNextVideo].title %}
+        {% assign nextTitle = nextVideo.title %}
         {% unless nextTitle %}
             {% assign nextTitle = "Teil " | append: strNextVideo %}
         {% endunless %}
@@ -120,33 +130,34 @@
 
 <h1>{{ title }}</h1>
 
-<p class="w3-padding">
-    {% for hoster in video[1].hosters %}
-    {% if hoster[1].id %}
-    {% if hoster[0] == "youtube" %}
-    <a class="w3-btn w3-red w3-margin-left w3-margin-right" target="_blank" href="https://youtube.com/watch?v={{ hoster[1].id }}">YouTube</a>
-    {% elsif hoster[0] == "twitch" %}
-    <a class="w3-btn w3-purple w3-margin-left w3-margin-right" target="_blank" href="https://www.twitch.tv/videos/{{ hoster[1].id }}">Twitch</a>
-    {% elsif hoster[0] == "vimeo" %}
-    <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://vimeo.com/{{ hoster[1].id }}">Vimeo</a>
-    {% elsif hoster[0] == "archive" %}
-    <a class="w3-btn w3-black w3-margin-left w3-margin-right" target="_blank" href="https://archive.org/download/{{ hoster[1].id }}">archive.org</a>
-    {% elsif hoster[0] == "dropbox" %}
-    <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://dl.dropboxusercontent.com/s/{{ hoster[1].id }}">Dropbox</a>
+<p class="w3-padding w3-small">
+    {% for upload in video.uploads %}
+    {% if upload.id %}
+    {% if upload.hoster == "youtube" %}
+    <a class="w3-btn w3-red w3-margin-left w3-margin-right" target="_blank" href="https://youtube.com/watch?v={{ upload.id }}">YouTube ({{ upload.resolution }}p)</a>
+    {% elsif upload.hoster == "twitch" %}
+    <a class="w3-btn w3-purple w3-margin-left w3-margin-right" target="_blank" href="https://www.twitch.tv/videos/{{ upload.id }}">Twitch ({{ upload.resolution }}p)</a>
+    {% elsif upload.hoster == "vimeo" %}
+    <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://vimeo.com/{{ upload.id }}">Vimeo ({{ upload.resolution }}p)</a>
+    {% elsif upload.hoster == "archive" %}
+    <a class="w3-btn w3-black w3-margin-left w3-margin-right" target="_blank" href="https://archive.org/download/{{ upload.id }}">archive.org ({{ upload.resolution }}p)</a>
+    {% elsif upload.hoster == "dropbox" %}
+    <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://dl.dropboxusercontent.com/s/{{ upload.id }}">Dropbox ({{ upload.resolution }}p)</a>
     {% elsif hoster[0] == "openload" %}
-    <a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ hoster[1].id }}">openload</a>
+    <a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ upload.id }}">openload ({{ upload.resolution }}p)</a>
     {% endif %}
     {% endif %}
     {% endfor %}
 </p>
 
-<p><b>Veröffentlicht am {{ video[1].date | date_to_string }}</b></p>
+<p><b>Veröffentlicht am {{ video.date | date_to_string }}</b></p>
 
-<p>{{ video[1].description }}</p>
+<p>{{ video.description }}</p>
 </div>
 
 {% endif %}
 {% endfor %}
+{% endif %}
 {% endfor %}
 
 {% include footer.html %}

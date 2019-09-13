@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import json
 import shutil
 import os
@@ -15,69 +17,159 @@ VIDEO_VERSIONS = [
 with open(DATA_LOCATION) as f:
     DB = json.load(f)
 
-def getPlaylistIds():
-    return range(len(DB))
+class Upload():
+    hoster = ""
+    id = ""
+    version = "Original"
+    resolution = -1
 
-def getPlaylistsNames():
-    names = []
+    def __init__(self, structs = None):
+        if structs:
+            self.hoster = structs["hoster"]
+            self.id = structs["id"]
+            self.version = structs["version"]
+            self.resolution = structs["resolution"]
 
-    for p in DB:
-        names.append(p["name"])
+    def toJsonSerializable(self) -> dict:
+        output = {}
+        output["hoster"] = self.hoster
+        output["id"] = self.id
+        output["version"] = self.version
+        output["resolution"] = self.resolution
+        return output
 
-    return names
+class Video():
+    id = ""
+    available_soon = False
+    date = ""
+    title = ""
+    description = ""
+    filename = ""
+    uploads = []
 
-def getPlaylistsTitles():
-    names = []
+    def __init__(self, structs = None):
+        if structs:
+            self.id = structs["id"]
+            if "available_soon" in structs:
+                self.available_soon = bool(structs["available_soon"])
+            if "date" in structs:
+                self.date = structs["date"]
+            if "title" in structs:
+                self.title = structs["title"]
+            if "description" in structs:
+                self.description = structs["description"]
+            if "filename" in structs:
+                self.filename = structs["filename"]
+            self.uploads = []
+            for u in structs["uploads"]:
+                self.uploads.append(Upload(structs = u))
+    
+    def toJsonSerializable(self) -> dict:
+        output = {}
+        output["id"] = self.id
+        if self.available_soon:
+            output["available_soon"] = True
+        if self.date:
+            output["date"] = self.date
+        if self.title:
+            output["title"] = self.title
+        if self.description:
+            output["description"] = self.description
+        if self.filename:
+            output["filename"] = self.filename
+        output["uploads"] = []
+        for u in self.uploads:
+            output["uploads"].append(u.toJsonSerializable())
+        return output
 
-    for p in DB:
-        names.append(p["title"])
-
-    return names
-
-def getPlaylistName(id):
-    return DB[id]["name"]
-
-def getPlaylistId(name):
-    for i in range(len(DB)):
-        if DB[i]["short"] == name or DB[i]["name"] == name:
-            return i
-    return -1
-
-def getVideos(playlist = -1):
-    videos = []
-    if playlist == -1:
-        for playlist in DB:
-            for video in playlist["videos"]:
-                videos.append(video)
-    else:
-        for video in DB[playlist]["videos"]:
-            videos.append(video)
-
-    return videos
-
-def getVideo(playlistId, part):
-    return DB[playlistId]["videos"][str(part)]
-
-def addVideo(playlist, newVideo):
-    if not newVideo in DB[playlist]["videos"]:
-        DB[playlist]["videos"].append(newVideo)
-
-def setVideoId(playlistId, part, hoster, videoId, version):
-    DB[playlistId]["videos"][str(part)]["hosters"][hoster] = {"id": videoId, "version": version}
-
-def removeVideoHoster(playlist, part, hoster):
-    DB[playlist]["videos"][str(part)]["hosters"].pop(hoster, None)
-
-def getVideoFilenameBase(playlistId, part, hoster):
-    video = getVideo(playlistId, part)
-    if "filename" in video and video["filename"]:
-        return video["filename"]
-    else:
-        if not hoster or video["hosters"][hoster]["version"] == "Original":
-            return getPlaylistName(playlistId) + "_{0:0>2}".format(part)
+    def getUpload(self, hoster: str, resolution: int = -1) -> Upload:
+        if resolution > 0:
+            for u in self.uploads:
+                if u.hoster == hoster and u.resolution == resolution:
+                    return u
         else:
-            return getPlaylistName(playlistId) + "_{0:0>2}_".format(part) + video["hosters"][hoster]["version"]
+            for u in self.uploads:
+                if u.hoster == hoster:
+                    return u
 
+class Playlist():
+    title = ""
+    name = ""
+    short = ""
+    videos = []
+
+    def __init__(self, structs = None):
+        if structs:
+            self.title = structs["title"]
+            self.name = structs["name"]
+            self.short = structs["short"]
+            self.videos = []
+            for v in structs["videos"]:
+                self.videos.append(Video(structs = v))
+    
+    def toJsonSerializable(self) -> dict:
+        output = {}
+        output["title"] = self.title
+        output["name"] = self.name
+        output["short"] = self.short
+        output["videos"] = []
+        for v in self.videos:
+            output["videos"].append(v.toJsonSerializable())
+        return output
+
+    def getVideo(self, id: int):
+        for v in self.videos:
+            if int(v.id) == id:
+                return v
+
+class Database():
+    playlists = []
+
+    def __init__(self, filepath: str = DATA_LOCATION):
+        self.filepath = filepath
+        with open(self.filepath) as f:
+            data = json.load(f)
+
+        self.playlists = []
+        for p in data:
+            self.playlists.append(Playlist(structs = p))
+    
+    def toJsonSerializable(self) -> list:
+        output = []
+        for p in self.playlists:
+            output.append(p.toJsonSerializable())
+        return output
+
+    def save(self):
+        with open(self.filepath, 'w') as f:
+            json.dump(self.toJsonSerializable(), f, indent=4)
+
+    def getPlaylistByName(self, name: str):
+        for p in self.playlists:
+            if p.short == name or p.name == name:
+                return p
+    
+    def getVideoFilenameBase(self, video, upload, playlist = None):
+        name = ""
+        if video.filename:
+            name = video.filename
+        else:
+            name = playlist.name + "_" + "{0:0>2}".format(int(video.id))
+
+        if upload.version and upload.version != "Original":
+            name += "_" + upload.version
+
+        if upload.resolution:
+            name += "." + str(upload.resolution) + "p"
+
+        return name
+
+if __name__ == "__main__":
+    db = Database()
+    print(db.toJsonSerializable())
+    db.save()
+
+"""
 def writePlaylist(playlist):
     f = open(
         COLLECTIONS_PLAYLISTS_LOCATION + playlist["short"] + ".md",
@@ -130,8 +222,4 @@ def writeCollections():
         writePlaylist(playlist)
         for video in playlist["videos"]:
             writeVideo(playlist, video)
-
-def saveDatabase():
-    with open(DATA_LOCATION, 'w') as f:
-        json.dump(DB, f, indent=4)
-    writeCollections()
+"""

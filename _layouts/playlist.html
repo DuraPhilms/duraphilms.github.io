@@ -8,50 +8,50 @@
 
 {% for video in playlist.videos %}
 <div class="w3-card w3-margin w3-animate-opacity" style="height: 11.3em;">
-{% unless video[1].available_soon %}
-    <a class="w3-left" href="/{{ playlist.short }}/{{ video[0] | prepend: '00' | slice: -2, 2 }}">
+{% unless video.available_soon %}
+    <a class="w3-left" href="/{{ playlist.short }}/{{ video.id | prepend: '00' | slice: -2, 2 }}">
 {% endunless %}
         <div class="w3-display-container w3-left w3-margin-right" style="width: 20em; height: 11.3em; background: #000000;">
-            <img class="w3-display-middle" style="width: 20em;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video[0] }}.small.jpg">
+            <img class="w3-display-middle" style="width: 20em;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video.id }}.small.jpg">
         </div>
-{% unless video[1].available_soon %}
+{% unless video.available_soon %}
     </a>
 {% endunless %}
 
     <div class="w3-margin w3-padding">
-{% unless video[1].available_soon %}
-        <a href="/{{ playlist.short }}/{{ video[0] | prepend: '00' | slice: -2, 2 }}">
+{% unless video.available_soon %}
+        <a href="/{{ playlist.short }}/{{ video.id | prepend: '00' | slice: -2, 2 }}">
 {% endunless %}
 
-{% if video[1].title %}
-            <h3>{{ video[1].title }}</h3>
+{% if video.title %}
+            <h3>{{ video.title }}</h3>
 {% else %}
-            <h3>Teil {{ video[0] }}</h3>
+            <h3>Teil {{ video.id }}</h3>
 {% endif %}
 
-{% unless video[1].available_soon %}
+{% unless video.available_soon %}
         </a>
 {% endunless %}
-        <small style="float: right;">{{ video[1].date | date_to_string }}</small>
+        <small style="float: right;">{{ video.date | date_to_string }}</small>
 
-{% if video[1].available_soon %}
+{% if video.available_soon %}
         <i><h5>Demnächst™ verfügbar</h5></i>
 {% else %}
         <p class="w3-small">
-            {% for hoster in video[1].hosters %}
-            {% if hoster[1].id %}
-            {% if hoster[0] == "youtube" %}
-            <a class="w3-btn w3-red w3-margin-left w3-margin-right" target="_blank" href="https://youtube.com/watch?v={{ hoster[1].id }}">YouTube</a>
-            {% elsif hoster[0] == "twitch" %}
-            <a class="w3-btn w3-purple w3-margin-left w3-margin-right" target="_blank" href="https://www.twitch.tv/videos/{{ hoster[1].id }}">Twitch</a>
-            {% elsif hoster[0] == "vimeo" %}
-            <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://vimeo.com/{{ hoster[1].id }}">Vimeo</a>
-            {% elsif hoster[0] == "archive" %}
-            <a class="w3-btn w3-black w3-margin-left w3-margin-right" target="_blank" href="https://archive.org/download/{{ hoster[1].id }}">archive.org</a>
-            {% elsif hoster[0] == "dropbox" %}
-            <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://dl.dropboxusercontent.com/s/{{ hoster[1].id }}">Dropbox</a>
-            {% elsif hoster[0] == "openload" %}
-            <a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ hoster[1].id }}">openload</a>
+            {% for upload in video.uploads %}
+            {% if upload.id %}
+            {% if upload.hoster == "youtube" %}
+            <a class="w3-btn w3-red w3-margin-left w3-margin-right" target="_blank" href="https://youtube.com/watch?v={{ upload.id }}">YouTube ({{ upload.resolution }}p)</a>
+            {% elsif upload.hoster == "twitch" %}
+            <a class="w3-btn w3-purple w3-margin-left w3-margin-right" target="_blank" href="https://www.twitch.tv/videos/{{ upload.id }}">Twitch ({{ upload.resolution }}p)</a>
+            {% elsif upload.hoster == "vimeo" %}
+            <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://vimeo.com/{{ upload.id }}">Vimeo ({{ upload.resolution }}p)</a>
+            {% elsif upload.hoster == "archive" %}
+            <a class="w3-btn w3-black w3-margin-left w3-margin-right" target="_blank" href="https://archive.org/download/{{ upload.id }}">archive.org ({{ upload.resolution }}p)</a>
+            {% elsif upload.hoster == "dropbox" %}
+            <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://dl.dropboxusercontent.com/s/{{ upload.id }}">Dropbox ({{ upload.resolution }}p)</a>
+            {% elsif upload.hoster == "openload" %}
+            <a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ upload.id }}">openload ({{ upload.resolution }}p)</a>
             {% endif %}
             {% endif %}
             {% endfor %}
