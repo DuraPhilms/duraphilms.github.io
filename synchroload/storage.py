@@ -92,6 +92,9 @@ class Video():
                 if u.hoster == hoster:
                     return u
 
+    def removeUpload(self, uploadId):
+        self.uploads = [u for u in self.uploads if u.id != uploadId]
+
 class Playlist():
     title = ""
     name = ""

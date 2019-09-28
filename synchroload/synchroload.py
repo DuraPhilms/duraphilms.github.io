@@ -42,12 +42,12 @@ db = storage.Database()
 def pluginByName(pluginName):
     return SYNCHROLOAD_PLUGINS[pluginName]
 
-def check_availability(upload, playlist, part):
+def check_availability(video, upload, playlist, part):
     plugin = SYNCHROLOAD_PLUGINS[upload.hoster]
     print("[check online] Checking availability for {} {} on {} ({}) ...".format(playlist.name, part, plugin.HOSTER_NAME, upload.id), end="")
     if not downloader.check_availability(plugin.linkFromId(upload.id)):
         print(" [FAIL] - Removing!")
-        storage.removeVideoId(playlistId, part, upload["id"])
+        video.removeUpload(upload.id)
     else:
         print(" [OK]")
 
@@ -105,7 +105,7 @@ if __name__ == "__main__":
         for playlist in db.playlists:
             for video in playlist.videos:
                 for upload in video.uploads:
-                    check_availability(upload, playlist, video.id)
+                    check_availability(video, upload, playlist, video.id)
 
         db.save()
 
