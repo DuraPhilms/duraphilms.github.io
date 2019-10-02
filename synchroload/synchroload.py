@@ -55,7 +55,7 @@ def findLocalVideo(playlist, video, version = None, resolution = None, container
     if version:
         versions = [version]
     else:
-        versions = ["Remastered", "1080Rmk", "Remake", "Original"]
+        versions = storage.VIDEO_VERSIONS
 
     if resolution:
         resolutions = [resolution]

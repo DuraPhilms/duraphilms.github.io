@@ -9,7 +9,7 @@ COLLECTIONS_PLAYLISTS_LOCATION = "_playlists/"
 COLLECTIONS_VIDEOS_LOCATION = "_videos/"
 
 VIDEO_VERSIONS = [
-    "1080Rmk",
+    "Remastered",
     "Remake",
     "Original",
 ]
