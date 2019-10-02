@@ -548,6 +548,12 @@
                         "id": "qgxkrnm2xuy0kjk/HPudOdP_01.mp4",
                         "version": "Original",
                         "resolution": 720
+                    },
+                    {
+                        "hoster": "openload",
+                        "id": "BNsGOcBFi1I",
+                        "version": "Original",
+                        "resolution": 720
                     }
                 ]
             },
@@ -573,6 +579,12 @@
                         "id": "coci7ejt4fujukj/HPudOdP_02.mp4",
                         "version": "Original",
                         "resolution": 720
+                    },
+                    {
+                        "hoster": "openload",
+                        "id": "TdkqbWwlWlQ",
+                        "version": "Original",
+                        "resolution": 720
                     }
                 ]
             },
@@ -596,6 +608,12 @@
                     {
                         "hoster": "dropbox",
                         "id": "d0h18oo002nj3kk/HPudOdP_03.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "openload",
+                        "id": "9bo5uiP_pO4",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -628,6 +646,12 @@
                         "id": "gquwxwdyb4xnx7k/HPudOdP_04.mp4",
                         "version": "Original",
                         "resolution": 720
+                    },
+                    {
+                        "hoster": "openload",
+                        "id": "i6XU2EV5nxM",
+                        "version": "Original",
+                        "resolution": 720
                     }
                 ]
             },
@@ -651,6 +675,12 @@
                     {
                         "hoster": "dropbox",
                         "id": "731xo3dxuwwet8u/HPudOdP_05.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "openload",
+                        "id": "Af5Gy4YnWBQ",
                         "version": "Original",
                         "resolution": 720
                     }
