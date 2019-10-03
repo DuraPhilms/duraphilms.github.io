@@ -50,8 +50,6 @@
 
 {% if upload.hoster == "archive" %}
     <source src="https://archive.org/download/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (archive)" {{ selected }}>
-{% elsif upload.hoster == "dropbox" %}
-    <source src="https://dl.dropboxusercontent.com/s/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (dropbox)" {{ selected }}>
 {% endif %}
 {% endfor %}
 
