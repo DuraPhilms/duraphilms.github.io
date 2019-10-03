@@ -10,10 +10,17 @@
 {% for video in playlist.videos %}
 {% if video.id == strpart %}
 
+{% if playlist.newest_first %}
 {% assign nextVideoI = forloop.index0 | minus: 1 %}
 {% assign nextVideo = playlist.videos[nextVideoI] %}
 {% assign prevVideoI = forloop.index0 | plus: 1 %}
 {% assign prevVideo = playlist.videos[prevVideoI] %}
+{% else %}
+{% assign nextVideoI = forloop.index0 | plus: 1 %}
+{% assign nextVideo = playlist.videos[nextVideoI] %}
+{% assign prevVideoI = forloop.index0 | minus: 1 %}
+{% assign prevVideo = playlist.videos[prevVideoI] %}
+{% endif %}
 
 {% if video.title %}
 {% assign title = video.title %}

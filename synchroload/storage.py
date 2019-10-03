@@ -100,12 +100,15 @@ class Playlist():
     name = ""
     short = ""
     videos = []
+    newest_first = False
 
     def __init__(self, structs = None):
         if structs:
             self.title = structs["title"]
             self.name = structs["name"]
             self.short = structs["short"]
+            if "newest_first" in structs:
+                self.newest_first = bool(structs["newest_first"])
             self.videos = []
             for v in structs["videos"]:
                 self.videos.append(Video(structs = v))
@@ -115,6 +118,8 @@ class Playlist():
         output["title"] = self.title
         output["name"] = self.name
         output["short"] = self.short
+        if self.newest_first:
+            output["newest_first"] = True
         output["videos"] = []
         for v in self.videos:
             output["videos"].append(v.toJsonSerializable())
@@ -146,6 +151,7 @@ class Database():
     def save(self):
         with open(self.filepath, 'w') as f:
             json.dump(self.toJsonSerializable(), f, indent=4)
+            f.write("\n")
 
     def getPlaylistByName(self, name: str):
         for p in self.playlists:

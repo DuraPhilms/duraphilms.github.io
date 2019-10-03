@@ -992,6 +992,7 @@
         "title": "Duraphilms News & Specials",
         "name": "Duraphilms",
         "short": "duraphilms",
+        "newest_first": true,
         "videos": [
             {
                 "id": "7",
