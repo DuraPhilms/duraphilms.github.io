@@ -332,6 +332,18 @@
                         "id": "YIhNXuUBRRQ",
                         "version": "Original",
                         "resolution": 720
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "zviy45ag6txcofz/HPudPvA_09_Remastered.1080p.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro_cqv/HPudPvA_09_Remastered.1080p.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
                     }
                 ]
             },
