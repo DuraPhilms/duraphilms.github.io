@@ -82,7 +82,7 @@ class Video():
             output["uploads"].append(u.toJsonSerializable())
         return output
 
-    def getUpload(self, hoster: str, resolution: int = -1) -> Upload:
+    def getUpload(self, hoster: str, resolution: int) -> Upload:
         if resolution > 0:
             for u in self.uploads:
                 if u.hoster == hoster and u.resolution == resolution:

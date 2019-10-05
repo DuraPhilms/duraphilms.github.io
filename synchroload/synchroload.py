@@ -31,6 +31,7 @@ parser = argparse.ArgumentParser(description='Synchronize ')
 parser.add_argument("--part", type=int, default=-1)
 parser.add_argument("--playlist", type=str)
 parser.add_argument("--hoster", type=str, default="youtube")
+parser.add_argument("--resolution", type=int, default=-1)
 parser.add_argument("--download", action="store_true")
 parser.add_argument("--upload", action="store_true")
 parser.add_argument("--delete-offline", action="store_true")
@@ -92,8 +93,8 @@ def getVideo(playlist, part):
     print("No such video: " + str(part))
     exit(1)
 
-def getUpload(video, hoster):
-    upload = video.getUpload(args.hoster)
+def getUpload(video, hoster, resolution):
+    upload = video.getUpload(args.hoster, args.resolution)
     if upload:
         return upload
 
@@ -112,7 +113,7 @@ if __name__ == "__main__":
     if args.download:
         playlist = getPlaylist(args.playlist)
         video = getVideo(playlist, args.part)
-        upload = getUpload(video, args.hoster)
+        upload = getUpload(video, args.hoster, args.resolution)
 
         plugin = pluginByName(args.hoster)
         url = plugin.linkFromId(upload.id)
