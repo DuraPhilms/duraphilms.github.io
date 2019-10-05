@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-import json
 import argparse
-import subprocess
 import os
 
 import storage
@@ -15,6 +13,8 @@ import plugins.twitch
 import plugins.vimeo
 import plugins.youtube
 import plugins.dummy
+
+from makesprites import SpriteTask
 
 SYNCHROLOAD_PLUGINS = {
     "archive": plugins.archive,
@@ -31,12 +31,12 @@ SYNCHROLOAD_PLUGINS = {
 parser = argparse.ArgumentParser(description='Synchronize ')
 parser.add_argument("--part", type=str)
 parser.add_argument("--playlist", type=str)
-parser.add_argument("--hoster", type=str, default="youtube")
+parser.add_argument("--hoster", type=str)
 parser.add_argument("--resolution", type=int, default=-1)
 parser.add_argument("--download", action="store_true")
 parser.add_argument("--upload", action="store_true")
 parser.add_argument("--delete-offline", action="store_true")
-parser.add_argument("--gen-thumbs", action="store_true")
+parser.add_argument("--gen-vtt", action="store_true")
 
 args = parser.parse_args()
 
@@ -77,7 +77,7 @@ def findLocalVideo(playlist, video, version = None, resolution = None, container
                 fileName = base + "." + container
                 if os.path.isfile(fileName):
                     return upload, fileName
-    return ""
+    return "", ""
 
 def getPlaylist(playlistName):
     playlist = db.getPlaylistByName(playlistName)
@@ -148,5 +148,33 @@ if __name__ == "__main__":
 
         if upload.id:
             video.uploads.append(upload)
+
+    if args.gen_vtt:
+        playlist = getPlaylist(args.playlist)
+        video = getVideo(playlist, args.part)
+
+        source = ""
+
+        if args.hoster:
+            upload = getUpload(video, args.hoster, args.resolution)
+
+            plugin = pluginByName(args.hoster)
+            url = plugin.linkFromId(upload.id)
+            source = url
+        else:
+            (upload, fileName) = findLocalVideo(playlist, video)
+            source = fileName
+
+        task = SpriteTask(source)
+        task.vttfile = "thumbs/vtt/{}_{}.vtt".format(playlist.name, video.id)
+        task.spritefile = "thumbs/vtt/{}_{}.jpg".format(playlist.name, video.id)
+        task.thumb_rate_seconds = 5
+        task.thumb_width = 200
+        task.outdir = "/tmp/spritesgen"
+        task.use_sips = False
+        
+        task.makeOutDir("/tmp/spritesgen")
+
+        task.run()
 
     db.save()

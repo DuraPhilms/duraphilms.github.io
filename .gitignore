@@ -3,3 +3,4 @@ env.sh
 Gemfile.lock
 _site/
 __pycache__
+logs/

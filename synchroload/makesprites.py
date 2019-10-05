@@ -31,8 +31,8 @@ class SpriteTask():
     def __init__(self, videofile):
         # Moved from global variables
         self.use_sips = True #True to use sips if using MacOSX (creates slightly smaller sprites), else set to False to use ImageMagick
-        self.thumb_rate_seconds = 5 # every Nth second take a snapshot
-        self.thumb_width = 150 #100-150 is width recommended by JWPlayer; I like smaller files
+        self.thumb_rate_seconds = 7 # every Nth second take a snapshot
+        self.thumb_width = 100 #100-150 is width recommended by JWPlayer; I like smaller files
         self.skip_first = True #True to skip a thumbnail of second 1; often not a useful image, plus JWPlayer doesn't seem to show it anyway, and user knows beginning without needing preview
         self.sprite_name = "sprite.jpg" #jpg is much smaller than png, so using jpg
         self.vttfile_name = "thumbs.vtt"
@@ -51,11 +51,11 @@ class SpriteTask():
         fileprefix,ext = os.path.splitext(basefile_nospeed)
         spritefile = os.path.join(newoutdir,"%s_%s" % (fileprefix,self.sprite_name))
         vttfile = os.path.join(newoutdir,"%s_%s" % (fileprefix,self.vttfile_name))
+
         self.videofile = videofile
         self.vttfile = vttfile
         self.spritefile = spritefile
         self.outdir = newoutdir
-
 
     def getVideoFile(self):
         return self.videofile
@@ -195,7 +195,6 @@ class SpriteTask():
             end  = self.get_time_str(clipend,adjust=adjust)
             clipstart = clipend
             clipend += thumbRate
-            vtt.append("Img %d" % imgnum)
             vtt.append("%s --> %s" % (start,end)) #00:00.000 --> 00:05.000
             vtt.append("%s#xywh=%s" % (basefile,xywh))
             vtt.append("") #Linebreak
@@ -214,7 +213,7 @@ class SpriteTask():
 
     def get_grid_coordinates(self, imgnum,gridsize,w,h):
         """ given an image number in our sprite, map the coordinates to it in X,Y,W,H format"""
-        y = (imgnum - 1)/gridsize
+        y = (imgnum - 1)//gridsize
         x = (imgnum -1) - (y * gridsize)
         imgx = x * w
         imgy =y * h
