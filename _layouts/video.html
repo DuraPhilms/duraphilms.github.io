@@ -66,9 +66,8 @@
     });
 
     videojs("player").vttThumbnails({
-        src: "http://127.0.0.1:4000/thumbs/vtt/{{ playlist.name }}_{{ page.part }}.vtt"
+        src: "/thumbs/vtt/{{ playlist.name }}_{{ page.part }}.vtt"
     });
-    console.log("http://127.0.0.1:4000/thumbs/vtt/{{ playlist.name }}_{{ page.part }}.vtt");
 
     videojs("player").ready(function() {
         this.hotkeys({
