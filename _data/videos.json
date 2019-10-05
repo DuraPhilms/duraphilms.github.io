@@ -1109,5 +1109,44 @@
                 ]
             }
         ]
+    },
+    {
+        "title": "Fan Productions",
+        "name": "fan-productions",
+        "short": "fan",
+        "videos": [
+            {
+                "id": "OdP-Trailer",
+                "date": "2019-04-21",
+                "description": "Nach dem gro\u00dfen YouTube Erfolg mit dem Video \"Lego SHIT 2\" meldet sich Regisseur Dustin K. aka darthdustin und sein grandioses Produktionsteam zur\u00fcck. Diesmal gibt es eine \u00dcberraschung der Extraklasse! Aber seht selbst...",
+                "filename": "HPudOdP_Fan-Trailer",
+                "uploads": [
+                    {
+                        "hoster": "youtube",
+                        "id": "gemxrCSBlu8",
+                        "version": "Original",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "archive",
+                        "id": "Duraphilms_HPudOdP_Trailer/HPudOdP_Fan-Trailer.1080p.mp4",
+                        "version": "Original",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "39g3ptqajiqwv2l/HPudOdP_Fan-Trailer.1080p.mp4",
+                        "version": "Original",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "openload",
+                        "id": "S97ejUR5r1Y",
+                        "version": "Original",
+                        "resolution": 1080
+                    }
+                ]
+            }
+        ]
     }
 ]
