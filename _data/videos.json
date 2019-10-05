@@ -16,14 +16,8 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "o9la0a7erwntwxl/HPudPvA_01_1080Rmk.mp4",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "archive",
-                        "id": "DuraphilmsSynchro_fhu/HPudPvA_01_1080Rmk.mp4",
+                        "hoster": "openload",
+                        "id": "lSGkvasFG44",
                         "version": "Remastered",
                         "resolution": 1080
                     },
@@ -34,8 +28,14 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "openload",
-                        "id": "lSGkvasFG44",
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro_fhu/HPudPvA_01_1080Rmk.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "o9la0a7erwntwxl/HPudPvA_01_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080
                     }
@@ -59,14 +59,8 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "8l0g2v6s4uixpr7/HPudPvA_02_1080Rmk.mp4",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "archive",
-                        "id": "DuraphilmsSynchro_k1m/HPudPvA_02_1080Rmk.mp4",
+                        "hoster": "openload",
+                        "id": "ntDwwoU_CYo",
                         "version": "Remastered",
                         "resolution": 1080
                     },
@@ -77,8 +71,14 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "openload",
-                        "id": "ntDwwoU_CYo",
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro_k1m/HPudPvA_02_1080Rmk.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "8l0g2v6s4uixpr7/HPudPvA_02_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080
                     }
@@ -102,14 +102,8 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "zda15eebz4ppdim/HPudPvA_03_1080Rmk.mp4",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "archive",
-                        "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_03_1080Rmk.mp4",
+                        "hoster": "openload",
+                        "id": "x_kwAz-qyFs",
                         "version": "Remastered",
                         "resolution": 1080
                     },
@@ -120,8 +114,14 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "openload",
-                        "id": "x_kwAz-qyFs",
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_03_1080Rmk.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "zda15eebz4ppdim/HPudPvA_03_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080
                     }
@@ -145,8 +145,8 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "pdfekrnsqhzxc08/HPudPvA_04_1080Rmk.mp4",
+                        "hoster": "openload",
+                        "id": "eo3Aibw8ido",
                         "version": "Remastered",
                         "resolution": 1080
                     },
@@ -157,8 +157,8 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "openload",
-                        "id": "eo3Aibw8ido",
+                        "hoster": "dropbox",
+                        "id": "pdfekrnsqhzxc08/HPudPvA_04_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080
                     }
@@ -175,8 +175,8 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "giz6oz5tc8mpox4/HPudPvA_05_1080Rmk.mp4",
+                        "hoster": "openload",
+                        "id": "eyowNKF9HjQ",
                         "version": "Remastered",
                         "resolution": 1080
                     },
@@ -187,8 +187,8 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "openload",
-                        "id": "eyowNKF9HjQ",
+                        "hoster": "dropbox",
+                        "id": "giz6oz5tc8mpox4/HPudPvA_05_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080
                     }
@@ -212,8 +212,8 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "zo8ubu4u4picy5k/HPudPvA_06_1080Rmk.mp4",
+                        "hoster": "openload",
+                        "id": "vHh4Vd-X9FU",
                         "version": "Remastered",
                         "resolution": 1080
                     },
@@ -224,8 +224,8 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "openload",
-                        "id": "vHh4Vd-X9FU",
+                        "hoster": "dropbox",
+                        "id": "zo8ubu4u4picy5k/HPudPvA_06_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080
                     }
@@ -242,12 +242,6 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "ee3jufwopqd9uxn/HPudPvA_07_1080Rmk.mp4",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
                         "hoster": "openload",
                         "id": "P54OyGOU-Hs",
                         "version": "Remastered",
@@ -256,6 +250,12 @@
                     {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_07_1080Rmk.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "ee3jufwopqd9uxn/HPudPvA_07_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080
                     }
@@ -273,6 +273,12 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "vimeo",
+                        "id": "364508973",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_vz4/HPudPvA_08_Remastered.720p.mp4",
                         "version": "Remastered",
@@ -285,12 +291,6 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "5cuzxottcnlo33g/HPudPvA_08_Remastered.1080p.mp4",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
                         "hoster": "archive",
                         "id": "DuraphilmsSynchro_vz4/HPudPvA_08_Remastered.2160p.webm",
                         "version": "Remastered",
@@ -298,15 +298,15 @@
                     },
                     {
                         "hoster": "dropbox",
+                        "id": "5cuzxottcnlo33g/HPudPvA_08_Remastered.1080p.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "dropbox",
                         "id": "1pqyawow2bru3u3/HPudPvA_08_Remastered.2160p.webm",
                         "version": "Remastered",
                         "resolution": 2160
-                    },
-                    {
-                        "hoster": "vimeo",
-                        "id": "364508973",
-                        "version": "Remastered",
-                        "resolution": 1080
                     }
                 ]
             },
@@ -322,10 +322,28 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "openload",
+                        "id": "On6fDEXnjCU",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
                         "hoster": "archive",
                         "id": "HPudPvAT_file_remake/HPudPvA_T_09.mp4",
                         "version": "Original",
                         "resolution": 720
+                    },
+                    {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro_cqv/HPudPvA_09_Remastered.1080p.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro_cqv/HPudPvA_09_Remastered.2160p.webm",
+                        "version": "Remastered",
+                        "resolution": 2160
                     },
                     {
                         "hoster": "dropbox",
@@ -338,24 +356,6 @@
                         "id": "rwygy2f3kf1b8mn/HPudPvA_09_Remastered.1080p.mp4",
                         "version": "Remastered",
                         "resolution": 1080
-                    },
-                    {
-                        "hoster": "archive",
-                        "id": "DuraphilmsSynchro_cqv/HPudPvA_09_Remastered.1080p.mp4",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "openload",
-                        "id": "On6fDEXnjCU",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "archive",
-                        "id": "DuraphilmsSynchro_cqv/HPudPvA_09_Remastered.2160p.webm",
-                        "version": "Remastered",
-                        "resolution": 2160
                     },
                     {
                         "hoster": "dropbox",
@@ -414,6 +414,12 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "dailymotion",
+                        "id": "x2x19ua",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
                         "hoster": "archive",
                         "id": "HPudPvAT_file_remake/HPudPvA_T_11.mp4",
                         "version": "Original",
@@ -422,12 +428,6 @@
                     {
                         "hoster": "dropbox",
                         "id": "1dveoib6o7noa17/HPudPvA_T_11.mp4",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "dailymotion",
-                        "id": "x2x19ua",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -470,6 +470,12 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "dailymotion",
+                        "id": "x2x19ue",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
                         "hoster": "archive",
                         "id": "HPudPvAT_file_remake/HPudPvA_T_13.mp4",
                         "version": "Original",
@@ -480,12 +486,6 @@
                         "id": "9dmmcsf1v88ymko/HPudPvA_T_13.mp4",
                         "version": "Original",
                         "resolution": 720
-                    },
-                    {
-                        "hoster": "dailymotion",
-                        "id": "x2x19ue",
-                        "version": "Original",
-                        "resolution": 720
                     }
                 ]
             },
@@ -493,6 +493,12 @@
                 "id": "14",
                 "date": "2010-12-31",
                 "uploads": [
+                    {
+                        "hoster": "dailymotion",
+                        "id": "x2x19ug",
+                        "version": "Original",
+                        "resolution": 720
+                    },
                     {
                         "hoster": "archive",
                         "id": "HPudPvAT_file_remake/HPudPvA_T_14.mp4",
@@ -502,12 +508,6 @@
                     {
                         "hoster": "dropbox",
                         "id": "fhqqp1rrvvv6p39/HPudPvA_T_14.mp4",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "dailymotion",
-                        "id": "x2x19ug",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -538,8 +538,8 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "archive",
-                        "id": "HPudOdPT_file_remake/HPudOdP_T_01.mp4",
+                        "hoster": "openload",
+                        "id": "BNsGOcBFi1I",
                         "version": "Original",
                         "resolution": 720
                     },
@@ -550,14 +550,14 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "qgxkrnm2xuy0kjk/HPudOdP_01.mp4",
+                        "hoster": "archive",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_01.mp4",
                         "version": "Original",
                         "resolution": 720
                     },
                     {
-                        "hoster": "openload",
-                        "id": "BNsGOcBFi1I",
+                        "hoster": "dropbox",
+                        "id": "qgxkrnm2xuy0kjk/HPudOdP_01.mp4",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -575,6 +575,12 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "openload",
+                        "id": "TdkqbWwlWlQ",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
                         "hoster": "archive",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_02.mp4",
                         "version": "Original",
@@ -583,12 +589,6 @@
                     {
                         "hoster": "dropbox",
                         "id": "coci7ejt4fujukj/HPudOdP_02.mp4",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "openload",
-                        "id": "TdkqbWwlWlQ",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -606,6 +606,12 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "openload",
+                        "id": "9bo5uiP_pO4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
                         "hoster": "archive",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_03.mp4",
                         "version": "Original",
@@ -614,12 +620,6 @@
                     {
                         "hoster": "dropbox",
                         "id": "d0h18oo002nj3kk/HPudOdP_03.mp4",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "openload",
-                        "id": "9bo5uiP_pO4",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -642,6 +642,12 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "openload",
+                        "id": "i6XU2EV5nxM",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
                         "hoster": "archive",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_04.mp4",
                         "version": "Original",
@@ -650,12 +656,6 @@
                     {
                         "hoster": "dropbox",
                         "id": "gquwxwdyb4xnx7k/HPudOdP_04.mp4",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "openload",
-                        "id": "i6XU2EV5nxM",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -673,6 +673,12 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "openload",
+                        "id": "Af5Gy4YnWBQ",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
                         "hoster": "archive",
                         "id": "HPudOdPT_file_remake/HPudOdP_T_05.mp4",
                         "version": "Original",
@@ -681,12 +687,6 @@
                     {
                         "hoster": "dropbox",
                         "id": "731xo3dxuwwet8u/HPudOdP_05.mp4",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "openload",
-                        "id": "Af5Gy4YnWBQ",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -735,14 +735,14 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "archive",
-                        "id": "HPudOdPT_file_remake/HPudOdP_T_07.mp4",
+                        "hoster": "dailymotion",
+                        "id": "x2z0exh",
                         "version": "Original",
                         "resolution": 720
                     },
                     {
-                        "hoster": "dailymotion",
-                        "id": "x2z0exh",
+                        "hoster": "archive",
+                        "id": "HPudOdPT_file_remake/HPudOdP_T_07.mp4",
                         "version": "Original",
                         "resolution": 720
                     },
@@ -966,14 +966,14 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "j6gu9ghuf1uhh79/Duraphilms_OdP_News_Trailer_zu_Teil_14.webm",
+                        "hoster": "archive",
+                        "id": "DuraPhilmsSynchro_9db/Duraphilms_OdP_News_Trailer_zu_Teil_14.webm",
                         "version": "Original",
                         "resolution": 1080
                     },
                     {
-                        "hoster": "archive",
-                        "id": "DuraPhilmsSynchro_9db/Duraphilms_OdP_News_Trailer_zu_Teil_14.webm",
+                        "hoster": "dropbox",
+                        "id": "j6gu9ghuf1uhh79/Duraphilms_OdP_News_Trailer_zu_Teil_14.webm",
                         "version": "Original",
                         "resolution": 1080
                     }
@@ -993,14 +993,14 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "96lwcon0vxm6mou/Duraphilms_Die_Ankuendigung_des_Lebenslebens.webm",
+                        "hoster": "archive",
+                        "id": "DuraPhilmsSynchro_yr1/Duraphilms_Die_Ankuendigung_des_Lebenslebens.webm",
                         "version": "Original",
                         "resolution": 1080
                     },
                     {
-                        "hoster": "archive",
-                        "id": "DuraPhilmsSynchro_yr1/Duraphilms_Die_Ankuendigung_des_Lebenslebens.webm",
+                        "hoster": "dropbox",
+                        "id": "96lwcon0vxm6mou/Duraphilms_Die_Ankuendigung_des_Lebenslebens.webm",
                         "version": "Original",
                         "resolution": 1080
                     }
@@ -1020,14 +1020,14 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "q8s55mjbar8o1ny/Duraphilms_Die_Ankuendigung_des_Todestodes.webm",
+                        "hoster": "archive",
+                        "id": "DuraPhilmsSynchro_q7m/Duraphilms_Die_Ankuendigung_des_Todestodes.webm",
                         "version": "Original",
                         "resolution": 1080
                     },
                     {
-                        "hoster": "archive",
-                        "id": "DuraPhilmsSynchro_q7m/Duraphilms_Die_Ankuendigung_des_Todestodes.webm",
+                        "hoster": "dropbox",
+                        "id": "q8s55mjbar8o1ny/Duraphilms_Die_Ankuendigung_des_Todestodes.webm",
                         "version": "Original",
                         "resolution": 1080
                     }
@@ -1047,14 +1047,14 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "xam5ke4ufw3vcy2/Duraphilms_1000_Abonnenten_Special.mp4",
+                        "hoster": "archive",
+                        "id": "DuraPhilmsSynchro_g6w/Duraphilms_1000_Abonnenten_Special.mp4",
                         "version": "Original",
                         "resolution": 720
                     },
                     {
-                        "hoster": "archive",
-                        "id": "DuraPhilmsSynchro_g6w/Duraphilms_1000_Abonnenten_Special.mp4",
+                        "hoster": "dropbox",
+                        "id": "xam5ke4ufw3vcy2/Duraphilms_1000_Abonnenten_Special.mp4",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -1074,14 +1074,14 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "79ay311ieyymore/HPudPvA_Outtakes_2.mp4",
+                        "hoster": "archive",
+                        "id": "DuraPhilmsSynchro_oge/HPudPvA_Outtakes_2.mp4",
                         "version": "Original",
                         "resolution": 720
                     },
                     {
-                        "hoster": "archive",
-                        "id": "DuraPhilmsSynchro_oge/HPudPvA_Outtakes_2.mp4",
+                        "hoster": "dropbox",
+                        "id": "79ay311ieyymore/HPudPvA_Outtakes_2.mp4",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -1101,14 +1101,14 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "dropbox",
-                        "id": "sy5lbmyvi8r8eau/HPudPvA_Outtakes_1.webm",
+                        "hoster": "archive",
+                        "id": "DuraPhilmsSynchro_5sn/HPudPvA_Outtakes_1.webm",
                         "version": "Original",
                         "resolution": 720
                     },
                     {
-                        "hoster": "archive",
-                        "id": "DuraPhilmsSynchro_5sn/HPudPvA_Outtakes_1.webm",
+                        "hoster": "dropbox",
+                        "id": "sy5lbmyvi8r8eau/HPudPvA_Outtakes_1.webm",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -1135,6 +1135,12 @@
                         "resolution": 1080
                     },
                     {
+                        "hoster": "openload",
+                        "id": "S97ejUR5r1Y",
+                        "version": "Original",
+                        "resolution": 1080
+                    },
+                    {
                         "hoster": "archive",
                         "id": "Duraphilms_HPudOdP_Trailer/HPudOdP_Fan-Trailer.1080p.mp4",
                         "version": "Original",
@@ -1143,12 +1149,6 @@
                     {
                         "hoster": "dropbox",
                         "id": "39g3ptqajiqwv2l/HPudOdP_Fan-Trailer.1080p.mp4",
-                        "version": "Original",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "openload",
-                        "id": "S97ejUR5r1Y",
                         "version": "Original",
                         "resolution": 1080
                     }

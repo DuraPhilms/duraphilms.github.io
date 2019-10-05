@@ -14,6 +14,16 @@ VIDEO_VERSIONS = [
     "Original",
 ]
 
+HOSTER_SORTING = [
+    "youtube",
+    "twitch",
+    "vimeo",
+    "openload",
+    "dailymotion",
+    "archive",
+    "dropbox"
+]
+
 with open(DATA_LOCATION) as f:
     DB = json.load(f)
 
@@ -37,6 +47,11 @@ class Upload():
         output["version"] = self.version
         output["resolution"] = self.resolution
         return output
+
+    def __lt__(self, other) -> bool:
+        if HOSTER_SORTING.index(self.hoster) != HOSTER_SORTING.index(other.hoster):
+            return HOSTER_SORTING.index(self.hoster) < HOSTER_SORTING.index(other.hoster)
+        return self.resolution < other.resolution
 
 class Video():
     id = ""
@@ -63,7 +78,8 @@ class Video():
             self.uploads = []
             for u in structs["uploads"]:
                 self.uploads.append(Upload(structs = u))
-    
+            self.uploads.sort()
+
     def toJsonSerializable(self) -> dict:
         output = {}
         output["id"] = self.id
