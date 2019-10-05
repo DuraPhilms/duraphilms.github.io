@@ -1,9 +1,9 @@
 ---
 layout: video
-title: Harry Potter und der Penner von Alcatraz Teil 7
+title: "Harry Potter und der Penner von Alcatraz Teil 7"
 permalink: /PvA/07/
-playlist: PvA
-part: 7
-nextVideo: 8
-prevVideo: 6
+playlist: "PvA"
+part: "07"
+nextVideoI: 7
+prevVideoI: 5
 ---

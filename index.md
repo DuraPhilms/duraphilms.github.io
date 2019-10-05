@@ -29,7 +29,7 @@ heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
     <div class="w3-padding w3-animate-opacity">
         <div class="w3-card" style="height: 100%; width: 20em;">
 {% unless video.available_soon %}
-            <a href="/{{ playlist.short }}/{{ video.id | prepend: '00' | slice: -2, 2 }}">
+            <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
                 <div class="w3-display-container" style="width: 100%; height: 11.3em; background: #000000;">
                     <img class="w3-display-middle" style="width: 100%;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video.id }}.small.jpg">
@@ -40,7 +40,7 @@ heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
             <div class="w3-margin">
 
 {% unless video.available_soon %}
-                <a href="/{{ playlist.short }}/{{ video.id | prepend: '00' | slice: -2, 2 }}">
+                <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
 
 {% if video.title %}

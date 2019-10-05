@@ -148,10 +148,74 @@ class Database():
             output.append(p.toJsonSerializable())
         return output
 
+    def writePlaylist(self, playlist):
+        f = open(
+            COLLECTIONS_PLAYLISTS_LOCATION + playlist.short + ".md",
+            "w"
+        )
+        f.write("---\n")
+        f.write("layout: playlist\n")
+        f.write("title: \"{}\"\n".format(playlist.title))
+        f.write("permalink: /{}/\n".format(playlist.short))
+        f.write("playlist: \"{}\"\n".format(playlist.short))
+        f.write("---\n")
+        f.close()
+
+    def writeVideo(self, playlist, video, nextI, lastI):
+        f = open(
+            COLLECTIONS_VIDEOS_LOCATION + playlist.short + "_{}.md".format(video.id),
+            "w"
+        )
+        f.write("---\n")
+        f.write("layout: video\n")
+
+        if video.title:
+            f.write("title: \"{}\"\n".format(video.title))
+        else:
+            f.write("title: \"{} Teil {}\"\n".format(playlist.title, str(int(video.id))))
+        f.write("permalink: /" + playlist.short + "/{}/\n".format(video.id))
+        f.write("playlist: \"{}\"\n".format(playlist.short))
+        f.write("part: \"{}\"\n".format(video.id))
+
+        if nextI >= 0:
+            f.write("nextVideoI: {}\n".format(nextI))
+        if lastI >= 0:
+            f.write("prevVideoI: {}\n".format(lastI))
+
+        f.write("---\n")
+        f.close()
+
+    def writeCollections(self):
+        print("[storage] Cleaning up...")
+        # delete everything
+        for directory in ["_playlists", "_videos"]:
+            shutil.rmtree(directory)
+            os.mkdir(directory)
+
+        print("[storage] Generating collections...")
+        for playlist in self.playlists:
+            self.writePlaylist(playlist)
+            i: int = 0
+            for video in playlist.videos:
+                last: int = -1
+                next: int = -1
+                if i > 0:
+                    last = i - 1
+                if i < len(playlist.videos) - 1:
+                    next = i + 1
+
+                if playlist.newest_first:
+                    self.writeVideo(playlist, video, last, next)
+                else:
+                    self.writeVideo(playlist, video, next, last)
+                i += 1
+
     def save(self):
         with open(self.filepath, 'w') as f:
             json.dump(self.toJsonSerializable(), f, indent=4)
             f.write("\n")
+
+        self.writeCollections()
 
     def getPlaylistByName(self, name: str):
         for p in self.playlists:
@@ -175,60 +239,5 @@ class Database():
 
 if __name__ == "__main__":
     db = Database()
-    print(db.toJsonSerializable())
+    #print(db.toJsonSerializable())
     db.save()
-
-"""
-def writePlaylist(playlist):
-    f = open(
-        COLLECTIONS_PLAYLISTS_LOCATION + playlist["short"] + ".md",
-        "w"
-    )
-    f.write("---\n")
-    f.write("layout: playlist\n")
-    f.write("title: {}\n".format(playlist["title"]))
-    f.write("permalink: /{}/\n".format(playlist["short"]))
-    f.write("playlist: {}\n".format(playlist["short"]))
-    f.write("---\n")
-    f.close()
-
-def writeVideo(playlist, videoId):
-    f = open(
-        COLLECTIONS_VIDEOS_LOCATION + playlist["short"] + "_{0:0>2}.md".format(videoId),
-        "w"
-    )
-    f.write("---\n")
-    f.write("layout: video\n")
-
-    if "title" in playlist["videos"][videoId]:
-        f.write("title: {}\n".format(playlist["videos"][videoId]["title"]))
-    else:
-        f.write("title: {} Teil {}\n".format(playlist["title"], videoId))
-
-    f.write("permalink: /" + playlist["short"] + "/{0:0>2}/\n".format(videoId))
-
-    f.write("playlist: {}\n".format(playlist["short"]))
-
-    f.write("part: {}\n".format(videoId))
-
-    if str(int(videoId) + 1) in playlist["videos"]:
-        f.write("nextVideo: {}\n".format(int(videoId) + 1))
-    if str(int(videoId) - 1) in playlist["videos"]:
-        f.write("prevVideo: {}\n".format(int(videoId) - 1))
-
-    f.write("---\n")
-    f.close()
-
-def writeCollections():
-    print("[storage] Cleaning up...")
-    # delete everything
-    for directory in ["_playlists", "_videos"]:
-        shutil.rmtree(directory)
-        os.mkdir(directory)
-
-    print("[storage] Generating collections...")
-    for playlist in DB:
-        writePlaylist(playlist)
-        for video in playlist["videos"]:
-            writeVideo(playlist, video)
-"""

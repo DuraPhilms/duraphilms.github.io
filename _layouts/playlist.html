@@ -9,7 +9,7 @@
 {% for video in playlist.videos %}
 <div class="w3-card w3-margin w3-animate-opacity" style="height: 11.3em;">
 {% unless video.available_soon %}
-    <a class="w3-left" href="/{{ playlist.short }}/{{ video.id | prepend: '00' | slice: -2, 2 }}">
+    <a class="w3-left" href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
         <div class="w3-display-container w3-left w3-margin-right" style="width: 20em; height: 11.3em; background: #000000;">
             <img class="w3-display-middle" style="width: 20em;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video.id }}.small.jpg">
@@ -20,7 +20,7 @@
 
     <div class="w3-margin w3-padding">
 {% unless video.available_soon %}
-        <a href="/{{ playlist.short }}/{{ video.id | prepend: '00' | slice: -2, 2 }}">
+        <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
 
 {% if video.title %}
