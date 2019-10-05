@@ -28,7 +28,7 @@ SYNCHROLOAD_PLUGINS = {
 }
 
 parser = argparse.ArgumentParser(description='Synchronize ')
-parser.add_argument("--part", type=int, default=-1)
+parser.add_argument("--part", type=str)
 parser.add_argument("--playlist", type=str)
 parser.add_argument("--hoster", type=str, default="youtube")
 parser.add_argument("--resolution", type=int, default=-1)

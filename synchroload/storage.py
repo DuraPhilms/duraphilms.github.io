@@ -125,9 +125,9 @@ class Playlist():
             output["videos"].append(v.toJsonSerializable())
         return output
 
-    def getVideo(self, id: int):
+    def getVideo(self, id):
         for v in self.videos:
-            if int(v.id) == id:
+            if str(v.id) == str(id):
                 return v
 
 class Database():
