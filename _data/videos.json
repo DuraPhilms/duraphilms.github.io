@@ -878,13 +878,19 @@
                     },
                     {
                         "hoster": "archive",
-                        "id": "HPudOdPT_file_remake/HPudOdP_T_12.mp4",
+                        "id": "DuraphilmsSynchro_46f/HPudOdP_12.720p.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro_46f/HPudOdP_12.1080p.mp4",
                         "version": "Original",
                         "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
-                        "id": "l2jbrrra9zrpf60/HPudOdP_12.mp4",
+                        "id": "c8f10smsrmi9wcd/HPudOdP_12.1080p.mp4",
                         "version": "Original",
                         "resolution": 1080
                     }
