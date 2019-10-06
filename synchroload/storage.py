@@ -94,6 +94,7 @@ class Video():
         if self.filename:
             output["filename"] = self.filename
         output["uploads"] = []
+        self.uploads.sort()
         for u in self.uploads:
             output["uploads"].append(u.toJsonSerializable())
         return output

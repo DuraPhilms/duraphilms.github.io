@@ -10,7 +10,8 @@ HOSTER_HAS_DIRECT_LINKS = True
 # get item name from environment; use default if nothing set
 ARCHIVE_ITEM_NAME = os.getenv(
     "ARCHIVE_ITEM_NAME",
-    "DuraphilmsSynchro_" + "".join(random.choices(string.ascii_lowercase + string.digits, k=3))
+    "DuraphilmsSynchro"
+#    "DuraphilmsSynchro_" + "".join(random.choices(string.ascii_lowercase + string.digits, k=3))
 )
 
 # save item name for next execution

@@ -1005,14 +1005,26 @@
                         "resolution": 1080
                     },
                     {
+                        "hoster": "openload",
+                        "id": "MV-7e7rK0H4",
+                        "version": "Original",
+                        "resolution": 1080
+                    },
+                    {
                         "hoster": "archive",
-                        "id": "DuraPhilmsSynchro_yr1/Duraphilms_Die_Ankuendigung_des_Lebenslebens.webm",
+                        "id": "DuraphilmsSynchro/Duraphilms_Die_Ankuendigung_des_Lebenslebens.720p.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro/Duraphilms_Die_Ankuendigung_des_Lebenslebens.1080p.mp4",
                         "version": "Original",
                         "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
-                        "id": "96lwcon0vxm6mou/Duraphilms_Die_Ankuendigung_des_Lebenslebens.webm",
+                        "id": "c7b71399fwfmnou/Duraphilms_Die_Ankuendigung_des_Lebenslebens.1080p.mp4",
                         "version": "Original",
                         "resolution": 1080
                     }
@@ -1032,14 +1044,26 @@
                         "resolution": 1080
                     },
                     {
+                        "hoster": "openload",
+                        "id": "MUebT9J7DJY",
+                        "version": "Original",
+                        "resolution": 1080
+                    },
+                    {
                         "hoster": "archive",
-                        "id": "DuraPhilmsSynchro_q7m/Duraphilms_Die_Ankuendigung_des_Todestodes.webm",
+                        "id": "DuraphilmsSynchro/Duraphilms_Die_Ankuendigung_des_Todestodes.720p.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro/Duraphilms_Die_Ankuendigung_des_Todestodes.1080p.mp4",
                         "version": "Original",
                         "resolution": 1080
                     },
                     {
                         "hoster": "dropbox",
-                        "id": "q8s55mjbar8o1ny/Duraphilms_Die_Ankuendigung_des_Todestodes.webm",
+                        "id": "k4qkauvzl4jr38q/Duraphilms_Die_Ankuendigung_des_Todestodes.1080p.mp4",
                         "version": "Original",
                         "resolution": 1080
                     }
