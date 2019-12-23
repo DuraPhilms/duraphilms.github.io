@@ -1,6 +1,6 @@
 ---
 layout: playlist
-title: "Duraphilms Fan Productions"
+title: "DuRöhre | Duraphilms-Fanproduktionen"
 permalink: /DuRoehre/
 playlist: "DuRoehre"
 ---
