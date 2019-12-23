@@ -1171,6 +1171,24 @@
                         "id": "D7trGYJ5n2A",
                         "version": "Original",
                         "resolution": 1080
+                    },
+                    {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro/DuRoehre_Die_Ankuendigung_des_Duraphilmesphilmes.720p.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro/DuRoehre_Die_Ankuendigung_des_Duraphilmesphilmes.1080p.mp4",
+                        "version": "Original",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "suzjisx82dyeuin/DuRoehre_Die_Ankuendigung_des_Duraphilmesphilmes.1080p.mp4",
+                        "version": "Original",
+                        "resolution": 1080
                     }
                 ]
             },
