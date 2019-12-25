@@ -17,13 +17,6 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "lSGkvasFG44",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
                         "hoster": "dailymotion",
                         "enabled": true,
                         "id": "x2x19uc",
@@ -62,13 +55,6 @@
                         "hoster": "twitch",
                         "enabled": true,
                         "id": "224047707",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "ntDwwoU_CYo",
                         "version": "Remastered",
                         "resolution": 1080
                     },
@@ -115,13 +101,6 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "x_kwAz-qyFs",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
                         "hoster": "dailymotion",
                         "enabled": true,
                         "id": "x2x19uh",
@@ -164,13 +143,6 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "eo3Aibw8ido",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_04_1080Rmk.mp4",
@@ -194,13 +166,6 @@
                         "hoster": "twitch",
                         "enabled": true,
                         "id": "155750947",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "eyowNKF9HjQ",
                         "version": "Remastered",
                         "resolution": 1080
                     },
@@ -240,13 +205,6 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "vHh4Vd-X9FU",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_06_1080Rmk.mp4",
@@ -270,13 +228,6 @@
                         "hoster": "twitch",
                         "enabled": true,
                         "id": "388174548",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "P54OyGOU-Hs",
                         "version": "Remastered",
                         "resolution": 1080
                     },
@@ -365,13 +316,6 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "On6fDEXnjCU",
-                        "version": "Remastered",
-                        "resolution": 1080
-                    },
-                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudPvAT_file_remake/HPudPvA_T_09.mp4",
@@ -428,13 +372,6 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "332207514",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudPvAT_file_remake/HPudPvA_T_10.mp4",
@@ -459,13 +396,6 @@
                         "hoster": "youtube",
                         "enabled": true,
                         "id": "_Bb2YoEspY8",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "332209387",
                         "version": "Original",
                         "resolution": 720
                     },
@@ -609,13 +539,6 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "BNsGOcBFi1I",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
                         "hoster": "dailymotion",
                         "enabled": true,
                         "id": "x2p1wnp",
@@ -651,13 +574,6 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "TdkqbWwlWlQ",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_02.mp4",
@@ -682,13 +598,6 @@
                         "hoster": "twitch",
                         "enabled": true,
                         "id": "385917574",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "9bo5uiP_pO4",
                         "version": "Original",
                         "resolution": 720
                     },
@@ -727,13 +636,6 @@
                         "resolution": 720
                     },
                     {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "i6XU2EV5nxM",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_04.mp4",
@@ -758,13 +660,6 @@
                         "hoster": "twitch",
                         "enabled": true,
                         "id": "385699696",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "Af5Gy4YnWBQ",
                         "version": "Original",
                         "resolution": 720
                     },
@@ -1132,13 +1027,6 @@
                         "resolution": 1080
                     },
                     {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "MV-7e7rK0H4",
-                        "version": "Original",
-                        "resolution": 1080
-                    },
-                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro/Duraphilms_Die_Ankuendigung_des_Lebenslebens.720p.mp4",
@@ -1172,13 +1060,6 @@
                         "hoster": "youtube",
                         "enabled": true,
                         "id": "uw76l0VnoL0",
-                        "version": "Original",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "MUebT9J7DJY",
                         "version": "Original",
                         "resolution": 1080
                     },
@@ -1252,13 +1133,6 @@
                     {
                         "hoster": "archive",
                         "enabled": true,
-                        "id": "DuraPhilmsSynchro_oge/HPudPvA_Outtakes_2.mp4",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
                         "id": "DuraphilmsSynchro/HPudPvA_Outtakes_2.720p.mp4",
                         "version": "Original",
                         "resolution": 720
@@ -1290,13 +1164,6 @@
                         "hoster": "youtube",
                         "enabled": true,
                         "id": "GSR4rE8Tsms",
-                        "version": "Original",
-                        "resolution": 720
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
-                        "id": "DuraPhilmsSynchro_5sn/HPudPvA_Outtakes_1.webm",
                         "version": "Original",
                         "resolution": 720
                     },
@@ -1379,13 +1246,6 @@
                         "hoster": "youtube",
                         "enabled": true,
                         "id": "gemxrCSBlu8",
-                        "version": "Original",
-                        "resolution": 1080
-                    },
-                    {
-                        "hoster": "openload",
-                        "enabled": true,
-                        "id": "S97ejUR5r1Y",
                         "version": "Original",
                         "resolution": 1080
                     },
