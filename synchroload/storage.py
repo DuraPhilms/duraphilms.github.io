@@ -32,6 +32,7 @@ class Upload():
     id = ""
     version = "Original"
     resolution = -1
+    enabled = True
 
     def __init__(self, structs = None):
         if structs:
@@ -39,10 +40,13 @@ class Upload():
             self.id = structs["id"]
             self.version = structs["version"]
             self.resolution = structs["resolution"]
+            if "enabled" in structs:
+                self.enabled = bool(structs["enabled"])
 
     def toJsonSerializable(self) -> dict:
         output = {}
         output["hoster"] = self.hoster
+        output["enabled"] = self.enabled
         output["id"] = self.id
         output["version"] = self.version
         output["resolution"] = self.resolution

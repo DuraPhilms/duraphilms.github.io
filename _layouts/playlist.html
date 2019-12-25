@@ -39,7 +39,7 @@
 {% else %}
         <p class="w3-small">
             {% for upload in video.uploads %}
-            {% if upload.id %}
+            {% if upload.enabled %}
             {% if upload.hoster == "youtube" %}
             <a class="w3-btn w3-red w3-margin-left w3-margin-right" target="_blank" href="https://youtube.com/watch?v={{ upload.id }}">YouTube ({{ upload.resolution }}p)</a>
             {% elsif upload.hoster == "twitch" %}

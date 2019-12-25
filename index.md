@@ -59,7 +59,7 @@ heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
 
                 <p>
 {% for upload in video.uploads %}
-{% if upload.id %}
+{% if upload.enabled %}
 {% if upload.hoster == "youtube" %}
                     <a target="_blank" href="https://youtube.com/watch?v={{ upload.id }}">YouTube</a>
 {% elsif upload.hoster == "twitch" %}
