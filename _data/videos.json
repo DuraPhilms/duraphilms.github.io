@@ -1116,8 +1116,20 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro/HPudPvA_Outtakes_2.720p.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
                         "hoster": "dropbox",
                         "id": "79ay311ieyymore/HPudPvA_Outtakes_2.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "ei7fowurx81a573/HPudPvA_Outtakes_2.720p.mp4",
                         "version": "Original",
                         "resolution": 720
                     }
@@ -1143,8 +1155,20 @@
                         "resolution": 720
                     },
                     {
+                        "hoster": "archive",
+                        "id": "DuraphilmsSynchro/HPudPvA_Outtakes_1.720p.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
                         "hoster": "dropbox",
                         "id": "sy5lbmyvi8r8eau/HPudPvA_Outtakes_1.webm",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "id": "labdjonnjk9oxfc/HPudPvA_Outtakes_1.720p.mp4",
                         "version": "Original",
                         "resolution": 720
                     }
