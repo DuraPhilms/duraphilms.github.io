@@ -999,7 +999,14 @@
                     {
                         "hoster": "archive",
                         "enabled": true,
-                        "id": "DuraPhilmsSynchro_9db/Duraphilms_OdP_News_Trailer_zu_Teil_14.webm",
+                        "id": "DuraphilmsSynchro/Duraphilms_OdP_News_Trailer_zu_Teil_14.720p.mp4",
+                        "version": "Original",
+                        "resolution": 720
+                    },
+                    {
+                        "hoster": "archive",
+                        "enabled": true,
+                        "id": "DuraphilmsSynchro/Duraphilms_OdP_News_Trailer_zu_Teil_14.1080p.mp4",
                         "version": "Original",
                         "resolution": 1080
                     },
@@ -1007,6 +1014,13 @@
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "j6gu9ghuf1uhh79/Duraphilms_OdP_News_Trailer_zu_Teil_14.webm",
+                        "version": "Original",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "enabled": true,
+                        "id": "t9tlyrvwq52hi1n/Duraphilms_OdP_News_Trailer_zu_Teil_14.1080p.mp4",
                         "version": "Original",
                         "resolution": 1080
                     }
