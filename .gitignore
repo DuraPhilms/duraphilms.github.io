@@ -1,3 +1,6 @@
+*.mp4
+*.mkv
+*.webm
 env.sh
 .sass-cache/
 Gemfile.lock
