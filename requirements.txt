@@ -4,5 +4,5 @@ requests
 internetarchive
 youtube_dl
 google_auth_oauthlib
-google-api-python-client
-dateutil
+#google-api-python-client
+
