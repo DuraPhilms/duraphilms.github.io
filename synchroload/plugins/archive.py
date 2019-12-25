@@ -6,6 +6,7 @@ import string
 
 HOSTER_NAME = "archive"
 HOSTER_HAS_DIRECT_LINKS = True
+HOSTER_KEEP_UNAVAILABLE_UPLOADS = False
 
 # get item name from environment; use default if nothing set
 ARCHIVE_ITEM_NAME = os.getenv(

@@ -116,6 +116,11 @@ class Video():
     def removeUpload(self, uploadId):
         self.uploads = [u for u in self.uploads if u.id != uploadId]
 
+    def disableUpload(self, uploadId):
+        for u in self.uploads:
+            if u.id == uploadId:
+                u.enabled = False
+
 class Playlist():
     title = ""
     name = ""

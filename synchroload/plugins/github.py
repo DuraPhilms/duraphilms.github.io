@@ -6,6 +6,7 @@ import magic
 
 HOSTER_NAME = "github"
 HOSTER_HAS_DIRECT_LINKS = True
+HOSTER_KEEP_UNAVAILABLE_UPLOADS = False
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
 GITHUB_OWNER = os.getenv("GITHUB_OWNER", "duramedia")

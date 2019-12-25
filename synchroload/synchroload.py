@@ -49,8 +49,12 @@ def check_availability(video, upload, playlist, part):
     plugin = SYNCHROLOAD_PLUGINS[upload.hoster]
     print("[check online] Checking availability for {} {} on {} ({}) ...".format(playlist.name, part, plugin.HOSTER_NAME, upload.id), end="")
     if not downloader.check_availability(plugin.linkFromId(upload.id)):
-        print(" [FAIL] - Removing!")
-        video.removeUpload(upload.id)
+        if plugin.HOSTER_KEEP_UNAVAILABLE_UPLOADS:
+            print(" [FAIL] - Disabling!")
+            video.disableUpload(upload.id)
+        else:
+            print(" [FAIL] - Removing!")
+            video.removeUpload(upload.id)
     else:
         print(" [OK]")
 
