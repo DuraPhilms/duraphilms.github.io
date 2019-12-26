@@ -158,6 +158,7 @@
 
 <p class="w3-padding w3-small">
     {% for upload in video.uploads %}
+    {% if upload.enabled %}
     {% if upload.id %}
     {% if upload.hoster == "youtube" %}
     <a class="w3-btn w3-red w3-margin-left w3-margin-right" target="_blank" href="https://youtube.com/watch?v={{ upload.id }}">YouTube ({{ upload.resolution }}p)</a>
@@ -171,6 +172,7 @@
     <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://dl.dropboxusercontent.com/s/{{ upload.id }}">Dropbox ({{ upload.resolution }}p)</a>
     {% elsif upload.hoster == "openload" %}
     <a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ upload.id }}">openload ({{ upload.resolution }}p)</a>
+    {% endif %}
     {% endif %}
     {% endif %}
     {% endfor %}
