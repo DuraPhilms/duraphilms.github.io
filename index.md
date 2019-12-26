@@ -3,8 +3,8 @@ layout: default
 title: Duraphilms
 ---
 
-Duraphilms Fan Productions
-==========================
+Duraphilms Synchros
+===================
 
 Diese Seite ist *nicht* von Duraphilms selbst, sondern wird von den
 Duraphilms-Fans LNJ und JBB verwaltet. Wenn ihr weitere Links habt, geben wir
@@ -14,8 +14,29 @@ Hier gibt es eine Auflistung aller Synchro Teile bei allen verschiedenen Hostern
 Hierbei entspricht 1080Rmk, einem 1080p Full-HD Remaster (von LNJ).
 
 Alle Teile können von den verschiedenen Seiten mittels [youtube-dl][ytdl]
-heruntergeladen werden. Dropbox und archive.org verfügen darüber hinaus auch
-über direkte Links, die Ihr einfach mit dem Browser herunterladen könnt.
+heruntergeladen werden. Dropbox und archive.org verfügen allerdings auch über
+direkte Links, die Ihr einfach mit dem Browser herunterladen könnt.
+
+Wir versuchen immer auch die beste Qualität anzubieten, daher sind einige
+Dateien ggf. sehr groß (z.B. wenn sie von den Downloadlinks von Duraphilms
+kommen) und sind nicht immer zum streamen geeignet. Aus diesem Grund bieten wir
+dann meistens noch eine kleinere Version in z.B. 720p an.
+
+Die Videos aus dem Downloadpaket von Duraphilms haben alle MP3-Tonspuren. Das
+MP3-Format wird allerdings von den gängigen Browsern nicht in Videodateien
+unterstützt, somit können diese Dateien nicht direkt gestreamt werden. Aus
+diesem Grund haben wir in diesen Fällen die Tonspur in AAC umgewandelt (die
+Videospur bleibt unverändert, 1:1 erhalten). Hörbar ist der
+Qualitätsunterschied nicht, aber wer die Dateien zur weiteren Bearbeitung
+nutzt, sollte unter Umständen doch besser auf die Originaldateien von
+Duraphilms zurückgreifen. Für diesen Fall haben wir die Downloadpakete auch
+hier noch einmal verlinkt.
+
+### Duraphilms-Downloadpakete auf Mega
+
+*PvA Teil 1-14 inkl. Outtakes*: [mega.co.nz](https://mega.co.nz/#!L1IXDRCQ!5U3K8SA_Y4NgC_tTJtFTs3j3ZI-c5RZUobE1wniL3xo)
+
+*OdP Teil 1-13 inkl. Specials*: [mega.nz](https://mega.nz/#!25JzRApD!4bZ9Y-pYSIcxubxGR0HXQoqEvv6Nv7LdJ9sgNpT39Y4)
 
 {% for playlist in site.data.videos %}
 <div class="w3-margin-top">
