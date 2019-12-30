@@ -398,7 +398,15 @@
                         "version": "Remastered",
                         "resolution": 2160,
                         "origin": "source"
-                    }
+                    },
+                    {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "381445100",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source"
+		    }
                 ]
             },
             {
