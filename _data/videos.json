@@ -352,6 +352,14 @@
                         "origin": "source"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "381445100",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudPvAT_file_remake/HPudPvA_T_09.mp4",
@@ -398,15 +406,7 @@
                         "version": "Remastered",
                         "resolution": 2160,
                         "origin": "source"
-                    },
-                    {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "381445100",
-                        "version": "Remastered",
-                        "resolution": 1080,
-                        "origin": "source"
-		    }
+                    }
                 ]
             },
             {
