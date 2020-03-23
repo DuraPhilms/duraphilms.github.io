@@ -608,6 +608,14 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399913358",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega"
+                    },
+                    {
                         "hoster": "dailymotion",
                         "enabled": true,
                         "id": "x2p1wnp",
@@ -647,6 +655,14 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399913569",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_02.mp4",
@@ -676,6 +692,14 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "youtube"
+                    },
+                    {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399919947",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega"
                     },
                     {
                         "hoster": "archive",
@@ -716,6 +740,14 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399920211",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_04.mp4",
@@ -747,6 +779,14 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399925158",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_05.mp4",
@@ -776,6 +816,14 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "youtube"
+                    },
+                    {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399925365",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega"
                     },
                     {
                         "hoster": "archive",
@@ -817,6 +865,14 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399932579",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega"
+                    },
+                    {
                         "hoster": "dailymotion",
                         "enabled": true,
                         "id": "x2z0exh",
@@ -856,6 +912,14 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399932791",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_08.mp4",
@@ -885,6 +949,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "youtube"
+                    },
+                    {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399948442",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega"
                     },
                     {
                         "hoster": "archive",
@@ -924,6 +996,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "youtube"
+                    },
+                    {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399956138",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega"
                     },
                     {
                         "hoster": "archive",
@@ -1003,6 +1083,14 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399958690",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro_46f/HPudOdP_12.720p.mp4",
@@ -1048,6 +1136,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "youtube"
+                    },
+                    {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399962326",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega"
                     },
                     {
                         "hoster": "archive",
