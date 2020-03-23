@@ -6,12 +6,14 @@ title: Duraphilms
 Duraphilms Synchros
 ===================
 
+### Fack, aehhm... *FAQ*
+
 Diese Seite ist *nicht* von Duraphilms selbst, sondern wird von den
 Duraphilms-Fans LNJ und JBB verwaltet. Wenn ihr weitere Links habt, geben wir
 euch gerne Zugriff auf [GitHub][gh].
 
-Hier gibt es eine Auflistung aller Synchro Teile bei allen verschiedenen Hostern.
-Hierbei entspricht 1080Rmk, einem 1080p Full-HD Remaster (von LNJ).
+Hier gibt es eine Auflistung aller Synchroteile bei allen verschiedenen Hostern.
+Ein paar Teile von PvA gibt es hier auch exklusiv als Full-HD Remake von LNJ.
 
 Alle Teile können von den verschiedenen Seiten mittels [youtube-dl][ytdl]
 heruntergeladen werden. Dropbox und archive.org verfügen allerdings auch über
@@ -28,9 +30,7 @@ unterstützt, somit können diese Dateien nicht direkt gestreamt werden. Aus
 diesem Grund haben wir in diesen Fällen die Tonspur in AAC umgewandelt (die
 Videospur bleibt unverändert, 1:1 erhalten). Hörbar ist der
 Qualitätsunterschied nicht, aber wer die Dateien zur weiteren Bearbeitung
-nutzt, sollte unter Umständen doch besser auf die Originaldateien von
-Duraphilms zurückgreifen. Für diesen Fall haben wir die Downloadpakete auch
-hier noch einmal verlinkt.
+nutzt, sollte besser auf die Originaldateien von Duraphilms zurückgreifen.
 
 ### Duraphilms-Downloadpakete auf Mega
 
