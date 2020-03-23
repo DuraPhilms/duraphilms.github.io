@@ -956,6 +956,14 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "399869597",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_11.mp4",
