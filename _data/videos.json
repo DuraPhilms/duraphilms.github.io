@@ -423,6 +423,13 @@
                         "origin": "source"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "428730638",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudPvAT_file_remake/HPudPvA_T_10.mp4",
@@ -431,12 +438,40 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "archive",
+                        "enabled": true,
+                        "id": "DuraphilmsSynchro/HPudPvA_10_Remastered.1080p.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "archive",
+                        "enabled": true,
+                        "id": "DuraphilmsSynchro/HPudPvA_10_Remastered.2160p.webm",
+                        "version": "Remastered",
+                        "resolution": 2160
+                    },
+                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "sp56a7yfhctt0dx/HPudPvA_T_10.mp4",
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "enabled": true,
+                        "id": "7osmtkx1dfdt428/HPudPvA_10_Remastered.1080p.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "enabled": true,
+                        "id": "ivrcywt7a7dgm7e/HPudPvA_10_Remastered.2160p.webm",
+                        "version": "Remastered",
+                        "resolution": 2160
                     }
                 ]
             },
@@ -554,6 +589,14 @@
                 "date": "2010-12-31",
                 "uploads": [
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "409178411",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac"
+                    },
+                    {
                         "hoster": "dailymotion",
                         "enabled": true,
                         "id": "x2x19ug",
@@ -565,14 +608,6 @@
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudPvAT_file_remake/HPudPvA_T_14.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "409178411",
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
