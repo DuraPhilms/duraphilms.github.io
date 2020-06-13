@@ -6,8 +6,6 @@ title: Duraphilms
 Duraphilms Synchros
 ===================
 
-### Fack, aehhm... *FAQ*
-
 Diese Seite ist *nicht* von Duraphilms selbst, sondern wird von den
 Duraphilms-Fans LNJ und JBB verwaltet. Wenn ihr weitere Links habt, geben wir
 euch gerne Zugriff auf [GitHub][gh].
