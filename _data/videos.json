@@ -10,6 +10,14 @@
                 "description": "Teil 1 unsrer Fan-Synchro, PLEASE COMMENT & SUBSCRIBE!<br/>Wir h\u00e4tten gerne R\u00fcckmeldung ob es gut ist, dann k\u00f6nnen wir Sachen verbessern. Wir versuchen nicht, coldmirror mit dieser Synchro nachzuahmen oder \u00e4hnliches, wir wollen zeigen, dass sie uns dazu inspiriert hat, eine eigene Synchro zu machen.<br/><br/>Viel Spa\u00df beim gucken!<br/><br/>P.S.: Meinen Hauptkanal findet ihr hier: http://www.youtube.com/user/darthdustin<br/><br/>EDIT: Mittlerweile sind wir schon erfahrener, in den sp\u00e4teren Teilen (ab 4) hat sich sowohl Videoqualit\u00e4t als auch Schnitt, Effekte und Inhalt verbessert (kein Eigenlob, sondern ein Verweis darauf, dass wir auch erst einmal Erfahrung sammeln mussten, was sich in den neueren Teilen dann auch zeigt).<br/><br/><i>Am 5. Februar 2011 kam dann die \u00fcberarbeitete Version als Remake:</i><br/>Der Teil, mit dem damals alles begann: Hier kommt er als Director's Cut in voller Aufl\u00f6sung mit \u00fcberarbeiteter Soundqualit\u00e4t und zus\u00e4tzlichen Szenen. Keine Angst, es wird auch weiterhin kr\u00e4ftig an \"Orden des Penners\" , sowie an den Outtakes zu PvA gearbeitet.<br/>Viel Spa\u00df beim angucken!",
                 "uploads": [
                     {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "8QPo_diqd8k",
+                        "version": "Remake",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "twitch",
                         "enabled": true,
                         "id": "173846718",
@@ -181,6 +189,14 @@
                 "date": "2010-02-12",
                 "uploads": [
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "xc_Xa7StPbQ",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "twitch",
                         "enabled": true,
                         "id": "155750947",
@@ -249,6 +265,14 @@
                 "id": "07",
                 "date": "2010-05-05",
                 "uploads": [
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "Pd8EfJ0FQb0",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
                     {
                         "hoster": "twitch",
                         "enabled": true,
