@@ -589,6 +589,14 @@
                 "date": "2010-12-31",
                 "uploads": [
                     {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "9A7KsljQHSw",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "vimeo",
                         "enabled": true,
                         "id": "409178411",
