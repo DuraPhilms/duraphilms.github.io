@@ -52,6 +52,8 @@
             <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://dl.dropboxusercontent.com/s/{{ upload.id }}">Dropbox ({{ upload.resolution }}p)</a>
             {% elsif upload.hoster == "openload" %}
             <a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ upload.id }}">openload ({{ upload.resolution }}p)</a>
+            {% elsif upload.hoster == "u6656" %}
+            <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://unknown6656.com/harrypotter/videos/{{ upload.id }}">Unknown6656 ({{ upload.resolution }}p)</a>
             {% endif %}
             {% endif %}
             {% endfor %}

@@ -82,6 +82,8 @@ Mehr Infos zum Videomaterial [hier](/faq).
                     <a target="_blank" href="https://openload.co/embed/{{ upload.id }}">openload</a>
 {% elsif upload.hoster == "dailymotion" %}
                     <a target="_blank" href="https://www.dailymotion.com/embed/video/{{ upload.id }}">dailymotion</a>
+{% elsif upload.hoster == "u6656" %}
+                    <a target="_blank" href="https://unknown6656.com/harrypotter/videos/{{ upload.id }}">Unknown6656</a>
 {% endif %}
 
 {% unless forloop.last %}
