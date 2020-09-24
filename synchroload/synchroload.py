@@ -10,6 +10,7 @@ import plugins.dropbox
 import plugins.dailymotion
 import plugins.openload
 import plugins.twitch
+import plugins.u6656
 import plugins.vimeo
 import plugins.youtube
 import plugins.dummy
@@ -22,6 +23,7 @@ SYNCHROLOAD_PLUGINS = {
     "dailymotion": plugins.dailymotion,
     "openload": plugins.openload,
     "twitch": plugins.twitch,
+    "u6656": plugins.u6656,
     "vimeo": plugins.vimeo,
     "youtube": plugins.youtube,
     
@@ -106,6 +108,21 @@ def getUpload(video, hoster, resolution):
 
     print("No upload for this hoster: " + args.hoster)
     exit(1)
+
+def importU6656(playlist):
+    baseId = "hpudpva"
+    if playlist == "OdP":
+        baseId = "hpudodp"
+
+    plist = getPlaylist(playlist)
+    for video in plist.videos:
+        upl = storage.Upload()
+        upl.hoster = "u6656"
+        upl.id = baseId + "/" + video.id + ".mp4"
+        upl.origin = "youtube"
+        upl.resolution = 720
+
+        video.uploads.append(upl)
 
 if __name__ == "__main__":
     if args.delete_offline:

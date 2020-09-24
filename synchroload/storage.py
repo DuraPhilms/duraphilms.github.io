@@ -21,7 +21,8 @@ HOSTER_SORTING = [
     "openload",
     "dailymotion",
     "archive",
-    "dropbox"
+    "dropbox",
+    "u6656"
 ]
 
 with open(DATA_LOCATION) as f:
