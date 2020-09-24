@@ -7,3 +7,5 @@ Gemfile.lock
 _site/
 __pycache__
 logs/
+.bundle
+vendor
