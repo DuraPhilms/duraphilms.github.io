@@ -35,7 +35,7 @@
 {% assign contentType = "video/mp4" %}
 {% endif %}
 
-{% if upload.hoster == "archive" and upload.resolution == 1080 %}
+{% if upload.hoster == "dropbox" and upload.resolution == 1080 %}
 {% assign selected = 'selected="true"' %}
 {% else %}
 {% assign selected = "" %}
@@ -43,6 +43,8 @@
 
 {% if upload.hoster == "archive" %}
     <source src="https://archive.org/download/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (archive)" {{ selected }}>
+{% elsif upload.hoster == "dropbox" %}
+    <source src="https://dl.dropboxusercontent.com/s/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (Dropbox)" {{ selected }}>
 {% elsif upload.hoster == "u6656" %}
     <source src="https://unknown6656.com/harrypotter/videos/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (Unknown6656)" {{ selected }}>
 {% endif %}
