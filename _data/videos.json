@@ -11,7 +11,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "8QPo_diqd8k",
                         "version": "Remake",
                         "resolution": 720,
@@ -512,7 +512,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "IJB5G2ZgS40",
                         "version": "Original",
                         "resolution": 720,
@@ -795,14 +795,6 @@
                         "origin": "youtube"
                     },
                     {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "399913358",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega"
-                    },
-                    {
                         "hoster": "dailymotion",
                         "enabled": true,
                         "id": "x2p1wnp",
@@ -848,14 +840,6 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "youtube"
-                    },
-                    {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "399913569",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega"
                     },
                     {
                         "hoster": "archive",
@@ -989,14 +973,6 @@
                 "date": "2011-12-16",
                 "description": "Und erneut hat es l\u00e4nger gedauert als geplant, daf\u00fcr aber mit extra vielen Special Effects ;) Nat\u00fcrlich auch wieder mit den anderen \u00fcblichen Features, Einschnitte, Metal und Seitenhiebe.<br/>Viel Spa\u00df beim Angucken^^",
                 "uploads": [
-                    {
-                        "hoster": "twitch",
-                        "enabled": true,
-                        "id": "385699696",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "youtube"
-                    },
                     {
                         "hoster": "vimeo",
                         "enabled": true,
