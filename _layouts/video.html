@@ -43,6 +43,8 @@
 
 {% if upload.hoster == "archive" %}
     <source src="https://archive.org/download/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (archive)" {{ selected }}>
+{% elsif upload.hoster == "u6656" %}
+    <source src="https://unknown6656.com/harrypotter/videos/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (Unknown6656)" {{ selected }}>
 {% endif %}
 
 {% endif%}
