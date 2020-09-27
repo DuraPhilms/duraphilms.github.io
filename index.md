@@ -25,6 +25,10 @@ Mehr Infos zum Videomaterial [hier](/faq).
 
 *OdP Teil 1-13 inkl. Specials*: [mega.nz](https://mega.nz/#!25JzRApD!4bZ9Y-pYSIcxubxGR0HXQoqEvv6Nv7LdJ9sgNpT39Y4)
 
+## Community-Gruppe
+
+<iframe src="http://www.strawpoll.me/embed_1/21011398" style="width:680px;height:480px;border:0;">Loading poll...</iframe>
+
 {% for playlist in site.data.videos %}
 <div class="w3-margin-top">
     <a href="/{{ playlist.short }}/">
