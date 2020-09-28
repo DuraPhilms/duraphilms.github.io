@@ -176,6 +176,8 @@
 
 {% assign versions = versions | split: "," | uniq | sort %}
 
+{% assign last_version = "" %}
+
 {% for ver in versions %}
 {% assign version_and_res = ver | split: "|" %}
 {% assign version = version_and_res[0] %}
@@ -183,8 +185,10 @@
 
 <p class="w3-small" style="display: block;">
     <span style="display: inline-block; width: 8em; height: 0em;">
+        {% unless version == last_version %}
         <b>{{ version | upcase }}</b>
         <br/>
+        {% endunless %}
         {{ resolution }}p
     </span>
 
@@ -197,6 +201,7 @@
         {% endfor %}
     </span>
 </p>
+{% assign last_version = version %}
 {% endfor %}
 
 
