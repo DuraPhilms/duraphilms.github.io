@@ -3,8 +3,9 @@ layout: default
 title: Duraphilms
 ---
 
+<h1 style="text-align: center">
 Durpahilms HP-Synchro-Multiversum
-=================================
+</h1>
 
 <div style="width: 33.33%; float: left;">
 <center>
