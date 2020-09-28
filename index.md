@@ -3,31 +3,44 @@ layout: default
 title: Duraphilms
 ---
 
-Duraphilms Synchros
-===================
+Durpahilms HP-Synchro-Multiversum
+=================================
 
-Diese Seite ist *nicht* von Duraphilms selbst, sondern wird von den
-Duraphilms-Fans LNJ und JBB verwaltet. Wenn ihr weitere Links habt, geben wir
-euch gerne Zugriff auf [GitHub][gh].
+<div style="width: 33.33%; float: left;">
+<center>
+<h2>
+<b>ALLE</b> Synchroteile
+</h2>
+</center>
+</div>
 
-Hier gibt es eine Auflistung aller Synchroteile bei allen verschiedenen Hostern.
-Ein paar Teile von PvA gibt es hier auch exklusiv als Full-HD Remake von LNJ.
+<div style="width: 33.33%; float: left;">
+<center>
+<h2>
+<b>IMMER</b> verfügbar
+</h2>
+</center>
+</div>
 
-Alle Teile können von den verschiedenen Seiten mittels [youtube-dl][ytdl]
-heruntergeladen werden. Dropbox und archive.org verfügen allerdings auch über
-direkte Links, die Ihr einfach mit dem Browser herunterladen könnt.
+<div style="width: 33.33%; float: left;">
+<center>
+<h2>
+<b>EXKLUSIV</b> Full-HD Remaster
+</h2>
+<br/>
+</center>
+</div>
 
-Mehr Infos zum Videomaterial [hier](/faq).
-
-### Duraphilms-Downloadpakete auf Mega
-
-*PvA Teil 1-14 inkl. Outtakes*: [mega.co.nz](https://mega.co.nz/#!L1IXDRCQ!5U3K8SA_Y4NgC_tTJtFTs3j3ZI-c5RZUobE1wniL3xo)
-
-*OdP Teil 1-13 inkl. Specials*: [mega.nz](https://mega.nz/#!25JzRApD!4bZ9Y-pYSIcxubxGR0HXQoqEvv6Nv7LdJ9sgNpT39Y4)
+Hier gibt es eine Auflistung **aller Synchroteile** und die Verfügbarkeit bei
+verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
+**4K Remaster** von LNJ.
 
 ## Community-Gruppe
 
 <iframe src="https://www.strawpoll.me/embed_1/21011398" style="width:680px;height:480px;border:0;">Loading poll...</iframe>
+
+Die Community-Gruppe und andere Projekte werden in Zukunft in Kooperation mit
+[Unknown6656][u6656] entstehen!
 
 {% for playlist in site.data.videos %}
 <div class="w3-margin-top">
@@ -105,6 +118,26 @@ Mehr Infos zum Videomaterial [hier](/faq).
 
 {% endfor %}
 
+## Herunterladen: *Die Synchro Offline*
+
+Wenn ihr die Teile herunterladen möchtet könnt ihr dies am einfachsten über die
+**direkten Links** von *Dropbox* und *archive.org* machen. Aktuell müsst ihr
+dazu allerdings jeden Teil einzeln herunterladen.
+
+#### Alternativ: Duraphilms-Downloadpakete auf Mega
+
+ * *__Penner von Alcatraz__ Teil 1-14 inkl. Outtakes*: [mega.co.nz](https://mega.co.nz/#!L1IXDRCQ!5U3K8SA_Y4NgC_tTJtFTs3j3ZI-c5RZUobE1wniL3xo)
+ * *__Orden des Penners__ Teil 1-13 inkl. Specials*: [mega.nz](https://mega.nz/#!25JzRApD!4bZ9Y-pYSIcxubxGR0HXQoqEvv6Nv7LdJ9sgNpT39Y4)
+
+## Über Duraphilms.tk
+
+Diese Seite wird von der Duraphilms-Fanorganisation _„Duraphilms.tk“_ (kreativer
+Name) betreut. Wenn ihr Feedback oder anderen Input habt, könnt ihr uns gerne
+auf [GitHub][gh] kontaktieren. Wenn ihr Interesse habt mitzumachen, laden wir
+euch gerne in die Organisation ein.
+
+Mehr Infos zum Videomaterial gibt es [hier](/faq).
 
 [gh]: https://github.com/duraphilms/duraphilms.github.io
 [ytdl]: https://ytdl-org.github.io/youtube-dl/index.html
+[u6656]: https://unknown6656.com/harrypotter/
