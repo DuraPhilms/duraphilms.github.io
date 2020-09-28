@@ -18,7 +18,7 @@
     </a>
 {% endunless %}
 
-    <div class="w3-margin w3-padding">
+    <div class="w3-margin w3-padding" style="display: block; height: 100%; overflow-y: scroll;">
 {% unless video.available_soon %}
         <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
@@ -37,14 +37,49 @@
 {% if video.available_soon %}
         <i><h5>Demnächst™ verfügbar</h5></i>
 {% else %}
-        <p class="w3-small">
-            {% for upload in video.uploads %}
+        {% assign versions = "" %}
+        {% for upload in video.uploads %}
             {% if upload.enabled %}
-            {% include upload.html %}
+                {% assign versions = versions | append: upload.version %}
+                {% assign versions = versions | append: "|" %}
+                {% if upload.resolution < 1000 %}
+                    {% assign versions = versions | append: "0" %}
+                {% endif %}
+                {% assign versions = versions | append: upload.resolution %}
+                {% assign versions = versions | append: "," %}
             {% endif %}
-            {% endfor %}
+        {% endfor %}
+
+        {% assign versions = versions | split: "," | uniq | sort %}
+
+        {% assign last_version = "" %}
+
+        {% for ver in versions %}
+        {% assign version_and_res = ver | split: "|" %}
+        {% assign version = version_and_res[0] %}
+        {% assign resolution = version_and_res[1] | plus: 0 %}
+
+        <p class="w3-small" style="display: block;">
+            <span style="display: inline-block; width: 8em; height: 0em;">
+                {% unless version == last_version %}
+                <b>{{ version | upcase }}</b>
+                <br/>
+                {% endunless %}
+                {{ resolution }}p
+            </span>
+
+            <span>
+                {% assign upload_no_include_res = true %}
+                {% for upload in video.uploads %}
+                {% if upload.enabled and upload.version == version and upload.resolution == resolution %}
+                {% include upload.html %}
+                {% endif %}
+                {% endfor %}
+            </span>
         </p>
-{% endif %}
+        {% assign last_version = version %}
+        {% endfor %}
+        {% endif %}
     </div>
 </div>
 {% endfor %}
