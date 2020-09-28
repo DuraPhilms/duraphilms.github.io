@@ -40,21 +40,7 @@
         <p class="w3-small">
             {% for upload in video.uploads %}
             {% if upload.enabled %}
-            {% if upload.hoster == "youtube" %}
-            <a class="w3-btn w3-red w3-margin-left w3-margin-right" target="_blank" href="https://youtube.com/watch?v={{ upload.id }}">YouTube ({{ upload.resolution }}p)</a>
-            {% elsif upload.hoster == "twitch" %}
-            <a class="w3-btn w3-purple w3-margin-left w3-margin-right" target="_blank" href="https://www.twitch.tv/videos/{{ upload.id }}">Twitch ({{ upload.resolution }}p)</a>
-            {% elsif upload.hoster == "vimeo" %}
-            <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://vimeo.com/{{ upload.id }}">Vimeo ({{ upload.resolution }}p)</a>
-            {% elsif upload.hoster == "archive" %}
-            <a class="w3-btn w3-black w3-margin-left w3-margin-right" target="_blank" href="https://archive.org/download/{{ upload.id }}">archive.org ({{ upload.resolution }}p)</a>
-            {% elsif upload.hoster == "dropbox" %}
-            <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" href="https://dl.dropboxusercontent.com/s/{{ upload.id }}">Dropbox ({{ upload.resolution }}p)</a>
-            {% elsif upload.hoster == "openload" %}
-            <a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ upload.id }}">openload ({{ upload.resolution }}p)</a>
-            {% elsif upload.hoster == "u6656" %}
-            <a class="w3-btn w3-indigo w3-margin-left w3-margin-right" target="_blank" href="https://unknown6656.com/harrypotter/videos/{{ upload.id }}">Unknown6656 ({{ upload.resolution }}p)</a>
-            {% endif %}
+            {% include upload.html %}
             {% endif %}
             {% endfor %}
         </p>
