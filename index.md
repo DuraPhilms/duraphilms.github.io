@@ -27,7 +27,7 @@ Mehr Infos zum Videomaterial [hier](/faq).
 
 ## Community-Gruppe
 
-<iframe src="http://www.strawpoll.me/embed_1/21011398" style="width:680px;height:480px;border:0;">Loading poll...</iframe>
+<iframe src="https://www.strawpoll.me/embed_1/21011398" style="width:680px;height:480px;border:0;">Loading poll...</iframe>
 
 {% for playlist in site.data.videos %}
 <div class="w3-margin-top">
