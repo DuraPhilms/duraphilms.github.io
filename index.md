@@ -40,7 +40,7 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 
 ## Community-Gruppe
 
-<iframe src="https://www.strawpoll.me/embed_1/21011398" style="width:680px;height:480px;border:0;">Loading poll...</iframe>
+<iframe src="https://www.strawpoll.me/embed_1/21011398" style="width:680px;height:480px;border:0;max-width: 100%">Loading poll...</iframe>
 
 Die Community-Gruppe und andere Projekte werden in Zukunft in Kooperation mit
 [Unknown6656][u6656] entstehen!
