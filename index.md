@@ -38,7 +38,7 @@ Hier gibt es eine Auflistung **aller Synchroteile** und die Verfügbarkeit bei
 verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 **4K Remaster** von LNJ.
 
-## Breaking News: Wir haben einen DISCORD Server!
+# Jetzt NEU unser Discord-Server: [chat.duraphilms.tk](https://chat.duraphilms.tk)!
 
 <iframe src="https://discordapp.com/widget?id=760488636382445590&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
