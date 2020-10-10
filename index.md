@@ -38,12 +38,9 @@ Hier gibt es eine Auflistung **aller Synchroteile** und die Verfügbarkeit bei
 verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 **4K Remaster** von LNJ.
 
-## Community-Gruppe
+## Breaking News: Wir haben einen DISCORD Server!
 
-<iframe src="https://www.strawpoll.me/embed_1/21011398" style="width:680px;height:480px;border:0;max-width: 100%">Loading poll...</iframe>
-
-Die Community-Gruppe und andere Projekte werden in Zukunft in Kooperation mit
-[Unknown6656][u6656] entstehen!
+<iframe src="https://discordapp.com/widget?id=760488636382445590&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 {% for playlist in site.data.videos %}
 <div class="w3-margin-top">
