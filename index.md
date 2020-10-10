@@ -40,7 +40,7 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 
 # Jetzt NEU unser Discord-Server: [chat.duraphilms.tk](https://chat.duraphilms.tk)!
 
-<iframe src="https://discordapp.com/widget?id=760488636382445590&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://discordapp.com/widget?id=760488636382445590&theme=dark" width="100%" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 {% for playlist in site.data.videos %}
 <div class="w3-margin-top">
