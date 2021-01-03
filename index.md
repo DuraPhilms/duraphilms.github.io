@@ -3,59 +3,14 @@ layout: default
 title: Duraphilms
 ---
 
-<style>
-.left, .right{
-    position: absolute;
-    top: 8px;
-    height: 12em; 
-    width: 5rem;
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
-}
-.left{
-    transform: rotate(180deg);
-}
-.right{
-    right: 0;
-}
+<link rel="stylesheet" href="assets/css/indexStyle.css">
 
-#DmButton{
-    position: absolute;
-    top: 0.5rem;
-    right: 0;
-    background-color: rgb(200, 200, 200); /* Green */
-    color: #159957;
-    padding: 10px 20px;
-    border-radius: 9px;
-    text-align: center;
-    text-decoration: none;
-    border: solid #159957 2px;
-    font-size: 16px;
-    font-weight: bold;
-}
-.DmButtonDm{
-    background-color: rgb(26, 29, 42) !important;
-}
-.DarkModeBg{
-    background-color: rgb(26, 29, 42) !important;
-}
-.LRScrollDm{
-    background-image: linear-gradient(to left, rgb(26, 29, 42), rgba(255, 255, 255, 0)) !important;
-}
-@media only screen and (max-width: 850px){
-    #DmButton{
-        position: relative;
-    }
-    #StickyHeadline{
-        margin-bottom: 5em !important;
-    }
-}
-</style>
+<div id="DarkModeButton"><svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg></div>
 
 <div id="StickyHeadline" style="position: sticky; top: 0; z-index: 1; height: 4em; padding-top: 0.4em; margin-bottom: 1em; background-color: white; border-bottom: 1px solid #159957">
 <h1 style="text-align: center;">
 Durpahilms Synchros
 </h1>
-<button id="DmButton" onclick="darkMode()">Toggle dark mode</button>
 </div>
 
 <div style="width: 33.33%; float: left;">
@@ -102,11 +57,11 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 <div id="Carusell{{ playlist.short }}" style="scroll-behavior: smooth; height: 19em; display: grid; grid-auto-flow: column; overflow: hidden;">
 {% for video in playlist.videos %}
     <div class="w3-padding w3-animate-opacity">
-        <div onmouseover="mOver(this.id)" onmouseout="mOut(this.id)" id="{{ playlist.short }}{{ video.id }}" class="w3-card" style="position: relative; width: 20em; transition: 100ms; height: 10em; border-radius: 0.5rem;">
+        <div onmouseover="mOver(this.id)" onmouseout="mOut(this.id)" id="{{ playlist.short }}{{ video.id }}" class="w3-card">
 {% unless video.available_soon %}
             <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
-                <div class="w3-display-container" style="width: 100%; height: 11.3em; background: #000000; border-radius: 0.5rem;">
+                <div class="w3-display-container" style="width: 100%; height: 11.3em; background: #000000; border-radius: 0.5rem">
                     <img class="w3-display-middle" style="width: 100%;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video.id }}.small.jpg">
                 </div>
 {% unless video.available_soon %}
@@ -132,7 +87,7 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 {% endif %}
 </div>
             <div class="w3-margin">
-                <p id="Wo{{ playlist.short }}{{ video.id }}" style="display: none;">
+                <p class="Wo" id="Wo{{ playlist.short }}{{ video.id }}" style="display: none;">
 {% for upload in video.uploads %}
 {% if upload.enabled %}
 {% if upload.hoster == "youtube" %}
@@ -166,10 +121,23 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 {% endfor %}
 </div>
 <div id="{{ playlist.short }}" onclick="leftScroll(this.id)">
-    <img class="left ScrollButtons" src="assets/images/arrow.svg">
+    <div style="
+    position: absolute;
+    top: 0px;
+    height: 100%; 
+    width: 5rem;
+    background-image: 
+    linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    " class="left ScrollButtons"><img style="transform: translateY(4em) rotate(180deg);" src="assets/images/arrow.svg"></div>
 </div>
 <div id="{{ playlist.short }}" onclick="rightScroll(this.id)">
-    <img class="right ScrollButtons" src="assets/images/arrow.svg">
+    <div style="
+    position: absolute;
+    top: 0px;
+    height: 100%; 
+    width: 5rem;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0)); right: 0;
+    " class="right ScrollButtons"><img style="transform: translateY(4em);" src="assets/images/arrow.svg"></div>
 </div>
 </div>
 
@@ -199,46 +167,5 @@ Mehr Infos zum Videomaterial gibt es [hier](/faq).
 [ytdl]: https://ytdl-org.github.io/youtube-dl/index.html
 [u6656]: https://unknown6656.com/harrypotter/
 
-<script>
-    var TriggeredWo;
-var TriggeredCard;
-
-function mOver(MouseOver_id){
-    TriggeredWo = "Wo" + MouseOver_id;
-    TriggeredCard = MouseOver_id;
-    document.getElementById(TriggeredWo).style.display= "block";
-    document.getElementById(TriggeredCard).style.height= "17em";
-    document.getElementById(TriggeredCard).style.transform= "scale(1.05) translateY(0.7em)";
-    document.getElementById(TriggeredCard).style.boxShadow= "0 2px 5px 0 rgba(0,0,0,0.2),0 2px 10px 0 rgba(0,0,0,0.2)";
-}
-function mOut(MouseOut_id){
-    document.getElementById(TriggeredWo).style.display= "none";
-    document.getElementById(TriggeredCard).style.height= "10em";
-    document.getElementById(TriggeredCard).style.transform= "scale(1)";
-    document.getElementById(TriggeredCard).style.boxShadow= "0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)";
-}
-
-function leftScroll(ScrollButton_Id){
-    var elmnt = document.getElementById('Carusell' + ScrollButton_Id);
-    elmnt.scrollLeft -= 332;
-}
-function rightScroll(ScrollButton_Id){
-    var elmnt = document.getElementById('Carusell' + ScrollButton_Id);
-    elmnt.scrollLeft += 332;
-}
-
-function darkMode() {
-    document.getElementById("StickyHeadline").classList.toggle("DarkModeBg");
-    document.body.classList.toggle("DarkModeBg");
-    document.getElementById("DmButton").classList.toggle("DmButtonDm");
-
-    (function() {
-    var titles = document.querySelectorAll(".ScrollButtons");
-    var i = titles.length;
-    while (i--) {
-        titles[i].classList.toggle("LRScrollDm")
-    }
-    })();
-}
-
-</script>
+<script src="assets/js/DarkmodeIndex.js"></script>
+<script src="assets/js/IndexScrollButtons.js"></script>
