@@ -1,0 +1,49 @@
+#DarkModeButton{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #159957;
+    border-radius: 9px;
+    border: solid #159957 2px;
+    padding: 0.5em;
+    width: 3em;
+    height: 3em;
+}
+.darkmode{
+    background-color: rgb(26, 29, 42) !important;
+}
+.RScrollDm{
+    background-image: linear-gradient(to left, rgb(26, 29, 42), rgba(255, 255, 255, 0)) !important;
+}
+.LScrollDm{
+    background-image: linear-gradient(to right, rgb(26, 29, 42), rgba(255, 255, 255, 0)) !important;
+}
+@media only screen and (max-width: 450px){
+    #DmButton{
+        position: relative;
+    }
+    #StickyHeadline{
+        margin-bottom: 5em !important;
+    }
+}
+@media only screen and (max-width: 600px){
+    .w3-card{
+        width: 15em !important;
+    }
+    .w3-display-container{
+        height: 9em !important;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .Wo{
+        display: block !important;
+    }
+    .w3-card{
+        height: 17em !important;
+    }
+}
+.w3-card{
+    position: relative; width: 20em; transition: 100ms; height: 10em; border-radius: 0.5rem;
+}
+
+.FontContrast{color: whitesmoke;}
