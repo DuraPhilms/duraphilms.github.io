@@ -3,7 +3,11 @@ layout: default
 title: Duraphilms
 ---
 
-<div style="position: sticky; top: 0; z-index: 1; height: 4em; padding-top: 0.4em; margin-bottom: 1em; background-color: white; border-bottom: 1px solid #159957">
+<link rel="stylesheet" href="assets/css/indexStyle.css">
+
+<div id="DarkModeButton"><svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg></div>
+
+<div id="StickyHeadline" style="position: sticky; top: 0; z-index: 1; height: 4em; padding-top: 0.4em; margin-bottom: 1em; background-color: white; border-bottom: 1px solid #159957">
 <h1 style="text-align: center;">
 Durpahilms Synchros
 </h1>
@@ -49,21 +53,21 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
     </a>
 </div>
 
-<div style="display: grid; grid-auto-flow: column; overflow-x: scroll;">
+<div style="position: relative; width: 100%;">
+<div id="Carusell{{ playlist.short }}" style="scroll-behavior: smooth; height: 19em; display: grid; grid-auto-flow: column; overflow: hidden;">
 {% for video in playlist.videos %}
     <div class="w3-padding w3-animate-opacity">
-        <div class="w3-card" style="height: 100%; width: 20em;">
+        <div onmouseover="mOver(this.id)" onmouseout="mOut(this.id)" id="{{ playlist.short }}{{ video.id }}" class="w3-card">
 {% unless video.available_soon %}
             <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
-                <div class="w3-display-container" style="width: 100%; height: 11.3em; background: #000000;">
+                <div class="w3-display-container" style="width: 100%; height: 11.3em; background: #000000; border-radius: 0.5rem">
                     <img class="w3-display-middle" style="width: 100%;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video.id }}.small.jpg">
                 </div>
 {% unless video.available_soon %}
             </a>
 {% endunless %}
-            <div class="w3-margin">
-
+            <div style="position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.8);" class="w3-margin">
 {% unless video.available_soon %}
                 <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
@@ -81,8 +85,9 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 {% if video.available_soon %}
                 <i><h5>Demnächst™ verfügbar</h5></i>
 {% endif %}
-
-                <p>
+</div>
+            <div class="w3-margin">
+                <p class="Wo" id="Wo{{ playlist.short }}{{ video.id }}" style="display: none;">
 {% for upload in video.uploads %}
 {% if upload.enabled %}
 {% if upload.hoster == "youtube" %}
@@ -115,6 +120,26 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
     </div>
 {% endfor %}
 </div>
+<div id="{{ playlist.short }}" onclick="leftScroll(this.id)">
+    <div style="
+    position: absolute;
+    top: 0px;
+    height: 100%; 
+    width: 5rem;
+    background-image: 
+    linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    " class="left ScrollButtons"><img style="transform: translateY(4em) rotate(180deg);" src="assets/images/arrow.svg"></div>
+</div>
+<div id="{{ playlist.short }}" onclick="rightScroll(this.id)">
+    <div style="
+    position: absolute;
+    top: 0px;
+    height: 100%; 
+    width: 5rem;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0)); right: 0;
+    " class="right ScrollButtons"><img style="transform: translateY(4em);" src="assets/images/arrow.svg"></div>
+</div>
+</div>
 
 {% endfor %}
 
@@ -141,3 +166,6 @@ Mehr Infos zum Videomaterial gibt es [hier](/faq).
 [gh]: https://github.com/duraphilms/duraphilms.github.io
 [ytdl]: https://ytdl-org.github.io/youtube-dl/index.html
 [u6656]: https://unknown6656.com/harrypotter/
+
+<script src="assets/js/DarkmodeIndex.js"></script>
+<script src="assets/js/IndexScrollButtons.js"></script>
