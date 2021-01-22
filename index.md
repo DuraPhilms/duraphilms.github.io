@@ -67,7 +67,7 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 {% unless video.available_soon %}
             </a>
 {% endunless %}
-            <div style="position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.8);" class="w3-margin">
+            <div style="position: absolute; top: 0; text-shadow: 0px 0px 3px black;" class="w3-margin">
 {% unless video.available_soon %}
                 <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
@@ -81,12 +81,12 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
 {% unless video.available_soon %}
                 </a>
 {% endunless %}
+</div>
 
+            <div class="w3-margin">
 {% if video.available_soon %}
                 <i><h5>Demnächst™ verfügbar</h5></i>
 {% endif %}
-</div>
-            <div class="w3-margin">
                 <p class="Wo" id="Wo{{ playlist.short }}{{ video.id }}" style="display: none;">
 {% for upload in video.uploads %}
 {% if upload.enabled %}
