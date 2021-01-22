@@ -9,7 +9,7 @@ title: Duraphilms
 
 <div id="StickyHeadline" style="position: sticky; top: 0; z-index: 1; height: 4em; padding-top: 0.4em; margin-bottom: 1em; background-color: white; border-bottom: 1px solid #159957">
 <h1 style="text-align: center;">
-Durpahilms Synchros
+Duraphilms Synchros
 </h1>
 </div>
 
