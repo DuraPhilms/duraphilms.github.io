@@ -834,6 +834,14 @@
                 "description": "Leicht versp\u00e4tet, leicht zu lang: Teil 2 ist da!<br/>Und zwar mit dem \u00fcblichen Paket an Extraszenen, VFX, Bl\u00f6dsinn, Hochspannung und dramatischer Story ;) Viel Spa\u00df!^^",
                 "uploads": [
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "H0ieXXwfKHI",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "twitch",
                         "enabled": true,
                         "id": "385699605",
@@ -872,6 +880,14 @@
                 "date": "2011-08-05",
                 "description": "Tataa, Teil 3 is da!<br/>Wir hoffen, dass sich das warten f\u00fcr euch gelohnt hat und w\u00fcnschen wie immer viel Spa\u00df beim Ansehen!^^",
                 "uploads": [
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "R8aXedHeZYM",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
                     {
                         "hoster": "twitch",
                         "enabled": true,
@@ -920,11 +936,19 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
+                        "enabled": false,
+                        "id": "biptKQHHF9c",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
+                        "hoster": "youtube",
                         "enabled": true,
                         "id": "XZWaD4Kutd4",
                         "version": "Original",
                         "resolution": 720,
-                        "origin": "source"
+                        "origin": "youtube"
                     },
                     {
                         "hoster": "twitch",
@@ -974,6 +998,14 @@
                 "description": "Und erneut hat es l\u00e4nger gedauert als geplant, daf\u00fcr aber mit extra vielen Special Effects ;) Nat\u00fcrlich auch wieder mit den anderen \u00fcblichen Features, Einschnitte, Metal und Seitenhiebe.<br/>Viel Spa\u00df beim Angucken^^",
                 "uploads": [
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "b2AxDGo6LKQ",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "vimeo",
                         "enabled": true,
                         "id": "399925158",
@@ -1012,6 +1044,14 @@
                 "date": "2012-07-27",
                 "description": "Nach einiger Wartezeit bedingt durch etliche Videosperrungen und zwei Remakes ist es nun soweit: Teil 6 hat es online geschafft (die Frage ist nur: F\u00fcr wie lange?^^). Ein Haufen Effekte, eine undurchsichtige Story und jede Menge eingef\u00fcgte Filmszenen und Soundtracks d\u00fcrfen da nat\u00fcrlich nicht fehlen. In der Hoffnung, dass es mit den nachfolgenden Parts nicht mehr so lange dauert, w\u00fcnschen wir euch viel Spa\u00df beim Angucken!^^",
                 "uploads": [
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "UnLIzRpz6no",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
                     {
                         "hoster": "twitch",
                         "enabled": true,
@@ -1123,6 +1163,14 @@
                 "description": "Da ist er endlich, und wieder hat es zu lange gedauert, ich weiss. Diesmal werden vor allem die Gefahren des \u00fcbertriebenen Rauschmittelkonsums thematisiert ;)<br/>Viel Spa\u00df beim Ansehen^^",
                 "uploads": [
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "LuQmEIbjTFM",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "twitch",
                         "enabled": true,
                         "id": "385699782",
@@ -1169,6 +1217,14 @@
                 "date": "2013-07-27",
                 "description": "Jetzt auch in Full HD! Mit noch mehr Effekten, neuer Aufl\u00f6sung und so lange wie keiner der anderen.",
                 "uploads": [
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "Mzmszrx_uco",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
+                    },
                     {
                         "hoster": "twitch",
                         "enabled": true,
@@ -1270,6 +1326,14 @@
                 "id": "11",
                 "date": "2014-12-30",
                 "uploads": [
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "FHhVIAqBV8U",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
+                    },
                     {
                         "hoster": "twitch",
                         "enabled": true,
