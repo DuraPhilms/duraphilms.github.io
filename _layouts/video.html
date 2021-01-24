@@ -16,6 +16,21 @@
     height: 3em;
     }
     .FontContrast{color: whitesmoke;}
+
+    .comment {
+        background-color: #EFEFEF;
+        border-radius: 8px;
+        padding: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 20px;
+        margin-left: 85px;
+        -webkit-transition: all 1s linear;
+    }
+    .comment:target {
+        background-color: #FFC;
+        -webkit-transition: all 1s linear;
+    }
 </style>
 
 <div id="DarkModeButton"><svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg></div>
@@ -38,6 +53,8 @@
 {% else %}
 {% assign title = playlist.title | append: " Teil " | append: page.part %}
 {% endif %}
+
+<!-- Videoplayer -->
 
 <video-js
         id="player"
@@ -116,6 +133,8 @@
     });
 </script>
 
+<!-- Videonavigation -->
+
 <div class="w3-card w3-padding">
 <div class="w3-container w3-cell-row">
     {% if prevVideo %}
@@ -179,7 +198,11 @@
     {% endif %}
 </div>
 
+<!-- Videotitel -->
+
 <h1>{{ title }}</h1>
+
+<!-- Linkuebersicht mit verschiedenen Versionen -->
 
 {% assign versions = "" %}
 {% for upload in video.uploads %}
@@ -224,10 +247,47 @@
 {% assign last_version = version %}
 {% endfor %}
 
+<!-- Videobeschreibung -->
 
 <p><b>Veröffentlicht am {{ video.date | date_to_string }}</b></p>
 
 <p>{{ video.description }}</p>
+
+<!-- Kommentare -->
+
+{% assign videoCommentsId = page.playlist | append: "_" | append: page.part %}
+{% assign comments = site.data.comments[videoCommentsId] %}
+<h3>Kommentare ({{ comments.commentCount }})</h3>
+
+{% if comments.commentCount == 0 %}
+Keine Kommentare verfügbar :(
+{% endif %}
+
+{% for comment in comments.comments %}
+<div>
+    <img style="float: left; border-radius: 50%;" width="75px" heiht="75px" src="{{ comment.authorThumbnails[2].url }}">
+    </img>
+
+    <div id="{{ comment.commentId }}"
+         class="comment">
+        <p>
+            <b style="background-color: #2ecc71; border-radius: 8px; padding: 5px; color: white">
+                <a href="https://www.youtube.com{{ comment.authorUrl }}">{{ comment.author }}</a>
+            </b>
+            {% if comment.likeCount > 0 %}
+            <b style="padding-left: 4px; color: grey; font-size: 0.8em"><tag style="font-size: 1.4em">⬆</tag> {{ comment.likeCount }}</b>
+            {% endif %}
+            <a href="#{{ comment.commentId }}">
+                <i style="float: right; font-size: 0.7em; padding-top: 0.5em">{{ comment.publishedText }}</i>
+            </a>
+        </p>
+        <p>
+            {{ comment.contentHtml }}
+        </p>
+    </div>
+</div>
+{% endfor %}
+
 </div>
 
 {% endif %}
