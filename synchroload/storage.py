@@ -25,9 +25,6 @@ HOSTER_SORTING = [
     "u6656"
 ]
 
-with open(DATA_LOCATION) as f:
-    DB = json.load(f)
-
 class Upload():
     hoster = ""
     id = ""
