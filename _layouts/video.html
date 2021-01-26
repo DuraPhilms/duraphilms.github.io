@@ -63,7 +63,7 @@
         preload="auto"
         style="width: 100%; height: /*57.8em*/43em;"
         poster="/thumbs/{{ playlist.name }}_{{ page.part }}.jpg" data-setup="{}">
-{% assign uploads = video.uploads | sort: "resolution" | reverse %}
+{% assign uploads = video.uploads | reverse | sort: "resolution" | reverse %}
 {% for upload in uploads %}
 {% if upload.enabled %}
 
