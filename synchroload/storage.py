@@ -16,13 +16,13 @@ VIDEO_VERSIONS = [
 
 HOSTER_SORTING = [
     "youtube",
+    "dropbox",
+    "archive",
+    "u6656",
     "twitch",
     "vimeo",
     "openload",
-    "dailymotion",
-    "archive",
-    "dropbox",
-    "u6656"
+    "dailymotion"
 ]
 
 class Upload():
