@@ -80,11 +80,11 @@
 {% endif %}
 
 {% if upload.hoster == "archive" %}
-    <source src="https://archive.org/download/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (archive)" {{ selected }}>
+    <source src="https://archive.org/download/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [archive]" {{ selected }}>
 {% elsif upload.hoster == "dropbox" %}
-    <source src="https://dl.dropboxusercontent.com/s/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (Dropbox)" {{ selected }}>
+    <source src="https://dl.dropboxusercontent.com/s/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [dropbox]" {{ selected }}>
 {% elsif upload.hoster == "u6656" %}
-    <source src="https://unknown6656.com/harrypotter/videos/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p (Unknown6656)" {{ selected }}>
+    <source src="https://unknown6656.com/harrypotter/videos/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [unknwn6]" {{ selected }}>
 {% endif %}
 
 {% endif%}
