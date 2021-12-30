@@ -761,6 +761,14 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "archive",
+                        "enabled": true,
+                        "id": "DuraphilmsSynchro/HPudPvA_11_Remastered.1080p.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/11.mp4",
