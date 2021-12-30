@@ -721,12 +721,36 @@
                         "origin": "source"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "SHtUrQPg5_A",
+                        "version": "Remastered",
+                        "resolution": 2160,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "1dveoib6o7noa17/HPudPvA_T_11.mp4",
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "enabled": true,
+                        "id": "02xylnmte5csb7z/HPudPvA_11_Remastered.1080p.mp4",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source"
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "enabled": true,
+                        "id": "qlqdmhra93rsjvc/HPudPvA_11_Remastered.2160p.webm",
+                        "version": "Remastered",
+                        "resolution": 2160,
+                        "origin": "source"
                     },
                     {
                         "hoster": "archive",
@@ -745,12 +769,28 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "vimeo",
+                        "enabled": true,
+                        "id": "661048457",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "dailymotion",
                         "enabled": true,
                         "id": "x2x19ua",
                         "version": "Original",
                         "resolution": 720,
                         "origin": "youtube"
+                    },
+                    {
+                        "hoster": "dailymotion",
+                        "enabled": false,
+                        "id": "x86o0x9",
+                        "version": "Remastered",
+                        "resolution": 2160,
+                        "origin": "source"
                     }
                 ]
             },
