@@ -125,7 +125,7 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
     position: absolute;
     top: 0px;
     height: 100%; 
-    width: 5rem;
+    width: 3rem;
     background-image: 
     linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
     " class="left ScrollButtons"><img style="transform: translateY(4em) rotate(180deg);" src="assets/images/arrow.svg"></div>
@@ -135,7 +135,7 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
     position: absolute;
     top: 0px;
     height: 100%; 
-    width: 5rem;
+    width: 3rem;
     background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0)); right: 0;
     " class="right ScrollButtons"><img style="transform: translateY(4em);" src="assets/images/arrow.svg"></div>
 </div>
