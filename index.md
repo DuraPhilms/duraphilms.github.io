@@ -3,7 +3,7 @@ layout: default
 title: Duraphilms
 ---
 
-<link rel="stylesheet" href="assets/css/indexStyle.css">
+<link rel="stylesheet" href="/assets/css/darkmode.css">
 
 <div id="DarkModeButton"><svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg></div>
 
@@ -53,92 +53,60 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
     </a>
 </div>
 
-<div style="position: relative; width: 100%;">
-<div id="Carusell{{ playlist.short }}" style="scroll-behavior: smooth; height: 19em; display: grid; grid-auto-flow: column; overflow: hidden;">
+<div style="display: grid; grid-auto-flow: column; overflow-x: scroll;">
 {% for video in playlist.videos %}
     <div class="w3-padding w3-animate-opacity">
-        <div onmouseover="mOver(this.id)" onmouseout="mOut(this.id)" id="{{ playlist.short }}{{ video.id }}" class="w3-card">
+        <div class="w3-card" style="height: 100%; width: 20em;">
 {% unless video.available_soon %}
             <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
                 <div class="w3-display-container" style="width: 100%; height: 11.3em; background: #000000; border-radius: 0.5rem">
-                    <img class="w3-display-middle" style="width: 100%;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video.id }}.small.jpg">
+                    <img class="w3-display-middle" style="width: 100%; border-radius: 0.5rem;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video.id }}.small.jpg">
                 </div>
 {% unless video.available_soon %}
             </a>
 {% endunless %}
-            <div style="position: absolute; top: 0; text-shadow: 0px 0px 3px black;" class="w3-margin">
+            <div class="w3-margin">
+
 {% unless video.available_soon %}
                 <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
 
 {% if video.title %}
-                    <h3>{{ video.title }}</h3>
+                    <h3 style="display: inline">{{ video.title }}</h3>
 {% else %}
-                    <h3>Teil {{ video.id }}</h3>
+                    <h3 style="display: inline">Teil {{ video.id }}</h3>
 {% endif %}
 
 {% unless video.available_soon %}
                 </a>
 {% endunless %}
-</div>
 
-            <div class="w3-margin">
+<!-- Quality -->
+{% assign maxRes = 0 %}
+{% for upload in video.uploads %}
+  {% if upload.enabled %}
+    {% if upload.resolution > maxRes %}
+      {% assign maxRes = upload.resolution %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% if maxRes >= 2160 %}
+                    <img src="/assets/images/quality-4k.svg" style="float: right; height: 1.5em">
+{% elsif maxRes >= 1080 %}
+                    <img src="/assets/images/quality-hd.svg" style="float: right; height: 1.5em">
+{% elsif maxRes >= 720 %}
+                    <img src="/assets/images/quality-sd.svg" style="float: right; height: 1.5em">
+{% endif %}
+
 {% if video.available_soon %}
                 <i><h5>Demnächst™ verfügbar</h5></i>
 {% endif %}
-                <p class="Wo" id="Wo{{ playlist.short }}{{ video.id }}" style="display: none;">
-{% for upload in video.uploads %}
-{% if upload.enabled %}
-{% if upload.hoster == "youtube" %}
-                    <a target="_blank" href="https://youtube.com/watch?v={{ upload.id }}">YouTube</a>
-{% elsif upload.hoster == "twitch" %}
-                    <a target="_blank" href="https://www.twitch.tv/videos/{{ upload.id }}">Twitch</a>
-{% elsif upload.hoster == "vimeo" %}
-                    <a target="_blank" href="https://vimeo.com/{{ upload.id }}">Vimeo</a>
-{% elsif upload.hoster == "archive" %}
-                    <a target="_blank" href="https://archive.org/download/{{ upload.id }}">archive.org</a>
-{% elsif upload.hoster == "dropbox" %}
-                    <a target="_blank" href="https://dl.dropboxusercontent.com/s/{{ upload.id }}">Dropbox</a>
-{% elsif upload.hoster == "openload" %}
-                    <a target="_blank" href="https://openload.co/embed/{{ upload.id }}">openload</a>
-{% elsif upload.hoster == "dailymotion" %}
-                    <a target="_blank" href="https://www.dailymotion.com/embed/video/{{ upload.id }}">dailymotion</a>
-{% elsif upload.hoster == "u6656" %}
-                    <a target="_blank" href="https://unknown6656.com/harrypotter/videos/{{ upload.id }}">Unknown6656</a>
-{% endif %}
-
-{% unless forloop.last %}
-                    •
-{% endunless %}
-
-{% endif %}
-{% endfor %}
-                </p>
             </div>
         </div>
     </div>
 {% endfor %}
-</div>
-<div id="{{ playlist.short }}" onclick="leftScroll(this.id)">
-    <div style="
-    position: absolute;
-    top: 0px;
-    height: 100%; 
-    width: 3rem;
-    background-image: 
-    linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
-    " class="left ScrollButtons"><img style="transform: translateY(4em) rotate(180deg);" src="assets/images/arrow.svg"></div>
-</div>
-<div id="{{ playlist.short }}" onclick="rightScroll(this.id)">
-    <div style="
-    position: absolute;
-    top: 0px;
-    height: 100%; 
-    width: 3rem;
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0)); right: 0;
-    " class="right ScrollButtons"><img style="transform: translateY(4em);" src="assets/images/arrow.svg"></div>
-</div>
 </div>
 
 {% endfor %}
@@ -168,4 +136,3 @@ Mehr Infos zum Videomaterial gibt es [hier](/faq).
 [u6656]: https://unknown6656.com/harrypotter/
 
 <script src="assets/js/DarkmodeIndex.js"></script>
-<script src="assets/js/IndexScrollButtons.js"></script>
