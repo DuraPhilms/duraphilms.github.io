@@ -70,7 +70,10 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
             <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
                 <div class="w3-display-container" style="width: 100%; height: 11.3em; background: #000000; border-radius: 0.5rem">
-                    <img class="w3-display-middle" style="width: 100%; border-radius: 0.5rem;" alt="Thumbnail" src="/thumbs/{{ playlist.name }}_{{ video.id }}.small.jpg">
+                    <img class="w3-display-middle"
+                         style="width: 100%; border-radius: 0.5rem;{% if video.available_soon %} filter: grayscale(80%);{% endif %}"
+                         alt="Thumbnail"
+                         src="/thumbs/{{ playlist.name }}_{{ video.id }}.small.jpg">
                 </div>
 {% unless video.available_soon %}
             </a>
