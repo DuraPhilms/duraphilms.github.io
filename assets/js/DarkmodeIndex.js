@@ -2,7 +2,10 @@ let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('#DarkModeButton');
 
 const enableDarkMode = () => {
-  document.getElementById("StickyHeadline").classList.add("darkmode");
+  let sticky = document.getElementById("StickyHeadline");
+  if (sticky) {
+    sticky.classList.add("darkmode");
+  }
   document.body.classList.add('darkmode');
   document.body.classList.add('FontContrast');
 
@@ -25,7 +28,10 @@ const enableDarkMode = () => {
 }
 
 const disableDarkMode = () => {
-  document.getElementById("StickyHeadline").classList.remove("darkmode");
+  let sticky = document.getElementById("StickyHeadline");
+  if (sticky) {
+    sticky.classList.remove("darkmode");
+  }
   document.body.classList.remove('darkmode');
   document.body.classList.remove('FontContrast');
 
