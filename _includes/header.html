@@ -19,16 +19,21 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <div id="DarkModeButton" onclick="toggleDarkMode()">
-        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/>
-        </svg>
-    </div>
     <div style="width: 100%; border-bottom: 1px solid #159957; background: #080a08;">
       <a href="/">
         <center>
           <img class="page-header" role="banner" style="height: 15em; display: block; margin-left: 50%; transform: translateX(-50%);" src="/assets/images/banner.jpg"/>
         </center>
       </a>
+        <div class="w3-card" style="position: absolute; top: 9.8em; right: 0.9em; padding: 0.65em; border-radius: 50%; background: var(--video-comment-bg-color);">
+            <a href="https://chat.duraphilms.tk" target="_blank">
+                <img src="/assets/images/discord.svg" style="width: 3em; height: 3em;"></img>
+            </a>
+        </div>
+    </div>
+    <div id="DarkModeButton" onclick="toggleDarkMode()">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/>
+        </svg>
     </div>
 
     <main id="content" class="main-content" role="main">
