@@ -3,11 +3,7 @@ layout: default
 title: Duraphilms
 ---
 
-<link rel="stylesheet" href="/assets/css/darkmode.css">
-
-<div id="DarkModeButton"><svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg></div>
-
-<div id="StickyHeadline" style="position: sticky; top: 0; z-index: 1; height: 4em; padding-top: 0.4em; margin-bottom: 1em; background-color: white; border-bottom: 1px solid #159957">
+<div id="StickyHeadline" style="position: sticky; top: 0; z-index: 1; height: 4em; padding-top: 0.4em; margin-bottom: 1em; background-color: var(--background-color); border-bottom: 1px solid #159957">
 <h1 style="text-align: center;">
 Duraphilms Synchros
 </h1>
@@ -146,5 +142,3 @@ Mehr Infos zum Videomaterial gibt es [hier](/faq).
 [gh]: https://github.com/duraphilms/duraphilms.github.io
 [ytdl]: https://ytdl-org.github.io/youtube-dl/index.html
 [u6656]: https://unknown6656.com/harrypotter/
-
-<script src="assets/js/DarkmodeIndex.js"></script>

@@ -1,40 +1,5 @@
 {% include header.html %}
 
-<style>
-    .darkmode{
-    background-color: rgb(26, 29, 42) !important;
-    }
-    #DarkModeButton{
-    position: fixed;
-    right: 0;
-    top: 0;
-    color: #159957;
-    border-radius: 9px;
-    border: solid #159957 2px;
-    padding: 0.5em;
-    width: 3em;
-    height: 3em;
-    }
-    .FontContrast{color: whitesmoke;}
-
-    .comment {
-        background-color: #EFEFEF;
-        border-radius: 8px;
-        padding: 1px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 20px;
-        margin-left: 85px;
-        -webkit-transition: all 1s linear;
-    }
-    .comment:target {
-        background-color: #FFC;
-        -webkit-transition: all 1s linear;
-    }
-</style>
-
-<div id="DarkModeButton"><svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg></div>
-
 {% for playlist in site.data.videos %}
 {% if playlist.short == page.playlist %}
 
@@ -302,36 +267,5 @@ Keine Kommentare verfügbar :(
 {% endfor %}
 {% endif %}
 {% endfor %}
-
-<script>
-let darkMode = localStorage.getItem('darkMode'); 
-const darkModeToggle = document.querySelector('#DarkModeButton');
-
-const enableDarkMode = () => {
-  document.body.classList.add('darkmode');
-  document.body.classList.add('FontContrast');
-  localStorage.setItem('darkMode', 'enabled');
-}
-
-const disableDarkMode = () => {
-  document.body.classList.remove('darkmode');
-  document.body.classList.remove('FontContrast');
-  localStorage.setItem('darkMode', null);
-}
- 
-if (darkMode === 'enabled') {
-  enableDarkMode();
-}
-
-darkModeToggle.addEventListener('click', () => {
-  darkMode = localStorage.getItem('darkMode'); 
-    
-  if (darkMode !== 'enabled') {
-    enableDarkMode();
-  } else {  
-    disableDarkMode(); 
-  }
-});
-</script>
 
 {% include footer.html %}

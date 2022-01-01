@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-GB" }}" data-theme="dark">
   <head>
     <meta charset="UTF-8">
 
@@ -14,9 +14,15 @@
     <link href="/assets/css/videojs.quality-selector.css" rel="stylesheet">
     <link href="/assets/css/videojs.vtt-thumbnails.css" rel="stylesheet">
 
+    <script type="text/javascript"  src="/assets/js/darkmode.js"></script>
+
     <title>{{ page.title }}</title>
   </head>
   <body>
+    <div id="DarkModeButton" onclick="toggleDarkMode()">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/>
+        </svg>
+    </div>
     <div style="width: 100%; border-bottom: 1px solid #159957; background: #080a08;">
       <a href="/">
         <center>

@@ -1,4 +1,19 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+:root {
+}
+
+[data-theme="light"] {
+    --background-color: #fff;
+    --font-color: #606c71;
+    --video-comment-bg-color: #EFEFEF;
+}
+[data-theme="dark"] {
+    --background-color: rgb(26, 29, 42);
+    --font-color: whitesmoke;
+    --video-comment-bg-color: rgb(36, 40, 59);
+}
+
+
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -6,17 +21,17 @@
  */
 html {
   font-family: sans-serif;
-  /* 1 */
   -ms-text-size-adjust: 100%;
-  /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+}
 
 /**
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: var(--background-color);
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -39,7 +54,8 @@ menu,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
@@ -50,9 +66,8 @@ canvas,
 progress,
 video {
   display: inline-block;
-  /* 1 */
   vertical-align: baseline;
-  /* 2 */ }
+}
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -60,7 +75,8 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
@@ -68,7 +84,8 @@ audio:not([controls]) {
  */
 [hidden],
 template {
-  display: none; }
+  display: none;
+}
 
 /* Links
    ========================================================================== */
@@ -91,7 +108,8 @@ a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
@@ -564,7 +582,7 @@ th {
   color: #bbbbbb; }
 
 .highlight {
-  background-color: #f8f8f8; }
+  background-color: var() #f8f8f8; }
 
 @font-face {
   font-family: 'Open Sans';
@@ -585,7 +603,8 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: var(--font-color);
+}
 
 #skip-to-content {
   height: 1px;
@@ -833,3 +852,32 @@ a {
 
 .site-footer-credits {
   color: #819198; }
+
+/* Dark mode */
+#DarkModeButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #159957;
+    border-radius: 9px;
+    border: solid #159957 2px;
+    padding: 0.5em;
+    width: 3em;
+    height: 3em;
+}
+
+/* Video comments */
+.comment {
+    background-color: var(--video-comment-bg-color);
+    border-radius: 8px;
+    padding: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px;
+    margin-left: 85px;
+    -webkit-transition: all 1s linear;
+}
+.comment:target {
+    background-color: #FFC;
+    -webkit-transition: all 1s linear;
+}
