@@ -53,10 +53,19 @@ verschiedenen Hostern. PvA gibt es hier zum Teil auch als **Full-HD** bzw.
     </a>
 </div>
 
-<div style="display: grid; grid-auto-flow: column; overflow-x: scroll;">
+<style>
+.video-card {
+    transform: scale(1);
+}
+.video-card:hover {
+    transform: scale(1.05) translateY(0.7em);
+}
+</style>
+
+<div style="display: grid; grid-auto-flow: column; overflow-x: scroll; padding-bottom: 1.3em;">
 {% for video in playlist.videos %}
     <div class="w3-padding w3-animate-opacity">
-        <div class="w3-card" style="height: 100%; width: 20em;">
+        <div class="w3-card video-card" style="height: 100%; width: 20em;">
 {% unless video.available_soon %}
             <a href="/{{ playlist.short }}/{{ video.id }}">
 {% endunless %}
