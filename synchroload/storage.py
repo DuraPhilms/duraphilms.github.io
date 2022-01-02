@@ -233,10 +233,11 @@ class Database():
                 if i < len(playlist.videos) - 1:
                     next = i + 1
 
-                if playlist.newest_first:
-                    self.writeVideo(playlist, video, last, next)
-                else:
-                    self.writeVideo(playlist, video, next, last)
+                if not video.available_soon:
+                    if playlist.newest_first:
+                        self.writeVideo(playlist, video, last, next)
+                    else:
+                        self.writeVideo(playlist, video, next, last)
                 i += 1
 
     def save(self):
