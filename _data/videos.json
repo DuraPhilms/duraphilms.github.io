@@ -153,7 +153,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "2H8SCuHWjdw",
                         "version": "Remake",
                         "resolution": 720,
@@ -224,7 +224,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "3GXJpjFtv4o",
                         "version": "Original",
                         "resolution": 720,
@@ -349,7 +349,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "rKM5iXdOxtE",
                         "version": "Original",
                         "resolution": 720,
@@ -474,7 +474,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "Pd8EfJ0FQb0",
                         "version": "Original",
                         "resolution": 720,
@@ -561,7 +561,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "4gOStT5d_Nw",
                         "version": "Original",
                         "resolution": 720,
@@ -714,7 +714,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "_Bb2YoEspY8",
                         "version": "Original",
                         "resolution": 720,
@@ -816,7 +816,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "8TEXBGAYuN0",
                         "version": "Original",
                         "resolution": 720,
@@ -1410,7 +1410,7 @@
                 "uploads": [
                     {
                         "hoster": "youtube",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "Mzmszrx_uco",
                         "version": "Original",
                         "resolution": 1080,
