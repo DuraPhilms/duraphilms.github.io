@@ -15,7 +15,8 @@ import plugins.vimeo
 import plugins.youtube
 import plugins.dummy
 
-from makesprites import SpriteTask
+from gen_vtt import VttConfig, generate_vtt_thumbnails
+from image_optimization import compress_lossy
 
 SYNCHROLOAD_PLUGINS = {
     "archive": plugins.archive,
@@ -83,7 +84,7 @@ def findLocalVideo(playlist, video, version = None, resolution = None, container
                     return upload, fileName
     return "", ""
 
-def getPlaylist(playlistName):
+def getPlaylist(playlistName) -> storage.Playlist:
     playlist = db.getPlaylistByName(playlistName)
     if playlist:
         return playlist
@@ -91,7 +92,7 @@ def getPlaylist(playlistName):
     print("No such playlist: " + playlistName)
     exit(1)
 
-def getVideo(playlist, part):
+def getVideo(playlist, part) -> storage.Video:
     video = playlist.getVideo(part)
     if video:
         return video
@@ -99,7 +100,7 @@ def getVideo(playlist, part):
     print("No such video: " + str(part))
     exit(1)
 
-def getUpload(video, hoster, resolution):
+def getUpload(video, hoster, resolution) -> storage.Upload:
     upload = video.getUpload(args.hoster, args.resolution)
     if upload:
         return upload
@@ -132,8 +133,6 @@ if __name__ == "__main__":
                     for upload in video.uploads:
                         if not hoster or hoster == upload.hoster:
                             check_availability(video, upload, playlist, video.id)
-
-            db.save()
 
         case "download":
             playlist = getPlaylist(args.playlist)
@@ -188,17 +187,18 @@ if __name__ == "__main__":
                 (upload, fileName) = findLocalVideo(playlist, video)
                 source = fileName
 
-            task = SpriteTask(source)
-            task.vttfile = "thumbs/vtt/{}_{}.vtt".format(playlist.name, video.id)
-            task.spritefile = "thumbs/vtt/{}_{}.jpg".format(playlist.name, video.id)
-            task.thumb_rate_seconds = 5
-            task.thumb_width = 200
-            task.outdir = "/tmp/spritesgen"
-            task.use_sips = False
+            vtt_filename = f"thumbs/vtt/{playlist.name}_{video.id}.vtt"
+            thumb_image = f"thumbs/vtt/{playlist.name}_{video.id}"
+            thumb_png = f"{thumb_image}.png"
+            thumb_jpg = f"{thumb_image}.jpg"
 
-            task.makeOutDir("/tmp/spritesgen")
+            vtt_config = VttConfig(frame_delta=5, frame_width=200, referenced_image_filename=thumb_jpg)
+            generate_vtt_thumbnails(source, thumb_png, vtt_filename, vtt_config)
 
-            task.run()
+            compress_lossy(thumb_png, thumb_jpg)
+
+            # delete .png variant
+            os.remove(thumb_png)
 
         case _:
             print(f"What do you mean by {args.action}?")

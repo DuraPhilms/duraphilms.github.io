@@ -3,4 +3,4 @@ ffmpeg-python
 requests
 internetarchive
 youtube_dl
-
+Pillow
