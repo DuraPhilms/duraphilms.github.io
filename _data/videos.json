@@ -27,7 +27,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "o9la0a7erwntwxl/HPudPvA_01_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -98,7 +98,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "8l0g2v6s4uixpr7/HPudPvA_02_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -169,7 +169,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "zda15eebz4ppdim/HPudPvA_03_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -240,7 +240,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "pdfekrnsqhzxc08/HPudPvA_04_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -1034,7 +1034,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "coci7ejt4fujukj/HPudOdP_02.mp4",
                         "version": "Original",
                         "resolution": 720,
@@ -1081,7 +1081,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "d0h18oo002nj3kk/HPudOdP_03.mp4",
                         "version": "Original",
                         "resolution": 720,
@@ -1143,7 +1143,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "gquwxwdyb4xnx7k/HPudOdP_04.mp4",
                         "version": "Original",
                         "resolution": 720,
@@ -1198,7 +1198,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "731xo3dxuwwet8u/HPudOdP_05.mp4",
                         "version": "Original",
                         "resolution": 720,
@@ -1245,7 +1245,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "yptvc8ci3y5ezk7/HPudOdP_06.mp4",
                         "version": "Original",
                         "resolution": 720,
@@ -1300,7 +1300,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "lwuknkceimpv5o5/HPudOdP_07.mp4",
                         "version": "Original",
                         "resolution": 720,
@@ -1363,7 +1363,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "hv6uuz7u1cygje1/HPudOdP_08.mp4",
                         "version": "Original",
                         "resolution": 720,
@@ -1418,7 +1418,7 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "klqsbh6nvckv6mj/HPudOdP_09.mp4",
                         "version": "Original",
                         "resolution": 1080,
