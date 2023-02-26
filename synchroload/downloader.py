@@ -1,4 +1,4 @@
-import youtube_dl
+import yt_dlp
 import urllib.error
 import ffmpeg
 import json
@@ -6,15 +6,15 @@ import requests
 
 def check_availability(url):
     try:
-        youtube_dl.YoutubeDL({"quiet": True}).extract_info(
+        yt_dlp.YoutubeDL({"quiet": True}).extract_info(
             url,
             download=False
         )
     except urllib.error.HTTPError:
         return False
-    except youtube_dl.utils.ExtractorError:
+    except yt_dlp.utils.ExtractorError:
         return False
-    except youtube_dl.utils.DownloadError: # Copyright
+    except yt_dlp.utils.DownloadError: # Copyright
         return False
     except:
         return False
@@ -22,7 +22,7 @@ def check_availability(url):
 
 def download(url, basename):
     fullname = basename + ".mkv"
-    ydl = youtube_dl.YoutubeDL({
+    ydl = yt_dlp.YoutubeDL({
         'format': "bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo[ext=webm]+bestaudio[ext=webm]",
         'outtmpl': fullname,
         "merge_output_format": "mkv"
@@ -32,9 +32,9 @@ def download(url, basename):
         ydl.extract_info(url)
     except urllib.error.HTTPError:
         return ""
-    except youtube_dl.utils.ExtractorError:
+    except yt_dlp.utils.ExtractorError:
         return ""
-    except youtube_dl.utils.DownloadError: # Copyright
+    except yt_dlp.utils.DownloadError: # Copyright
         return ""
     except:
         return ""
