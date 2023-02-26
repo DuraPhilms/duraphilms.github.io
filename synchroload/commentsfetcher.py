@@ -6,7 +6,7 @@ import json
 import os
 import sys
 
-INVIDIOUS_INSTANCE = "https://invidious.tube"
+INVIDIOUS_INSTANCE = "https://invidious.nerdvpn.de"
 COMMENTS_ENDPOINT = "/api/v1/comments/"
 COMMENTS_DATA = "_data/comments"
 
