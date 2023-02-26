@@ -1730,6 +1730,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "source"
+                    },
+                    {
+                        "hoster": "archive",
+                        "enabled": true,
+                        "id": "DuraphilmsSynchro/Duraphilms_OdP_14_kommt.1080p.mp4",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "youtube"
                     }
                 ]
             },
