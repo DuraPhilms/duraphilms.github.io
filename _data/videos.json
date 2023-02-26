@@ -617,13 +617,6 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "youtube"
-                    },
-                    {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "428730638",
-                        "version": "Remastered",
-                        "resolution": 1080
                     }
                 ]
             },
@@ -694,14 +687,6 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "youtube"
-                    },
-                    {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "661048457",
-                        "version": "Remastered",
-                        "resolution": 1080,
-                        "origin": "source"
                     },
                     {
                         "hoster": "dailymotion",
@@ -1219,14 +1204,6 @@
                         "origin": "youtube"
                     },
                     {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "399932579",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega"
-                    },
-                    {
                         "hoster": "dailymotion",
                         "enabled": true,
                         "id": "x2z0exh",
@@ -1280,14 +1257,6 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "youtube"
-                    },
-                    {
-                        "hoster": "vimeo",
-                        "enabled": true,
-                        "id": "399932791",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega"
                     }
                 ]
             },
