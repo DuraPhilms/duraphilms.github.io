@@ -192,7 +192,7 @@ if __name__ == "__main__":
             thumb_png = f"{thumb_image}.png"
             thumb_jpg = f"{thumb_image}.jpg"
 
-            vtt_config = VttConfig(frame_delta=5, frame_width=200, referenced_image_filename=thumb_jpg)
+            vtt_config = VttConfig(frame_delta=5, frame_width=200, referenced_image_filename=f"{playlist.name}_{video.id}.jpg")
             generate_vtt_thumbnails(source, thumb_png, vtt_filename, vtt_config)
 
             compress_lossy(thumb_png, thumb_jpg)
