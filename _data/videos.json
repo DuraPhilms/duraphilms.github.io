@@ -971,8 +971,16 @@
                     },
                     {
                         "hoster": "dropbox",
-                        "enabled": true,
+                        "enabled": false,
                         "id": "qgxkrnm2xuy0kjk/HPudOdP_01.mp4",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "dropbox",
+                        "enabled": true,
+                        "id": "vsc0v9yiwu10k8r/HPudOdP_01.720p.mp4",
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
