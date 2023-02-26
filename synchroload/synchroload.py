@@ -30,15 +30,13 @@ SYNCHROLOAD_PLUGINS = {
     "dummy": plugins.dummy
 }
 
-parser = argparse.ArgumentParser(description='Synchronize ')
+parser = argparse.ArgumentParser(description="SynchroLoad: Manage duraphilms.tk sources")
+parser.add_argument("action", type=str)
 parser.add_argument("--part", type=str)
 parser.add_argument("--playlist", type=str)
 parser.add_argument("--hoster", type=str)
 parser.add_argument("--resolution", type=int, default=-1)
-parser.add_argument("--download", action="store_true")
-parser.add_argument("--upload", action="store_true")
 parser.add_argument("--delete-offline", action="store_true")
-parser.add_argument("--gen-vtt", action="store_true")
 
 args = parser.parse_args()
 
@@ -125,77 +123,82 @@ def importU6656(playlist):
         video.uploads.append(upl)
 
 if __name__ == "__main__":
-    if args.delete_offline:
-        for playlist in db.playlists:
-            for video in playlist.videos:
-                for upload in video.uploads:
-                    check_availability(video, upload, playlist, video.id)
+    match args.action:
+        case "delete-offline":
+            for playlist in db.playlists:
+                for video in playlist.videos:
+                    for upload in video.uploads:
+                        check_availability(video, upload, playlist, video.id)
 
-        db.save()
+            db.save()
 
-    if args.download:
-        playlist = getPlaylist(args.playlist)
-        video = getVideo(playlist, args.part)
-        upload = getUpload(video, args.hoster, args.resolution)
-
-        plugin = pluginByName(args.hoster)
-        url = plugin.linkFromId(upload.id)
-
-        filename = db.getVideoFilenameBase(video, upload, playlist = playlist)
-
-        if plugin.HOSTER_HAS_DIRECT_LINKS:
-            download = downloader.downloadDirect(url, filename)
-        else:
-            download = downloader.download(url, filename)
-
-        if download:
-            print("Downloaded video to: {}".format(download))
-        else:
-            print("Could not download video from {}.".format(plugin.HOSTER_NAME))
-            exit(1)
-
-    if args.upload:
-        plugin = pluginByName(args.hoster)
-        if not plugin:
-            print("Could not upload: unknown hoster.")
-            exit(1)
-
-        playlist = getPlaylist(args.playlist)
-        video = getVideo(playlist, args.part)
-        (upload, fileName) = findLocalVideo(playlist, video)
-
-        upload.hoster = args.hoster
-        upload.id = plugin.upload(fileName)
-
-        if upload.id:
-            video.uploads.append(upload)
-
-    if args.gen_vtt:
-        playlist = getPlaylist(args.playlist)
-        video = getVideo(playlist, args.part)
-
-        source = ""
-
-        if args.hoster:
+        case "download":
+            playlist = getPlaylist(args.playlist)
+            video = getVideo(playlist, args.part)
             upload = getUpload(video, args.hoster, args.resolution)
 
             plugin = pluginByName(args.hoster)
             url = plugin.linkFromId(upload.id)
-            source = url
-        else:
+
+            filename = db.getVideoFilenameBase(video, upload, playlist = playlist)
+
+            if plugin.HOSTER_HAS_DIRECT_LINKS:
+                download = downloader.downloadDirect(url, filename)
+            else:
+                download = downloader.download(url, filename)
+
+            if download:
+                print("Downloaded video to: {}".format(download))
+            else:
+                print("Could not download video from {}.".format(plugin.HOSTER_NAME))
+                exit(1)
+
+        case "upload":
+            plugin = pluginByName(args.hoster)
+            if not plugin:
+                print("Could not upload: unknown hoster.")
+                exit(1)
+
+            playlist = getPlaylist(args.playlist)
+            video = getVideo(playlist, args.part)
             (upload, fileName) = findLocalVideo(playlist, video)
-            source = fileName
 
-        task = SpriteTask(source)
-        task.vttfile = "thumbs/vtt/{}_{}.vtt".format(playlist.name, video.id)
-        task.spritefile = "thumbs/vtt/{}_{}.jpg".format(playlist.name, video.id)
-        task.thumb_rate_seconds = 5
-        task.thumb_width = 200
-        task.outdir = "/tmp/spritesgen"
-        task.use_sips = False
-        
-        task.makeOutDir("/tmp/spritesgen")
+            upload.hoster = args.hoster
+            upload.id = plugin.upload(fileName)
 
-        task.run()
+            if upload.id:
+                video.uploads.append(upload)
+
+        case "gen-vtt":
+            playlist = getPlaylist(args.playlist)
+            video = getVideo(playlist, args.part)
+
+            source = ""
+
+            if args.hoster:
+                upload = getUpload(video, args.hoster, args.resolution)
+
+                plugin = pluginByName(args.hoster)
+                url = plugin.linkFromId(upload.id)
+                source = url
+            else:
+                (upload, fileName) = findLocalVideo(playlist, video)
+                source = fileName
+
+            task = SpriteTask(source)
+            task.vttfile = "thumbs/vtt/{}_{}.vtt".format(playlist.name, video.id)
+            task.spritefile = "thumbs/vtt/{}_{}.jpg".format(playlist.name, video.id)
+            task.thumb_rate_seconds = 5
+            task.thumb_width = 200
+            task.outdir = "/tmp/spritesgen"
+            task.use_sips = False
+
+            task.makeOutDir("/tmp/spritesgen")
+
+            task.run()
+
+        case _:
+            print(f"What do you mean by {args.action}?")
+            exit(1)
 
     db.save()

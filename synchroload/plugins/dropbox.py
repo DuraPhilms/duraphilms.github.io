@@ -21,7 +21,7 @@ def upload(filename):
     print("[dropbox] Uploading {}...".format(filename))
     f = open(filename, "rb")
     file_size = os.path.getsize(filename)
-    
+
     dest_path = "/" + filename
 
     upload_session_start_result = dbx.files_upload_session_start(f.read(CHUNK_SIZE))
