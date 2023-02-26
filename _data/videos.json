@@ -36,14 +36,6 @@
                     {
                         "hoster": "archive",
                         "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_01.mp4",
-                        "version": "Remake",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
                         "id": "DuraphilmsSynchro_fhu/HPudPvA_01_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -103,14 +95,6 @@
                         "version": "Remastered",
                         "resolution": 1080,
                         "origin": "source"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_02.mp4",
-                        "version": "Remake",
-                        "resolution": 720,
-                        "origin": "mega+aac"
                     },
                     {
                         "hoster": "archive",
@@ -178,14 +162,6 @@
                     {
                         "hoster": "archive",
                         "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_03.mp4",
-                        "version": "Remake",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_03_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -249,14 +225,6 @@
                     {
                         "hoster": "archive",
                         "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_04.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_04_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -307,14 +275,6 @@
                         "version": "Remastered",
                         "resolution": 1080,
                         "origin": "source"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_05.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
                     },
                     {
                         "hoster": "archive",
@@ -374,14 +334,6 @@
                     {
                         "hoster": "archive",
                         "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_06.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_06_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -432,14 +384,6 @@
                         "version": "Remastered",
                         "resolution": 1080,
                         "origin": "source"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_07.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
                     },
                     {
                         "hoster": "archive",
@@ -515,14 +459,6 @@
                     {
                         "hoster": "archive",
                         "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_08.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
                         "id": "DuraphilmsSynchro_v4y/HPudPvA_08_1080Rmk.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -594,14 +530,6 @@
                     {
                         "hoster": "archive",
                         "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_09.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
                         "id": "DuraphilmsSynchro_cqv/HPudPvA_09_Remastered.1080p.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -667,14 +595,6 @@
                         "id": "ivrcywt7a7dgm7e/HPudPvA_10_Remastered.2160p.webm",
                         "version": "Remastered",
                         "resolution": 2160
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_10.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
                     },
                     {
                         "hoster": "archive",
@@ -755,14 +675,6 @@
                     {
                         "hoster": "archive",
                         "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_11.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
                         "id": "DuraphilmsSynchro/HPudPvA_11_Remastered.1080p.mp4",
                         "version": "Remastered",
                         "resolution": 1080,
@@ -831,14 +743,6 @@
                         "origin": "mega+aac"
                     },
                     {
-                        "hoster": "archive",
-                        "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_12.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/12.mp4",
@@ -865,14 +769,6 @@
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "9dmmcsf1v88ymko/HPudPvA_T_13.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_13.mp4",
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
@@ -911,14 +807,6 @@
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "fhqqp1rrvvv6p39/HPudPvA_T_14.mp4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "mega+aac"
-                    },
-                    {
-                        "hoster": "archive",
-                        "enabled": true,
-                        "id": "HPudPvAT_file_remake/HPudPvA_T_14.mp4",
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
