@@ -17,7 +17,7 @@ def upload(filename):
     """
     DROPBOX_TOKEN = os.getenv("DROPBOX_TOKEN", "")
     dbx = dropbox.Dropbox(DROPBOX_TOKEN)
-    
+
     print("[dropbox] Uploading {}...".format(filename))
     f = open(filename, "rb")
     file_size = os.path.getsize(filename)
