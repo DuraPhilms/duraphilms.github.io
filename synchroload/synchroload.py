@@ -124,11 +124,14 @@ def importU6656(playlist):
 
 if __name__ == "__main__":
     match args.action:
-        case "delete-offline":
+        case "check-online":
+            hoster = args.hoster or None
+
             for playlist in db.playlists:
                 for video in playlist.videos:
                     for upload in video.uploads:
-                        check_availability(video, upload, playlist, video.id)
+                        if not hoster or hoster == upload.hoster:
+                            check_availability(video, upload, playlist, video.id)
 
             db.save()
 
