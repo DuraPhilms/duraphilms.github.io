@@ -45,20 +45,25 @@ db = storage.Database()
 def pluginByName(pluginName):
     return SYNCHROLOAD_PLUGINS[pluginName]
 
-def check_availability(video: storage.Video, upload, playlist, part):
+def check_availability(video: storage.Video, upload: storage.Upload, playlist: storage.Playlist, part: str):
+    indent = " " * len("[check-online]")
+
     plugin = SYNCHROLOAD_PLUGINS[upload.hoster]
     print(f"[check-online] {playlist.name} {part} on {plugin.HOSTER_NAME} ({upload.id})…")
 
     if not downloader.check_availability(plugin.linkFromId(upload.id)):
-        if plugin.HOSTER_KEEP_UNAVAILABLE_UPLOADS:
-            print("[check-online] Upload is offline. Disabling.")
-            video.disableUpload(upload.id)
+        if upload.enabled:
+            if plugin.HOSTER_KEEP_UNAVAILABLE_UPLOADS:
+                print(f"{indent} Upload is offline. Disabling.")
+                video.disableUpload(upload.id)
+            else:
+                print(f"{indent} Upload is offline. Removing.")
+                video.removeUpload(upload.id)
         else:
-            print("[check-online] Upload is offline. Removing.")
-            video.removeUpload(upload.id)
+            print(f"{indent} Still offline.")
     else:
         if not upload.enabled:
-            print("[check-online] Upload is online again. Re-enabling.")
+            print(f"{indent} Upload is online again. Re-enabling.")
             video.enableUpload(upload.id)
 
 
