@@ -37,7 +37,6 @@ parser.add_argument("--part", type=str)
 parser.add_argument("--playlist", type=str)
 parser.add_argument("--hoster", type=str)
 parser.add_argument("--resolution", type=int, default=-1)
-parser.add_argument("--delete-offline", action="store_true")
 
 args = parser.parse_args()
 
@@ -46,18 +45,22 @@ db = storage.Database()
 def pluginByName(pluginName):
     return SYNCHROLOAD_PLUGINS[pluginName]
 
-def check_availability(video, upload, playlist, part):
+def check_availability(video: storage.Video, upload, playlist, part):
     plugin = SYNCHROLOAD_PLUGINS[upload.hoster]
-    print("[check online] {} {} on {} ({}) ...".format(playlist.name, part, plugin.HOSTER_NAME, upload.id), end="", flush=True)
+    print(f"[check-online] {playlist.name} {part} on {plugin.HOSTER_NAME} ({upload.id})…")
+
     if not downloader.check_availability(plugin.linkFromId(upload.id)):
         if plugin.HOSTER_KEEP_UNAVAILABLE_UPLOADS:
-            print(" [FAIL] - Disabling!")
+            print("[check-online] Upload is offline. Disabling.")
             video.disableUpload(upload.id)
         else:
-            print(" [FAIL] - Removing!")
+            print("[check-online] Upload is offline. Removing.")
             video.removeUpload(upload.id)
     else:
-        print(" [OK]")
+        if not upload.enabled:
+            print("[check-online] Upload is online again. Re-enabling.")
+            video.enableUpload(upload.id)
+
 
 def findLocalVideo(playlist, video, version = None, resolution = None, containers = ["mp4", "webm", "mkv"]):
     if version:

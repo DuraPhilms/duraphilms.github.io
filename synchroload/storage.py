@@ -124,6 +124,12 @@ class Video():
             if u.id == uploadId:
                 u.enabled = False
 
+    def enableUpload(self, uploadId: str):
+        for u in self.uploads:
+            if u.id == uploadId:
+                u.enabled = True
+
+
 class Playlist():
     title = ""
     name = ""
