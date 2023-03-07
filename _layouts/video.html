@@ -54,6 +54,8 @@
     <source src="https://dl.dropboxusercontent.com/s/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [dropbox]" {{ selected }}>
 {% elsif upload.hoster == "u6656" %}
     <source src="https://unknown6656.com/harrypotter/videos/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [unknwn6]" {{ selected }}>
+{% elsif upload.hoster == "linuj24" %}
+    <source src="https://linuj24.userpage.fu-berlin.de/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [fu-up]" {{ selected }}>
 {% endif %}
 
 {% endif%}

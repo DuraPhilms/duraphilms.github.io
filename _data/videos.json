@@ -881,14 +881,6 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "youtube"
-                    },
-                    {
-                        "hoster": "dailymotion",
-                        "enabled": true,
-                        "id": "x2p1wnp",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "youtube"
                     }
                 ]
             },
@@ -1608,6 +1600,14 @@
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro/Duraphilms_OdP_14_kommt.1080p.mp4",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "youtube"
+                    },
+                    {
+                        "hoster": "linuj24",
+                        "enabled": true,
+                        "id": "Duraphilms_OdP_14_kommt.1080p.mp4",
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "youtube"
