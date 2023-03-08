@@ -19,6 +19,7 @@ HOSTER_SORTING = [
     "dropbox",
     "archive",
     "u6656",
+    "linuj24",
     "twitch",
     "vimeo",
     "openload",
