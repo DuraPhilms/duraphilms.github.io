@@ -208,6 +208,9 @@ if __name__ == "__main__":
             # delete .png variant
             os.remove(thumb_png)
 
+        case "build":
+            pass
+
         case _:
             print(f"What do you mean by {args.action}?")
             exit(1)
