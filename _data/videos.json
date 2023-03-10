@@ -1111,6 +1111,15 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21109&authkey=AKtGlvOW8tcesws",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_01.mp4",
@@ -1158,6 +1167,15 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21107&authkey=AL7WPOtENNCM7YY",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_02.mp4",
@@ -1203,6 +1221,15 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21108&authkey=AIAdfjliEiMlEF8",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -1267,6 +1294,15 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21110&authkey=AC9bj41tKTEJUmE",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_04.mp4",
@@ -1322,6 +1358,15 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21112&authkey=ACYUE0Ertx8-g4U",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_05.mp4",
@@ -1367,6 +1412,15 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21111&authkey=AE6paQIP7fASIqY",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -1424,6 +1478,15 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21113&authkey=AEAUD0t3Mz6IY9k",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_07.mp4",
@@ -1479,6 +1542,15 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21114&authkey=AFxna-6rzibRK64",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_08.mp4",
@@ -1524,6 +1596,15 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21115&authkey=AEUZn0hQ-qlePuU",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega+aac",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -1581,6 +1662,15 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21116&authkey=AAeDiVqyrQkyXG8",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega+aac",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "HPudOdPT_file_remake/HPudOdP_T_10.mp4",
@@ -1633,6 +1723,15 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21117&authkey=AMmXS4FN4hFM-uQ",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega+aac",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -1688,6 +1787,15 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21118&authkey=AGSx1x4E9czgNBg",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega+aac",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -1751,6 +1859,15 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21119&authkey=AM5jbC_NyFi85uY",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "mega+aac",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
