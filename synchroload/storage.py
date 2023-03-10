@@ -291,6 +291,9 @@ class Database():
                 raise Exception("Invalid container")
         return self.getVideoFilenameBase(video, upload, playlist) + "." + container
 
+    def collect_upload_origins(self):
+        return list(set([u.origin for p in self.playlists for v in p.videos for u in v.uploads]))
+
 
 if __name__ == "__main__":
     db = Database()

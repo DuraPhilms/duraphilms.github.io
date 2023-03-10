@@ -133,6 +133,83 @@ def importU6656(playlist):
 
         video.uploads.append(upl)
 
+def import_upload():
+    def ask_int_range(max=-1) -> int:
+        while True:
+            value = input()
+            try:
+                number = int(value)
+                if max == -1 or (1 <= number <= max):
+                    return number
+            except:
+                pass
+
+    def ask_int(text: str, fallback: int | None):
+        while True:
+            if fallback is not None:
+                result = input(f"Enter {text} (default: {str(fallback)}): ")
+            else:
+                result = input(f"Enter {text}: ")
+
+            try:
+                if not result:
+                    return fallback
+                return int(result)
+            except ValueError:
+                print("Needs to be an integer.")
+
+    def ask_str(text: str, fallback: str | None = None):
+        while True:
+            if fallback is not None:
+                result = input(f"Enter {text} (default: \"{fallback}\"): ")
+            else:
+                result = input(f"Enter {text}: ")
+
+            if result:
+                return result
+            if fallback is not None:
+                return fallback
+
+    def ask_string_list(strings: list[str], fallback: str | None = None) -> str:
+        for i in range(len(strings)):
+            print(f" {i + 1}: {strings[i]}")
+        return strings[ask_int_range(max=len(strings)) - 1]
+
+    print("Select playlist:")
+    for i in range(len(db.playlists)):
+        print(f" {i + 1}: {db.playlists[i].title}")
+    plist_i = ask_int_range(max=len(db.playlists))
+    plist = db.playlists[plist_i - 1]
+
+    print("Select video:")
+    for i in range(len(plist.videos)):
+        print(f" {i + 1}: {plist.videos[i].id}")
+    vid_i = ask_int_range(max=len(plist.videos))
+    vid = plist.videos[vid_i - 1]
+
+    upload = storage.Upload()
+
+    print("Select upload hoster:")
+    upload.hoster = ask_string_list(storage.HOSTER_SORTING)
+
+    if plist.short == "PvA":
+        print("Select video version:")
+        upload.version = ask_string_list(storage.VIDEO_VERSIONS)
+    else:
+        upload.version = "Original"
+
+    upload.resolution = ask_int("resolution", 1080)
+    print("Select upload origin/source:")
+    upload.origin = ask_string_list(db.collect_upload_origins())
+
+    upload.id = ask_str("upload id")
+
+    if upload.id.split(".")[-1] not in ["mkv", "mp4", "webm"]:
+        upload.container = ask_str("container type", "mp4")
+
+    vid.uploads.append(upload)
+
+
 if __name__ == "__main__":
     match args.action:
         case "check-online":
@@ -178,6 +255,9 @@ if __name__ == "__main__":
 
             if upload.id:
                 video.uploads.append(upload)
+
+        case "import":
+            import_upload()
 
         case "gen-vtt":
             playlist = getPlaylist(args.playlist)
