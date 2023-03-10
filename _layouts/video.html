@@ -52,6 +52,8 @@
 {% endif %}
 {% elsif upload.hoster == "dropbox" %}
     <source src="https://dl.dropboxusercontent.com/s/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [dropbox]" {{ selected }}>
+{% elsif upload.hoster == "gdrive" %}
+    <source src="https://drive.google.com/uc?export=download&id={{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [gdrive]" {{ selected }}>
 {% elsif upload.hoster == "u6656" %}
     <source src="https://unknown6656.com/harrypotter/videos/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [unknwn6]" {{ selected }}>
 {% elsif upload.hoster == "linuj24" %}
@@ -62,7 +64,7 @@
 {% endfor %}
 
 {% if fallback360 != "" %}
-    <source src="https://archive.org/download/{{ fallback360 | replace: ".mp4", ".ogv" | replace: ".webm", ".ogv" }}" type="video/ogg" label="360p [archive]" {{ selected }}>
+    <source src="https://archive.org/download/{{ fallback360 | replace: ".mp4", ".ogv" | replace: ".webm", ".ogv" }}" type="video/ogg" label="360p [archive]">
 {% endif %}
 
     <p class="vjs-no-js">

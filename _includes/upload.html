@@ -12,6 +12,8 @@
 <a class="w3-btn w3-black w3-margin-left w3-margin-right" target="_blank" download href="https://archive.org/download/{{ upload.id }}">archive.org{{ res }}</a>
 {% elsif upload.hoster == "dropbox" %}
 <a class="w3-btn w3-blue w3-margin-left w3-margin-right" target="_blank" download href="https://dl.dropboxusercontent.com/s/{{ upload.id }}">Dropbox{{ res }}</a>
+{% elsif upload.hoster == "gdrive" %}
+<a class="w3-btn w3-light-green w3-margin-left w3-margin-right" target="_blank" download href="https://drive.google.com/uc?export=download&id={{ upload.id }}">Google Drive{{ res }}</a>
 {% elsif upload.hoster == "openload" %}
 <a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ upload.id }}">openload{{ res }}</a>
 {% elsif upload.hoster == "u6656" %}
