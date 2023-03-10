@@ -152,12 +152,10 @@ if __name__ == "__main__":
             plugin = pluginByName(args.hoster)
             url = plugin.linkFromId(upload.id)
 
-            filename = db.getVideoFilenameBase(video, upload, playlist = playlist)
-
             if plugin.HOSTER_HAS_DIRECT_LINKS:
-                download = downloader.downloadDirect(url, filename)
+                download = downloader.downloadDirect(url, db.getVideoFilename(video, upload, playlist=playlist))
             else:
-                download = downloader.download(url, filename)
+                download = downloader.download(url, db.getVideoFilenameBase(video, upload, playlist=playlist))
 
             if download:
                 print("Downloaded video to: {}".format(download))

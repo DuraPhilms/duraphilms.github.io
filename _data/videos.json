@@ -1594,7 +1594,8 @@
                         "id": "15f2w-adrX6bCPhPoVWCU-IiT7YFFHfvw",
                         "version": "Original",
                         "resolution": 1080,
-                        "origin": "youtube"
+                        "origin": "youtube",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "dropbox",

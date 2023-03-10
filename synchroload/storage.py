@@ -34,6 +34,7 @@ class Upload():
     resolution = -1
     enabled = True
     origin = ""
+    container = ""
 
     def __init__(self, structs = None):
         if structs:
@@ -45,6 +46,8 @@ class Upload():
                 self.enabled = bool(structs["enabled"])
             if "origin" in structs:
                 self.origin = str(structs["origin"])
+            if "container" in structs:
+                self.container = str(structs["container"])
 
     def toJsonSerializable(self) -> dict:
         output = {}
@@ -55,6 +58,8 @@ class Upload():
         output["resolution"] = self.resolution
         if self.origin:
             output["origin"] = self.origin
+        if self.container:
+            output["container"] = self.container
         return output
 
     def __lt__(self, other) -> bool:
@@ -260,7 +265,7 @@ class Database():
             if p.short == name or p.name == name:
                 return p
     
-    def getVideoFilenameBase(self, video, upload, playlist = None):
+    def getVideoFilenameBase(self, video, upload, playlist=None):
         name = ""
         if video.filename:
             name = video.filename
@@ -274,6 +279,16 @@ class Database():
             name += "." + str(upload.resolution) + "p"
 
         return name
+
+    def getVideoFilename(self, video: Video, upload: Upload, playlist: Playlist | None = None):
+        container = upload.container if upload.container else upload.id.split('.')[-1]
+        match container:
+            case "mkv" | "mp4" | "webm":
+                pass
+            case _:
+                raise Exception("Invalid container")
+        return self.getVideoFilenameBase(video, upload, playlist) + "." + container
+
 
 if __name__ == "__main__":
     db = Database()

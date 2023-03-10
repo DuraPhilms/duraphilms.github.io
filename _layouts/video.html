@@ -33,6 +33,8 @@
 {% for upload in uploads %}
 {% if upload.enabled %}
 
+{% comment %}<!-- FIXME: some uploads (gdrive) don't have their container in upload.id -->{% endcomment %}
+
 {% if upload.id contains ".webm" %}
 {% assign contentType = "video/webm" %}
 {% else %}
