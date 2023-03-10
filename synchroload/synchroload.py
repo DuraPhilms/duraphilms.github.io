@@ -6,6 +6,7 @@ import os
 import storage
 import downloader
 import plugins.archive
+import plugins.gdrive
 import plugins.dropbox
 import plugins.dailymotion
 import plugins.openload
@@ -20,6 +21,7 @@ from image_optimization import compress_lossy
 
 SYNCHROLOAD_PLUGINS = {
     "archive": plugins.archive,
+    "gdrive": plugins.gdrive,
     "dropbox": plugins.dropbox,
     "dailymotion": plugins.dailymotion,
     "openload": plugins.openload,
