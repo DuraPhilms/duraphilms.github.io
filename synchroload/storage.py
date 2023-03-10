@@ -18,6 +18,7 @@ HOSTER_SORTING = [
     "youtube",
     "gdrive",
     "dropbox",
+    "onedrive",
     "archive",
     "u6656",
     "linuj24",

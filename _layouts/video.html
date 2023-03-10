@@ -56,6 +56,8 @@
     <source src="https://dl.dropboxusercontent.com/s/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [dropbox]" {{ selected }}>
 {% elsif upload.hoster == "gdrive" %}
     <source src="https://drive.google.com/uc?export=download&id={{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [gdrive]" {{ selected }}>
+{% elsif upload.hoster == "onedrive" %}
+    <source src="https://onedrive.live.com/download?{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [onedrive]" {{ selected }}>
 {% elsif upload.hoster == "u6656" %}
     <source src="https://unknown6656.com/harrypotter/videos/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [unknwn6]" {{ selected }}>
 {% elsif upload.hoster == "linuj24" %}

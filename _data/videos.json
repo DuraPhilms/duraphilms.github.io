@@ -1606,6 +1606,15 @@
                         "origin": "youtube"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1!106&authkey=ACH7MOMCAP7x3JI",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "youtube",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro/Duraphilms_OdP_14_kommt.1080p.mp4",
