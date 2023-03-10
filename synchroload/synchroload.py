@@ -175,39 +175,72 @@ def import_upload():
             print(f" {i + 1}: {strings[i]}")
         return strings[ask_int_range(max=len(strings)) - 1]
 
-    print("Select playlist:")
-    for i in range(len(db.playlists)):
-        print(f" {i + 1}: {db.playlists[i].title}")
-    plist_i = ask_int_range(max=len(db.playlists))
-    plist = db.playlists[plist_i - 1]
+    def select_playlist():
+        p = db.getPlaylistByName(args.playlist)
+        if p:
+            return p
 
-    print("Select video:")
-    for i in range(len(plist.videos)):
-        print(f" {i + 1}: {plist.videos[i].id}")
-    vid_i = ask_int_range(max=len(plist.videos))
-    vid = plist.videos[vid_i - 1]
+        print("Select playlist:")
+        for i in range(len(db.playlists)):
+            print(f" {i + 1}: {db.playlists[i].title}")
+        plist_i = ask_int_range(max=len(db.playlists))
+        return db.playlists[plist_i - 1]
+
+    def select_video(p: storage.Playlist):
+        v = p.getVideo(args.part)
+        if v:
+            return v
+
+        print("Select video:")
+        for i in range(len(plist.videos)):
+            print(f" {i + 1}: {plist.videos[i].id}")
+        vid_i = ask_int_range(max=len(plist.videos))
+        return plist.videos[vid_i - 1]
+
+    def select_hoster():
+        if args.hoster:
+            if args.hoster not in storage.HOSTER_SORTING:
+                raise ValueError("Invalid hoster given")
+            return args.hoster
+
+        print("Select upload hoster:")
+        return ask_string_list(storage.HOSTER_SORTING)
+
+    plist = select_playlist()
+    vid = select_video(plist)
 
     upload = storage.Upload()
 
-    print("Select upload hoster:")
-    upload.hoster = ask_string_list(storage.HOSTER_SORTING)
+    upload.hoster = select_hoster()
+    upload.resolution = int(args.resolution) if args.resolution != -1 else ask_int("resolution", 1080)
 
     if plist.short == "PvA":
-        print("Select video version:")
-        upload.version = ask_string_list(storage.VIDEO_VERSIONS)
+        if upload.resolution >= 1080:
+            upload.version = "Remastered"
+        else:
+            print("Select video version:")
+            upload.version = ask_string_list(storage.VIDEO_VERSIONS)
     else:
         upload.version = "Original"
 
-    upload.resolution = ask_int("resolution", 1080)
     print("Select upload origin/source:")
     upload.origin = ask_string_list(db.collect_upload_origins())
 
-    upload.id = ask_str("upload id")
+    if upload.hoster == "onedrive":
+        iframe = input("Enter onedrive iframe html: ")
+        iframe = iframe.replace('<iframe src="https://onedrive.live.com/embed?', '')
+        assert iframe[73] == "\""
+        upload.id = iframe[:73]
+    else:
+        upload.id = ask_str("upload id")
 
     if upload.id.split(".")[-1] not in ["mkv", "mp4", "webm"]:
         upload.container = ask_str("container type", "mp4")
 
     vid.uploads.append(upload)
+
+    print("Adding the following entry:")
+    print(upload.toJsonSerializable())
 
 
 if __name__ == "__main__":
