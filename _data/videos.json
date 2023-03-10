@@ -43,6 +43,15 @@
                         "origin": "source"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21110&authkey=AN7iPxyHPeyqE0Y",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro_fhu/HPudPvA_01_1080Rmk.mp4",
@@ -113,6 +122,15 @@
                         "version": "Remastered",
                         "resolution": 1080,
                         "origin": "source"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21111&authkey=ABmtrpRtACVuuHc",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -187,6 +205,15 @@
                         "origin": "source"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21112&authkey=AGIvi00FuliqZtw",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_03_1080Rmk.mp4",
@@ -259,6 +286,15 @@
                         "origin": "source"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21114&authkey=ABQIH4yK9ckXIi4",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_04_1080Rmk.mp4",
@@ -320,6 +356,15 @@
                         "version": "Remastered",
                         "resolution": 1080,
                         "origin": "source"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21113&authkey=AKjgLzmCpq9Ba2k",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -386,6 +431,15 @@
                         "origin": "source"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21115&authkey=AOKR-4bL__yEmC4",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro_1080Rmk/HPudPvA_06_1080Rmk.mp4",
@@ -447,6 +501,15 @@
                         "version": "Remastered",
                         "resolution": 1080,
                         "origin": "source"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21118&authkey=AEzHO1n1WehTeJI",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -519,6 +582,15 @@
                         "version": "Remastered",
                         "resolution": 2160,
                         "origin": "source"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21116&authkey=AHEaFbPdlen5cBQ",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -609,6 +681,15 @@
                         "origin": "source"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21117&authkey=AFJ7nOW1iqzaHNc",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro_cqv/HPudPvA_09_Remastered.1080p.mp4",
@@ -685,6 +766,15 @@
                         "id": "ivrcywt7a7dgm7e/HPudPvA_10_Remastered.2160p.webm",
                         "version": "Remastered",
                         "resolution": 2160
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=52C66D194AEB7AD9&resid=52C66D194AEB7AD9%21106&authkey=AMLxNDgFJrOcsa8",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "archive",
@@ -765,6 +855,15 @@
                         "origin": "source"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21119&authkey=AJBWFgBGtF51l84",
+                        "version": "Remastered",
+                        "resolution": 1080,
+                        "origin": "source",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "archive",
                         "enabled": true,
                         "id": "DuraphilmsSynchro/HPudPvA_11_Remastered.1080p.mp4",
@@ -836,6 +935,15 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21109&authkey=AFlsFMy160SJS_o",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/12.mp4",
@@ -874,6 +982,15 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21108&authkey=APpKlxNGo1aMRPE",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "u6656",
@@ -921,6 +1038,15 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "onedrive",
+                        "enabled": true,
+                        "id": "cid=E45B95064AB566C1&resid=E45B95064AB566C1%21107&authkey=AAegBIfb4WDqe4E",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "mega+aac",
+                        "container": "mp4"
                     },
                     {
                         "hoster": "u6656",
