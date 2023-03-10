@@ -54,8 +54,6 @@
 {% endif %}
 {% elsif upload.hoster == "dropbox" %}
     <source src="https://dl.dropboxusercontent.com/s/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [dropbox]" {{ selected }}>
-{% elsif upload.hoster == "gdrive" %}
-    <source src="https://drive.google.com/uc?export=download&id={{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [gdrive]" {{ selected }}>
 {% elsif upload.hoster == "onedrive" %}
     <source src="https://onedrive.live.com/download?{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [onedrive]" {{ selected }}>
 {% elsif upload.hoster == "fu-box" %}
