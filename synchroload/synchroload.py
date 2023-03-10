@@ -8,6 +8,7 @@ import downloader
 import plugins.archive
 import plugins.gdrive
 import plugins.dropbox
+import plugins.onedrive
 import plugins.dailymotion
 import plugins.openload
 import plugins.twitch
@@ -23,6 +24,7 @@ SYNCHROLOAD_PLUGINS = {
     "archive": plugins.archive,
     "gdrive": plugins.gdrive,
     "dropbox": plugins.dropbox,
+    "onedrive": plugins.onedrive,
     "dailymotion": plugins.dailymotion,
     "openload": plugins.openload,
     "twitch": plugins.twitch,
