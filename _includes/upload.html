@@ -16,6 +16,8 @@
 <a class="w3-btn w3-light-green w3-margin-left w3-margin-right" target="_blank" download href="https://drive.google.com/uc?export=download&id={{ upload.id }}">Google Drive{{ res }}</a>
 {% elsif upload.hoster == "onedrive" %}
 <a class="w3-btn w3-deep-purple w3-margin-left w3-margin-right" target="_blank" download href="https://onedrive.live.com/download?{{ upload.id }}">OneDrive{{ res }}</a>
+{% elsif upload.hoster == "fu-box" %}
+<a class="w3-btn w3-green w3-margin-left w3-margin-right" target="_blank" download href="https://box.fu-berlin.de/s/{{ upload.id }}">FU Box{{ res }}</a>
 {% elsif upload.hoster == "openload" %}
 <a class="w3-btn w3-light-blue w3-margin-left w3-margin-right" target="_blank" href="https://openload.co/embed/{{ upload.id }}">openload{{ res }}</a>
 {% elsif upload.hoster == "u6656" %}

@@ -21,6 +21,7 @@ HOSTER_SORTING = [
     "onedrive",
     "archive",
     "u6656",
+    "fu-box",
     "linuj24",
     "twitch",
     "vimeo",
