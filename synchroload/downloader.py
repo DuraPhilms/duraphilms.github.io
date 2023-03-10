@@ -17,6 +17,9 @@ def check_availability(url):
         return False
     except yt_dlp.utils.DownloadError: # Copyright
         return False
+    except KeyboardInterrupt:
+        print("Aborting.")
+        exit(1)
     except:
         return False
     return True
