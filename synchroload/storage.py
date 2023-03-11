@@ -16,10 +16,10 @@ VIDEO_VERSIONS = [
 
 HOSTER_SORTING = [
     "youtube",
-    "gdrive",
     "dropbox",
     "onedrive",
     "archive",
+    "gdrive",
     "u6656",
     "fu-box",
     "linuj24",
