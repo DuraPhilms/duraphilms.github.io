@@ -10,14 +10,6 @@
                 "description": "Teil 1 unsrer Fan-Synchro, PLEASE COMMENT & SUBSCRIBE!<br/>Wir h\u00e4tten gerne R\u00fcckmeldung ob es gut ist, dann k\u00f6nnen wir Sachen verbessern. Wir versuchen nicht, coldmirror mit dieser Synchro nachzuahmen oder \u00e4hnliches, wir wollen zeigen, dass sie uns dazu inspiriert hat, eine eigene Synchro zu machen.<br/><br/>Viel Spa\u00df beim gucken!<br/><br/>P.S.: Meinen Hauptkanal findet ihr hier: http://www.youtube.com/user/darthdustin<br/><br/>EDIT: Mittlerweile sind wir schon erfahrener, in den sp\u00e4teren Teilen (ab 4) hat sich sowohl Videoqualit\u00e4t als auch Schnitt, Effekte und Inhalt verbessert (kein Eigenlob, sondern ein Verweis darauf, dass wir auch erst einmal Erfahrung sammeln mussten, was sich in den neueren Teilen dann auch zeigt).<br/><br/><i>Am 5. Februar 2011 kam dann die \u00fcberarbeitete Version als Remake:</i><br/>Der Teil, mit dem damals alles begann: Hier kommt er als Director's Cut in voller Aufl\u00f6sung mit \u00fcberarbeiteter Soundqualit\u00e4t und zus\u00e4tzlichen Szenen. Keine Angst, es wird auch weiterhin kr\u00e4ftig an \"Orden des Penners\" , sowie an den Outtakes zu PvA gearbeitet.<br/>Viel Spa\u00df beim angucken!",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "8QPo_diqd8k",
-                        "version": "Remake",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "ca27pxotoceuk8o/HPudPvA_T_1.mp4",
@@ -60,6 +52,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "8QPo_diqd8k",
+                        "version": "Remake",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/01.mp4",
@@ -90,14 +90,6 @@
                 "date": "2009-06-22",
                 "description": "Teil 2 unserer Synchro, wir bitten wie immer um Kommentare (PLEASE COMMENT & SUBSCRIBE!).<br/>F\u00fcr Fragen und Anregungen sind wir immer offen.<br/>Viel Spa\u00df beim gucken w\u00fcnscht darthdustin!<br/><br/><i>Am 18. Februar 2012 kam dann die \u00fcberarbeitete Version als Remake:</i><br/>Auf Wunsch kommt hier doch noch das Remake von PvA2! Eigentlich wollten wir euch nur erm\u00f6glichen, den 3. und 6. Teil wieder sehen zu k\u00f6nnen. Die Audioqualit\u00e4t von Teil 3 fanden wir aber so unzumutbar, das wir ihn \"ge-remaket\" haben. Und damits nicht totale Verwirrung gibt und es d\u00e4mlich aussieht, Teil 2 direkt noch hinterher. Um jetzt der chronologischen Reihenfolge gerecht zu werden, ist hier Teil 2 [Remake], in K\u00fcrze folgt Teil 3 [Remake] und dann Teil 6 (kein Remake). Und dann gehts auch schon weiter mit Orden des Penners. Ich hoffe, die Arbeiten an 4 Vids gleichzeitig und eine Erk\u00e4ltung entschuldigen die Wartezeit ;) Viel Spa\u00df beim Angucken^^",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "-h-yviW_xVs",
-                        "version": "Remake",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -141,6 +133,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "-h-yviW_xVs",
+                        "version": "Remake",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/02.mp4",
@@ -171,14 +171,6 @@
                 "date": "2009-11-28",
                 "description": "Endlich! Der 3. Teil unserer Synchro konnte dank diverser Probleme (inklusive komplettes Neu-schneiden und Sperrung wegen \u00a9!) erst jetzt fertig gestellt werden.<br/>Dank an http://www.youtube.com/user/Philipp1099 !<br/>Wie immer: PLEASE RATE & COMMENT!<br/><br/>Viel Spa\u00df w\u00fcnscht<br/>darthdustin<br/><br/><i>Am 18. Mai 2012 kam dann die \u00fcberarbeitete Version als Remake:</i><br/>Mal sehen, wie lange er sich h\u00e4lt ;) Der letzte Remake-Part, bevor es mit Orden des Penners endlich weitergeht, sofern nicht wieder diverse Video-Sperrungen dazwischenfunken. Wie immer mit aufpolierter Bild- und Tonqualit\u00e4t, neugeschnittenen Szenen und extra VFX. Viel Spa\u00df beim Ansehen^^",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "2H8SCuHWjdw",
-                        "version": "Remake",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -222,6 +214,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "2H8SCuHWjdw",
+                        "version": "Remake",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/03.mp4",
@@ -252,14 +252,6 @@
                 "date": "2010-01-05",
                 "description": "Diesmal hat es nicht solange gedauert.<br/>Angefangen bei einer eher lahmen Unterrichtsstunde, geht's weiter mit einem Metal-Ausflug bei Hagrid, es folgt ein Wow-Battle und schlie\u00dflich ein idiotischer Unfall.<br/>Viel Spa\u00df",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "3GXJpjFtv4o",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -303,6 +295,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "3GXJpjFtv4o",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/04.mp4",
@@ -324,14 +324,6 @@
                 "id": "05",
                 "date": "2010-02-12",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "xc_Xa7StPbQ",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -375,6 +367,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "xc_Xa7StPbQ",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/05.mp4",
@@ -397,14 +397,6 @@
                 "date": "2010-04-10",
                 "description": "Auch in Teil 6 erlebt Harry wieder abgedrehte Abenteuer: Er besucht die Seelsorge, erh\u00e4lt Einblicke in eine Psychatrie, erf\u00e4hrt, wie die Pest in Hogwarts w\u00fctet und hat keine Ahnung, was Snape f\u00fcr ein Fach unterrichtet.<br/>Endlich erf\u00e4hrt man auch ein bisschen \u00fcber unsere an den Haaren herbeigezogene Story und der titelgebende Penner hat immerhin einen Kurzauftritt. Es gilt wie immer: PLEASE COMMENT & SUBSCRIBE! (vor allem weils keine Sterne mehr gibt)<br/><br/>Viel Spa\u00df!",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "rKM5iXdOxtE",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -448,6 +440,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "rKM5iXdOxtE",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/06.mp4",
@@ -469,14 +469,6 @@
                 "id": "07",
                 "date": "2010-05-05",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "Pd8EfJ0FQb0",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -520,6 +512,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "Pd8EfJ0FQb0",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/07.mp4",
@@ -542,14 +542,6 @@
                 "date": "2010-06-04",
                 "description": "Schwierige Frage: Kann Teil 8 besser sein als Teil 7? Die Antwort \u00fcberlassen wir euch (PLEASE COMMENT & RATE).<br/><br/>Diesmal ist wieder \"Werbung\" drin, z. B. McDonalds-Qualit\u00e4tsscout und Maoam, Hagrid tobt seine Battlefieldwut mit Metal aus und H\u00fctler schmiedet finstere Pl\u00e4ne und strebt mit Harry die Weltherrschaft an.<br/><br/>Viel Spa\u00df!",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "Pd8EfJ0FQb0",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -617,6 +609,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "Pd8EfJ0FQb0",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/08.mp4",
@@ -639,14 +639,6 @@
                 "date": "2010-07-19",
                 "description": "In Teil 9 drehen mal wieder alle durch, sowohl Lehrer als auch Sch\u00fcler werden mal eben zum Stra\u00dfenr\u00e4uber, Wahnsinnigen, Gollum oder zu diversen Star-Wars-Figuren. Neben dem Ton wurde auch das Video wieder umgestaltet mit einigem VFX.",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "4gOStT5d_Nw",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -706,6 +698,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "4gOStT5d_Nw",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/09.mp4",
@@ -728,14 +728,6 @@
                 "date": "2010-08-06",
                 "description": "Nach einer etwas l\u00e4ngeren Wartezeit (Sommerloch^^) kommt nun endlich Teil 10! Wir betonen hier, dass Teil 10 definitiv NICHT der letzte Teil ist, es folgen noch ca. 3-4 weitere Teile.<br/><br/>Langsam setzt sich auch die wahnsinnige Story aus diversen Details zusammen, was von einer \u00fcbergro\u00dfen Flashback-Welle untermalt wird^^. Die vollst\u00e4ndige Aufl\u00f6sung wird in den n\u00e4chsten Teilen folgen, f\u00fcr die wir uns noch einige \u00dcberraschungen aus dem Allerwertesten gezogen haben. Inhaltlich erwarten den Zuschauer einige \u00fcberraschende Wendungen, Witze, Special Effects, dazwischengequetsche Filmausschnitte und dramatischen Szenen.<br/><br/>Viel Spa\u00df!<br/><br/>P.S.: Vielen Dank, dass ihr die Videobeschreibung bis zum Ende gelesen habt :D",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "IJB5G2ZgS40",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -791,6 +783,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "IJB5G2ZgS40",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/10.mp4",
@@ -805,22 +805,6 @@
                 "date": "2010-09-03",
                 "description": "Dieser Teil steht vor der gewaltigen Aufgabe, unseren Jubil\u00e4umsteil zu \u00fcbertreffen, ob er es schafft, liegt bei euch ; )<br/><br/>Das Geheimnis des Penners wird nun gr\u00f6\u00dftenteils gel\u00fcftet und die \u00fcbliche Portion Werbung, Witz, Effekte und Superwaffen darf nat\u00fcrlich nicht fehlen^^ Danke auch an sw2gu!<br/><br/>Viel Spa\u00df!<br/><br/>P.S.: Immer noch nicht der letzte Teil!",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "_Bb2YoEspY8",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "SHtUrQPg5_A",
-                        "version": "Remastered",
-                        "resolution": 2160,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -879,6 +863,22 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "_Bb2YoEspY8",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "SHtUrQPg5_A",
+                        "version": "Remastered",
+                        "resolution": 2160,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/11.mp4",
@@ -910,14 +910,6 @@
                 "description": "Nach etwas l\u00e4ngerer Wartezeit ist es nun soweit:<br/>Teil 12, vollgestopft mit Action und VFX ist online! Harry erlebt ein bombastisches Finale, dennoch ist dies immer NOCH NICHT DER LETZTE TEIL!!!<br/>Dank auch an Jonas K. wegen der lange gesuchten Filmszene.<br/><br/>Viel Spa\u00df!",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "8TEXBGAYuN0",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "v9fvz4hcg2lm700/HPudPvA_T_12.mp4",
@@ -944,6 +936,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "8TEXBGAYuN0",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/12.mp4",
@@ -958,14 +958,6 @@
                 "date": "2010-11-26",
                 "description": "Dieser vorletzte Teil von \"HPudPvA\", war einer der schwierigsten (10min im Wald rumlaufen -.-), deshalb kommt er vlt. etwas gem\u00e4chlicher in Fahrt als der 12te.<br/>Der n\u00e4chste Teil wird wohl zwischen Weihnachten und Neujahr kommen, bis dahin viel Spa\u00df^^",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "AB5k0rhiqbc",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -993,6 +985,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "AB5k0rhiqbc",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudpva/13.mp4",
@@ -1014,14 +1014,6 @@
                 "id": "14",
                 "date": "2010-12-31",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "9A7KsljQHSw",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -1047,6 +1039,14 @@
                         "resolution": 720,
                         "origin": "mega+aac",
                         "container": "mp4"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "9A7KsljQHSw",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
                     },
                     {
                         "hoster": "u6656",
@@ -1087,14 +1087,6 @@
                 "description": "Endlich! Die Fortsetzung von \"Penner von Alcatraz\" ist da! In seinem neuen Abenteuer wird Harry wieder mal mit staubsaugerverkaufenden Monsteralienvertretern konfrontiert, entgeht nur knapp einem Antimaterie-Attentat und muss sich diversen Anspielungen auf Star Wars stellen. Viel Spa\u00df beim Angucken^^",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "4arwkIcTHgs",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "qgxkrnm2xuy0kjk/HPudOdP_01.mp4",
@@ -1128,6 +1120,14 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "4arwkIcTHgs",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudodp/01.mp4",
@@ -1150,14 +1150,6 @@
                 "date": "2011-06-17",
                 "description": "Leicht versp\u00e4tet, leicht zu lang: Teil 2 ist da!<br/>Und zwar mit dem \u00fcblichen Paket an Extraszenen, VFX, Bl\u00f6dsinn, Hochspannung und dramatischer Story ;) Viel Spa\u00df!^^",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "H0ieXXwfKHI",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -1184,6 +1176,14 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "H0ieXXwfKHI",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudodp/02.mp4",
@@ -1206,14 +1206,6 @@
                 "date": "2011-08-05",
                 "description": "Tataa, Teil 3 is da!<br/>Wir hoffen, dass sich das warten f\u00fcr euch gelohnt hat und w\u00fcnschen wie immer viel Spa\u00df beim Ansehen!^^",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "R8aXedHeZYM",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -1238,6 +1230,14 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "R8aXedHeZYM",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
                     },
                     {
                         "hoster": "u6656",
@@ -1270,22 +1270,6 @@
                 "date": "2011-10-07",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "biptKQHHF9c",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "XZWaD4Kutd4",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "youtube"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "gquwxwdyb4xnx7k/HPudOdP_04.mp4",
@@ -1309,6 +1293,22 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "biptKQHHF9c",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "XZWaD4Kutd4",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "youtube"
                     },
                     {
                         "hoster": "u6656",
@@ -1342,14 +1342,6 @@
                 "description": "Und erneut hat es l\u00e4nger gedauert als geplant, daf\u00fcr aber mit extra vielen Special Effects ;) Nat\u00fcrlich auch wieder mit den anderen \u00fcblichen Features, Einschnitte, Metal und Seitenhiebe.<br/>Viel Spa\u00df beim Angucken^^",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "b2AxDGo6LKQ",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "731xo3dxuwwet8u/HPudOdP_05.mp4",
@@ -1375,6 +1367,14 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "b2AxDGo6LKQ",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudodp/05.mp4",
@@ -1397,14 +1397,6 @@
                 "date": "2012-07-27",
                 "description": "Nach einiger Wartezeit bedingt durch etliche Videosperrungen und zwei Remakes ist es nun soweit: Teil 6 hat es online geschafft (die Frage ist nur: F\u00fcr wie lange?^^). Ein Haufen Effekte, eine undurchsichtige Story und jede Menge eingef\u00fcgte Filmszenen und Soundtracks d\u00fcrfen da nat\u00fcrlich nicht fehlen. In der Hoffnung, dass es mit den nachfolgenden Parts nicht mehr so lange dauert, w\u00fcnschen wir euch viel Spa\u00df beim Angucken!^^",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "UnLIzRpz6no",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -1429,6 +1421,14 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "UnLIzRpz6no",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
                     },
                     {
                         "hoster": "u6656",
@@ -1462,14 +1462,6 @@
                 "description": "Ja, er hat es geschafft! Hier ist Teil 7, vollgestopft mit Effekten, Bl\u00f6dsinn und dem anderen Kram... W\u00fcnschen wir ihm ein langes \u00dcberleben auf Youtube ;)<br/>Viel Spa\u00df beim Ansehen^^",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "Dd6G60HRaCI",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "lwuknkceimpv5o5/HPudOdP_07.mp4",
@@ -1493,6 +1485,14 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "Dd6G60HRaCI",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
                     },
                     {
                         "hoster": "u6656",
@@ -1526,14 +1526,6 @@
                 "description": "Da ist er endlich, und wieder hat es zu lange gedauert, ich weiss. Diesmal werden vor allem die Gefahren des \u00fcbertriebenen Rauschmittelkonsums thematisiert ;)<br/>Viel Spa\u00df beim Ansehen^^",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "LuQmEIbjTFM",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "hv6uuz7u1cygje1/HPudOdP_08.mp4",
@@ -1559,6 +1551,14 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "LuQmEIbjTFM",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudodp/08.mp4",
@@ -1581,14 +1581,6 @@
                 "date": "2013-07-27",
                 "description": "Jetzt auch in Full HD! Mit noch mehr Effekten, neuer Aufl\u00f6sung und so lange wie keiner der anderen.",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "Mzmszrx_uco",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -1613,6 +1605,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "Mzmszrx_uco",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
                     },
                     {
                         "hoster": "u6656",
@@ -1646,14 +1646,6 @@
                 "description": "Unser Weihnachtsgeschenk kommt zwar wieder mit Versp\u00e4tung, daf\u00fcr aber in einer extra-langen Fassung anl\u00e4sslich des 10. Teils. Neben den \u00fcblichen Anspielungen, diesmal vor allem auf Games, Effekten, Flashbacks usw. kehren auch verschiedene Elemente aus vergangenen Teilen wieder :)<br/>Viel Spa\u00df beim Anschauen!^^<br/><br/>Erg\u00e4nzung: Wir haben leider im Abspann einiges vergessen ;)<br/>Voldemort/Michael Jackson wird nat\u00fcrlich wie immer von Lukas D. gesprochen.<br/>Das verwendete Videomaterial:<br/>- Harry Potter und der Orden des Ph\u00f6nix (BD)<br/>- Stirb Langsam 1 (DVD)<br/>- Lawless (BD)<br/>- Silent Hill (BD)<br/>- Harry Potter Bloopers<br/>- Only In Battlefield - Beach Bomb<br/>- Dexter",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "IrDY1qGAJGw",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "ay9zwxwku6efwqo/HPudOdP_10.mp4",
@@ -1677,6 +1669,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "IrDY1qGAJGw",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
                     },
                     {
                         "hoster": "u6656",
@@ -1709,14 +1709,6 @@
                 "date": "2014-12-30",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": false,
-                        "id": "FHhVIAqBV8U",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "q8zdkygyekxosa1/HPudOdP_11.mp4",
@@ -1740,6 +1732,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": false,
+                        "id": "FHhVIAqBV8U",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
                     },
                     {
                         "hoster": "u6656",
@@ -1772,14 +1772,6 @@
                 "date": "2015-10-30",
                 "description": "Wenigstens hat es kein ganzes Jahr gedauert ;)<br/>Orden des Penners neigt sich dem Ende zu und wir sind mittendrin im Finale (Teil 12 ist nicht der letzte Teil!). Es gibt wieder eine Achterbahnfahrt durch die Medien- und Gaminglandschaft und der erste kleine Teaser f\u00fcr unser n\u00e4chstes Projekt hat sich auch eingeschlichen^^<br/>Viel Spa\u00df!",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "r90wHohn3_A",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -1814,6 +1806,14 @@
                         "origin": "mega+aac"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "r90wHohn3_A",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "u6656",
                         "enabled": true,
                         "id": "hpudodp/12.mp4",
@@ -1844,14 +1844,6 @@
                 "date": "2017-10-28",
                 "description": "Erstmal vielen Dank f\u00fcr 10.000 Abos (ein Special folgt noch!) und eure eiserne Geduld mit uns! Teil 13 hat es nun endlich geschafft und wir hoffen, dass er s\u00e4mtlichen Erwartungen gerecht wird^^ Es kommt zum gro\u00dfen Duell mit Michael Jackson und Dumbledore nimmt bittere Rache. Wie gewohnt mit viel Star Wars und ohne political correctness. Viel Spa\u00df beim Ansehen!",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "CNqeEqktQHo",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -1884,6 +1876,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "CNqeEqktQHo",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
                     },
                     {
                         "hoster": "u6656",
@@ -1950,14 +1950,6 @@
                 "filename": "Duraphilms_OdP_14_kommt",
                 "uploads": [
                     {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "q4VjhtMOihs",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
-                    {
                         "hoster": "dropbox",
                         "enabled": true,
                         "id": "gvp8fux9o50kte6/Duraphilms_OdP_14_kommt.1080p.mp4",
@@ -1992,6 +1984,14 @@
                         "container": "mp4"
                     },
                     {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "q4VjhtMOihs",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
+                    },
+                    {
                         "hoster": "fu-box",
                         "enabled": true,
                         "id": "5zKNaz5EXpCjsEp/download/Duraphilms_OdP_14_kommt.1080p.mp4",
@@ -2016,14 +2016,6 @@
                 "description": "Ihr wolltet ein Lebenszeichen, ihr bekommt eins!<br/>Jetzt neu: http://www.duraphilms.tk/<br/>Dort findet ihr all unsere Synchroteile inkl. HD-Remake von PvA (Gro\u00dfen Dank an LNJ & JBB!).",
                 "filename": "Duraphilms_OdP_News_Trailer_zu_Teil_14",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "6aH1Q3k-7L4",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -2055,6 +2047,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "6aH1Q3k-7L4",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
                     }
                 ]
             },
@@ -2065,14 +2065,6 @@
                 "description": "Nach langer Zeit melden wir uns mit frohen Nachrichten zur\u00fcck:<br/>Unsere Teile sind (warum auch immer) gr\u00f6\u00dftenteils wieder freigeschaltet. Und ja, bald gehts es dann auch endlich weiter mit Teil 13^^",
                 "filename": "Duraphilms_Die_Ankuendigung_des_Lebenslebens",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "hVVokdYUAgI",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -2096,6 +2088,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "hVVokdYUAgI",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
                     }
                 ]
             },
@@ -2106,14 +2106,6 @@
                 "description": "Update: Download jetzt inklusive Teil 12!<br/>Hier endlich die kleine \"\u00dcberraschung\", die wir bereits mal erw\u00e4hnt haben^^ Auf vielseitigen Wunsch hin haben wir uns dazu entschieden, euch alle Teile von Orden des Penners und Penner von Alcatraz wieder zur Verf\u00fcgung zu stellen.<br/><br/>PvA 1-14 inkl. Outtakes findet ihr hier:<br/>https://mega.nz/#!L1IXDRCQ!5U3K8SA_Y4NgC_tTJtFTs3j3ZI-c5RZUobE1wniL3xo<br/><br/>OdP 1-12 inkl. Abo-Special + Ank\u00fcndigung des Todestodes:<br/>https://mega.nz/#!LsRUnBwT!RIxNRlQ8yUMDoQaNAC5I-9c9y4l0DKAckH1XlIcezmU<br/><br/>F\u00fcr Leute mit einem nicht ganz so schnellen Anschluss hier nochmal OdP 1-11 etwas kompakter, die Qualit\u00e4t der Teile entspricht der jeweiligen Youtube-Fassung (Vielen Dank an Unknown6656!).<br/>https://mega.nz/#!esYR1DoR!7deKZNASRhfBJAaK9MHGj-Xfu-RgfvOjgtCLeZ_bJVg<br/><br/>Weitere Teile und/oder Hoster werden bei Bedarf hinzugef\u00fcgt, ihr k\u00f6nnt uns auch gerne weitere Links zukommen lassen :)<br/><br/>Zum Streamen derzeit:<br/>http://softwareinternational.de/duraphilms/ (Gro\u00dfes Dankesch\u00f6n an Unknown6656!)<br/><br/>Wir w\u00fcnschen Viel Spa\u00df!",
                 "filename": "Duraphilms_Die_Ankuendigung_des_Todestodes",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "uw76l0VnoL0",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -2137,6 +2129,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "uw76l0VnoL0",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
                     }
                 ]
             },
@@ -2147,14 +2147,6 @@
                 "description": "Hier das Videospecial anl\u00e4sslich unserer ersten 1000 Abos. Es hat tats\u00e4chlich geklappt, dass ich es noch am gleichen Abend hochladen konnte. Wir hoffen, dass ihr auch zuk\u00fcnftig viel Spa\u00df mit unseren Synchros haben werdet und uns weiterhin unterst\u00fctzt^^ Und immer flei\u00dfig Abspann lesen wenn ihr ein Lied sucht xD",
                 "filename": "Duraphilms_1000_Abonnenten_Special",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "ARcpujeMOog",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -2170,6 +2162,14 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "ARcpujeMOog",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
                     }
                 ]
             },
@@ -2180,14 +2180,6 @@
                 "description": "Und hier ist Teil 2:<br/><br/>Endlich ist es soweit! Die Duraphilms-Fr\u00fchjahrspause ist zu Ende! Als Entsch\u00e4digung f\u00fcr die lange Wartezeit haben wir ein dickes Paket Outtakes zusammengeschnibbelt (insgesamt 20 Min.), dass wir aufgrund des Youtube-Zeitlimits in 2 Teile splitten mussten. Wir hoffen es gef\u00e4llt euch und bevor jemand fragt: Wir arbeiten weiterhin flei\u00dfig an Orden des Penner (\"Gut Ding will Weile haben\")^^",
                 "filename": "HPudPvA_Outtakes_2",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "JShHKtexsbw",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -2211,6 +2203,14 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "JShHKtexsbw",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
                     }
                 ]
             },
@@ -2221,14 +2221,6 @@
                 "description": "Endlich ist es soweit! Die Duraphilms-Fr\u00fchjahrspause ist zu Ende! Als Entsch\u00e4digung f\u00fcr die lange Wartezeit haben wir ein dickes Paket Outtakes zusammengeschnibbelt (insgesamt 20 Min.), dass wir aufgrund des Youtube-Zeitlimits in 2 Teile splitten mussten. Wir hoffen es gef\u00e4llt euch und bevor jemand fragt: Wir arbeiten weiterhin flei\u00dfig an Orden des Penner (\"Gut Ding will Weile haben\")^^",
                 "filename": "HPudPvA_Outtakes_1",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "GSR4rE8Tsms",
-                        "version": "Original",
-                        "resolution": 720,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -2252,6 +2244,14 @@
                         "version": "Original",
                         "resolution": 720,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "GSR4rE8Tsms",
+                        "version": "Original",
+                        "resolution": 720,
+                        "origin": "source"
                     }
                 ]
             }
@@ -2270,14 +2270,6 @@
                 "description": "Das Team hinter duraphilms.tk pr\u00e4sentiert nun stolz ihre erste Eigenproduktion in Form eines Trailers f\u00fcr die Webseite. Qualitativ nat\u00fcrlich nicht ganz auf dem gewohnten Duraphilms-Niveau, aber f\u00fcr ein erstes Video schon nah dran!<br/><br/>Auf das n\u00e4chste Jahrzehnt mit Duraphilms!<br/><br/>Zatrox, JBB & LNJ w\u00fcnschen Euch frohe Weihnachten!<br/><br/><hr/><br/>Hole jetzt auch Du dir dein Duraphilms-All-Access-Abo:<br/><a href=\"https://www.duraphilms.tk/\">https://www.duraphilms.tk/</a><br/><br/><hr/><br/>Der offizielle Duraphilms-Kanal ist hier aufzufinden:<br/><a href=\"https://youtube.com/darthdustinKanal2\">https://youtube.com/darthdustinKanal2</a><br/><br/><hr/><br/><br/>PS: Wir k\u00f6nnen jetzt gut verstehen, warum das bei Duraphilms immer so lange dauert, selbst f\u00fcr drei Minuten haben wir schon ewig gebraucht.<br/><br/>",
                 "filename": "DuRoehre_Die_Ankuendigung_des_Duraphilmesphilmes",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "D7trGYJ5n2A",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -2301,6 +2293,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "D7trGYJ5n2A",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
                     }
                 ]
             },
@@ -2311,14 +2311,6 @@
                 "description": "Nach dem gro\u00dfen YouTube Erfolg mit dem Video \"Lego SHIT 2\" meldet sich Regisseur Dustin K. aka darthdustin und sein grandioses Produktionsteam zur\u00fcck. Diesmal gibt es eine \u00dcberraschung der Extraklasse! Aber seht selbst...",
                 "filename": "HPudOdP_Fan-Trailer",
                 "uploads": [
-                    {
-                        "hoster": "youtube",
-                        "enabled": true,
-                        "id": "gemxrCSBlu8",
-                        "version": "Original",
-                        "resolution": 1080,
-                        "origin": "source"
-                    },
                     {
                         "hoster": "dropbox",
                         "enabled": true,
@@ -2334,6 +2326,14 @@
                         "version": "Original",
                         "resolution": 1080,
                         "origin": "mega+aac"
+                    },
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "gemxrCSBlu8",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
                     }
                 ]
             }
