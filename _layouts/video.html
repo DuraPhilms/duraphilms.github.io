@@ -64,6 +64,8 @@
     <source src="https://linuj24.userpage.fu-berlin.de/{{ upload.id }}" type="{{ contentType }}" label="{{ upload.resolution }}p [fu-up]" {{ selected }}>
 {% elsif upload.hoster == "gdrive" %}
     <source src="https://redir.jbb.ghsq.ga/{{ upload.id | prepend: 'https://drive.google.com/uc?export=download&id=' | cgi_escape }}" type="{{ contentType }}" label="{{ upload.resolution }}p [gdrive]" {{ selected }}>
+{% elsif upload.hoster == "youtube" %}
+    <source src="https://redir.jbb.ghsq.ga/{{ upload.id | prepend: 'https://youtube.com/watch?v=' | cgi_escape }}" type="{{ contentType }}" label="720p [youtube]" {{ selected }}>
 {% endif %}
 
 {% endif%}
