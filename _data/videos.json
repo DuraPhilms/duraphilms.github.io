@@ -1913,8 +1913,17 @@
             },
             {
                 "id": "14",
-                "available_soon": true,
-                "uploads": []
+                "uploads": [
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "bea_VBzrPn8",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "youtube",
+                        "container": "mp4"
+                    }
+                ]
             }
         ]
     },
