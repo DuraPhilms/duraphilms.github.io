@@ -4,6 +4,6 @@ title: "1000-Abonnenten-Special"
 permalink: /duraphilms/03/
 playlist: "duraphilms"
 part: "03"
-nextVideoI: 4
-prevVideoI: 6
+nextVideoI: 3
+prevVideoI: 5
 ---
