@@ -256,8 +256,12 @@ if __name__ == "__main__":
     match args.action:
         case "check-online":
             hoster = args.hoster or None
+            playlist_filter = args.playlist or None
 
             for playlist in db.playlists:
+                if playlist_filter and playlist.name != playlist_filter:
+                    continue
+
                 for video in playlist.videos:
                     for upload in video.uploads:
                         if not hoster or hoster == upload.hoster:
