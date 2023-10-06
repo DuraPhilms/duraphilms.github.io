@@ -215,7 +215,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "2H8SCuHWjdw",
                         "version": "Remake",
                         "resolution": 720,
@@ -296,7 +296,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "3GXJpjFtv4o",
                         "version": "Original",
                         "resolution": 720,
@@ -441,7 +441,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "rKM5iXdOxtE",
                         "version": "Original",
                         "resolution": 720,
@@ -513,7 +513,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "Pd8EfJ0FQb0",
                         "version": "Original",
                         "resolution": 720,
@@ -610,7 +610,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "Pd8EfJ0FQb0",
                         "version": "Original",
                         "resolution": 720,
@@ -699,7 +699,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "4gOStT5d_Nw",
                         "version": "Original",
                         "resolution": 720,
@@ -784,7 +784,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "IJB5G2ZgS40",
                         "version": "Original",
                         "resolution": 720,
@@ -864,7 +864,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "_Bb2YoEspY8",
                         "version": "Original",
                         "resolution": 720,
@@ -872,7 +872,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "SHtUrQPg5_A",
                         "version": "Remastered",
                         "resolution": 2160,
@@ -937,7 +937,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "8TEXBGAYuN0",
                         "version": "Original",
                         "resolution": 720,
@@ -1177,7 +1177,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "H0ieXXwfKHI",
                         "version": "Original",
                         "resolution": 720,
@@ -1233,7 +1233,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "R8aXedHeZYM",
                         "version": "Original",
                         "resolution": 720,
@@ -1296,7 +1296,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "biptKQHHF9c",
                         "version": "Original",
                         "resolution": 720,
@@ -1424,7 +1424,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "UnLIzRpz6no",
                         "version": "Original",
                         "resolution": 720,
@@ -1608,7 +1608,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "Mzmszrx_uco",
                         "version": "Original",
                         "resolution": 1080,
@@ -1735,7 +1735,7 @@
                     },
                     {
                         "hoster": "youtube",
-                        "enabled": false,
+                        "enabled": true,
                         "id": "FHhVIAqBV8U",
                         "version": "Original",
                         "resolution": 1080,
