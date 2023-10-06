@@ -47,12 +47,19 @@ args = parser.parse_args()
 db = storage.Database()
 
 def pluginByName(pluginName):
+    if not pluginName in SYNCHROLOAD_PLUGINS:
+        print(f"Invalid plugin name '{pluginName}', needs to be registered in SYNCHROLOAD_PLUGINS")
+        return None
     return SYNCHROLOAD_PLUGINS[pluginName]
 
 def check_availability(video: storage.Video, upload: storage.Upload, playlist: storage.Playlist, part: str):
     indent = " " * len("[check-online]")
 
-    plugin = SYNCHROLOAD_PLUGINS[upload.hoster]
+    plugin = pluginByName(upload.hoster)
+    if not plugin:
+        print(f"Skipping upload of unkown hoster '{upload.hoster}'.")
+        return
+
     print(f"[check-online] {playlist.name} {part} on {plugin.HOSTER_NAME} ({upload.id})…")
 
     if not downloader.check_availability(plugin.linkFromId(upload.id)):
