@@ -1956,7 +1956,23 @@
                         "origin": "youtube"
                     }
                 ]
+            },
+            {
+                "id": "16",
+                "date": "2024-06-04",
+                "description": "Mit nur 4 Tagen Versp\u00e4tung hat es unser neuer Synchroteil endlich online geschafft! Es geht um hei\u00dfe Konzerte, Erinnerungsl\u00fccken, eine Menschenjagd, Magen-Darm-Probleme - und nat\u00fcrlich Weihnachten! In diesem Sinne: viel Spa\u00df & sch\u00F6nen Sommer!",
+                "uploads": [
+                    {
+                        "hoster": "youtube",
+                        "enabled": true,
+                        "id": "icgLxGhI_9w",
+                        "version": "Original",
+                        "resolution": 1080,
+                        "origin": "source"
+                    }
+                ]
             }
+            
         ]
     },
     {
